@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>P26 Eingabe, Ausgabe und Gruppen</title><link rel="stylesheet" href="pattern.css"><script src="pattern.js" defer></script></head>
+<body><header class="reference"><span>P26</span> Eingabe, Ausgabe und Gruppen</header><main>
+<p class="eyebrow">FORMULAR / BEISPIEL</p><h1>Fahrt erfassen</h1><p class="intro">Eingabe und berechneter Betrag erfüllen unterschiedliche Aufgaben. Zwei fachliche Gruppen bleiben auch bei wenig Platz getrennt.</p>
+<form novalidate><fieldset class="panel"><legend>Fahrtdaten</legend><div class="field"><label for="distance">Entfernung in Kilometern</label><input id="distance" type="number" min="0" max="500" step="1" value="12" inputmode="numeric" aria-describedby="distance-help distance-error"><p id="distance-help" class="hint">Ganze Kilometer von 0 bis 500.</p><p id="distance-error" class="error" hidden>Bitte eine ganze Zahl zwischen 0 und 500 eingeben.</p></div>
+<div class="summary" aria-label="Berechnung"><div><p class="summary-label">Beispielsatz</p><p>0,30 € pro Kilometer</p></div><div><label class="summary-label" for="amount">Erstattungsbetrag</label><output id="amount" for="distance" aria-live="polite">3,60 €</output></div></div></fieldset>
+<fieldset class="panel note-panel"><legend>Reisenotiz</legend><label for="note">Notiz zur Fahrt</label><textarea id="note" rows="3" placeholder="Zum Beispiel: Termin beim Kunden"></textarea><p class="hint">Optional. Diese Information gehört zur Fahrt, nicht zur Berechnung.</p></fieldset>
+</form><p class="hint">Lokale Vorschau mit einem frei gewählten Beispielsatz; keine Abrechnung.</p>
+</main><footer>Lokale Vorschau ohne Produktanbindung.</footer></body></html>

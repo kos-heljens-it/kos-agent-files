@@ -1,0 +1,2908 @@
+{
+  "source": "DUI_Designrichtlinien.txt",
+  "source_sha256": "c7cb96e83464bf6dab3e76cb67f3b61cd533dadbd97154ca1b611b0eb0b7d062",
+  "rule_count": 160,
+  "meaning": "Empfohlene Referenzsammlung; keine Pflicht zu 160 Einzelbeispielen.",
+  "rules": [
+    {
+      "rule_id": "R001",
+      "section": "Leitprinzipien",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Entscheidung und Aufgabenbezug erklären; konkrete Auswirkungen nur bei Bedarf zeigen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R002",
+      "section": "Leitprinzipien",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Entscheidung und Aufgabenbezug erklären; konkrete Auswirkungen nur bei Bedarf zeigen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R003",
+      "section": "Leitprinzipien",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": null,
+      "reason": "Entscheidung und Aufgabenbezug erklären; konkrete Auswirkungen nur bei Bedarf zeigen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R004",
+      "section": "Leitprinzipien",
+      "reference_type": "Screenshot",
+      "collection_priority": "B",
+      "suggested_package": null,
+      "reason": "Entscheidung und Aufgabenbezug erklären; konkrete Auswirkungen nur bei Bedarf zeigen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R005",
+      "section": "Leitprinzipien",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Entscheidung und Aufgabenbezug erklären; konkrete Auswirkungen nur bei Bedarf zeigen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R006",
+      "section": "Leitprinzipien",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": null,
+      "reason": "Entscheidung und Aufgabenbezug erklären; konkrete Auswirkungen nur bei Bedarf zeigen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R007",
+      "section": "Leitprinzipien",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Entscheidung und Aufgabenbezug erklären; konkrete Auswirkungen nur bei Bedarf zeigen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R008",
+      "section": "Leitprinzipien",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": null,
+      "reason": "Entscheidung und Aufgabenbezug erklären; konkrete Auswirkungen nur bei Bedarf zeigen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N02",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/language-localization.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R009",
+      "section": "Ausrichtung und Fluchtlinien",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Kanten und Grundlinien im Rendering beurteilen; Layoutstruktur im Code nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R010",
+      "section": "Ausrichtung und Fluchtlinien",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Kanten und Grundlinien im Rendering beurteilen; Layoutstruktur im Code nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R011",
+      "section": "Ausrichtung und Fluchtlinien",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Kanten und Grundlinien im Rendering beurteilen; Layoutstruktur im Code nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R012",
+      "section": "Ausrichtung und Fluchtlinien",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Kanten und Grundlinien im Rendering beurteilen; Layoutstruktur im Code nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R013",
+      "section": "Ausrichtung und Fluchtlinien",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Kanten und Grundlinien im Rendering beurteilen; Layoutstruktur im Code nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R014",
+      "section": "Ausrichtung und Fluchtlinien",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Kanten und Grundlinien im Rendering beurteilen; Layoutstruktur im Code nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R015",
+      "section": "Ausrichtung und Fluchtlinien",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Kanten und Grundlinien im Rendering beurteilen; Layoutstruktur im Code nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P09",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p09-data-reuse/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R016",
+      "section": "Ausrichtung und Fluchtlinien",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Kanten und Grundlinien im Rendering beurteilen; Layoutstruktur im Code nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R017",
+      "section": "Gruppierung und räumliche Zuordnung",
+      "reference_type": "Screenshot",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Nähe, Abstände und Gruppengrenzen im tatsächlichen Ensemble vergleichen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        },
+        {
+          "pattern_id": "P26",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p26-input-output-groups/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R018",
+      "section": "Gruppierung und räumliche Zuordnung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Nähe, Abstände und Gruppengrenzen im tatsächlichen Ensemble vergleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        },
+        {
+          "pattern_id": "P26",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p26-input-output-groups/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R019",
+      "section": "Gruppierung und räumliche Zuordnung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Nähe, Abstände und Gruppengrenzen im tatsächlichen Ensemble vergleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R020",
+      "section": "Gruppierung und räumliche Zuordnung",
+      "reference_type": "Screenshot",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Nähe, Abstände und Gruppengrenzen im tatsächlichen Ensemble vergleichen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P27",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p27-spatial-relationships/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R021",
+      "section": "Gruppierung und räumliche Zuordnung",
+      "reference_type": "Screenshot",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Nähe, Abstände und Gruppengrenzen im tatsächlichen Ensemble vergleichen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P27",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p27-spatial-relationships/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R022",
+      "section": "Gruppierung und räumliche Zuordnung",
+      "reference_type": "Screenshot",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Nähe, Abstände und Gruppengrenzen im tatsächlichen Ensemble vergleichen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R023",
+      "section": "Gruppierung und räumliche Zuordnung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Nähe, Abstände und Gruppengrenzen im tatsächlichen Ensemble vergleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P26",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p26-input-output-groups/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R024",
+      "section": "Gruppierung und räumliche Zuordnung",
+      "reference_type": "Screenshot",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Nähe, Abstände und Gruppengrenzen im tatsächlichen Ensemble vergleichen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P26",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p26-input-output-groups/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R025",
+      "section": "Buttons und Abschluss von Handlungen",
+      "reference_type": "Screenshot",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Beschriftung und Position im Kontext zeigen; sichere Auslösung gegebenenfalls ausführen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        },
+        {
+          "pattern_id": "P08",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p08-dialog-focus/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R026",
+      "section": "Buttons und Abschluss von Handlungen",
+      "reference_type": "Screenshot",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Beschriftung und Position im Kontext zeigen; sichere Auslösung gegebenenfalls ausführen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R027",
+      "section": "Buttons und Abschluss von Handlungen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Beschriftung und Position im Kontext zeigen; sichere Auslösung gegebenenfalls ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R028",
+      "section": "Buttons und Abschluss von Handlungen",
+      "reference_type": "Screenshot",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Beschriftung und Position im Kontext zeigen; sichere Auslösung gegebenenfalls ausführen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R029",
+      "section": "Buttons und Abschluss von Handlungen",
+      "reference_type": "Screenshot",
+      "collection_priority": "B",
+      "suggested_package": "P01",
+      "reason": "Beschriftung und Position im Kontext zeigen; sichere Auslösung gegebenenfalls ausführen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P13",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p13-guided-draft/pattern.md"
+        },
+        {
+          "pattern_id": "P17",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p17-pagination/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R030",
+      "section": "Buttons und Abschluss von Handlungen",
+      "reference_type": "Screenshot",
+      "collection_priority": "B",
+      "suggested_package": "P01",
+      "reason": "Beschriftung und Position im Kontext zeigen; sichere Auslösung gegebenenfalls ausführen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R031",
+      "section": "Buttons und Abschluss von Handlungen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Beschriftung und Position im Kontext zeigen; sichere Auslösung gegebenenfalls ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R032",
+      "section": "Buttons und Abschluss von Handlungen",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": "P01",
+      "reason": "Beschriftung und Position im Kontext zeigen; sichere Auslösung gegebenenfalls ausführen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R033",
+      "section": "Erkennbare Objekte und sichtbare Funktionen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Bedienbarkeit und sichtbare Zustände mit ihrer semantischen Umsetzung abgleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P02",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p02-control-states/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R034",
+      "section": "Erkennbare Objekte und sichtbare Funktionen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Bedienbarkeit und sichtbare Zustände mit ihrer semantischen Umsetzung abgleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P02",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p02-control-states/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R035",
+      "section": "Erkennbare Objekte und sichtbare Funktionen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Bedienbarkeit und sichtbare Zustände mit ihrer semantischen Umsetzung abgleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P26",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p26-input-output-groups/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R036",
+      "section": "Erkennbare Objekte und sichtbare Funktionen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Bedienbarkeit und sichtbare Zustände mit ihrer semantischen Umsetzung abgleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P02",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p02-control-states/pattern.md"
+        },
+        {
+          "pattern_id": "P11",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p11-overlap-snap/pattern.md"
+        },
+        {
+          "pattern_id": "P18",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p18-visible-shortcuts/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R037",
+      "section": "Erkennbare Objekte und sichtbare Funktionen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Bedienbarkeit und sichtbare Zustände mit ihrer semantischen Umsetzung abgleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P02",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p02-control-states/pattern.md"
+        },
+        {
+          "pattern_id": "P11",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p11-overlap-snap/pattern.md"
+        },
+        {
+          "pattern_id": "P18",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p18-visible-shortcuts/pattern.md"
+        },
+        {
+          "pattern_id": "P20",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p20-reorder-preview/pattern.md"
+        },
+        {
+          "pattern_id": "P22",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p22-touch-cancel/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R038",
+      "section": "Erkennbare Objekte und sichtbare Funktionen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Bedienbarkeit und sichtbare Zustände mit ihrer semantischen Umsetzung abgleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P02",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p02-control-states/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R039",
+      "section": "Erkennbare Objekte und sichtbare Funktionen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Bedienbarkeit und sichtbare Zustände mit ihrer semantischen Umsetzung abgleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P09",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p09-data-reuse/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R040",
+      "section": "Erkennbare Objekte und sichtbare Funktionen",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P02",
+      "reason": "Bedienbarkeit und sichtbare Zustände mit ihrer semantischen Umsetzung abgleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R041",
+      "section": "Farben und visuelle Hervorhebung",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Farbwirkung am gerenderten Ensemble und ihre Token-Definition zusammen betrachten.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P06",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p06-type-colour/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R042",
+      "section": "Farben und visuelle Hervorhebung",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Farbwirkung am gerenderten Ensemble und ihre Token-Definition zusammen betrachten.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P28",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p28-colour-emphasis/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R043",
+      "section": "Farben und visuelle Hervorhebung",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Farbwirkung am gerenderten Ensemble und ihre Token-Definition zusammen betrachten.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P28",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p28-colour-emphasis/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R044",
+      "section": "Farben und visuelle Hervorhebung",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Farbwirkung am gerenderten Ensemble und ihre Token-Definition zusammen betrachten.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P06",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p06-type-colour/pattern.md"
+        },
+        {
+          "pattern_id": "P28",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p28-colour-emphasis/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R045",
+      "section": "Farben und visuelle Hervorhebung",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Farbwirkung am gerenderten Ensemble und ihre Token-Definition zusammen betrachten.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P06",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p06-type-colour/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R046",
+      "section": "Farben und visuelle Hervorhebung",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Farbwirkung am gerenderten Ensemble und ihre Token-Definition zusammen betrachten.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R047",
+      "section": "Farben und visuelle Hervorhebung",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Farbwirkung am gerenderten Ensemble und ihre Token-Definition zusammen betrachten.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R048",
+      "section": "Farben und visuelle Hervorhebung",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": "P06",
+      "reason": "Farbwirkung am gerenderten Ensemble und ihre Token-Definition zusammen betrachten.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R049",
+      "section": "Typografie und Lesbarkeit",
+      "reference_type": "Screenshot",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Lesbarkeit mit realen Inhalten beurteilen und typografische Einstellungen nachvollziehen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P06",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p06-type-colour/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R050",
+      "section": "Typografie und Lesbarkeit",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Lesbarkeit mit realen Inhalten beurteilen und typografische Einstellungen nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R051",
+      "section": "Typografie und Lesbarkeit",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Lesbarkeit mit realen Inhalten beurteilen und typografische Einstellungen nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N02",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/language-localization.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R052",
+      "section": "Typografie und Lesbarkeit",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Lesbarkeit mit realen Inhalten beurteilen und typografische Einstellungen nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P06",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p06-type-colour/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R053",
+      "section": "Typografie und Lesbarkeit",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Lesbarkeit mit realen Inhalten beurteilen und typografische Einstellungen nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P06",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p06-type-colour/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R054",
+      "section": "Typografie und Lesbarkeit",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Lesbarkeit mit realen Inhalten beurteilen und typografische Einstellungen nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P06",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p06-type-colour/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R055",
+      "section": "Typografie und Lesbarkeit",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Lesbarkeit mit realen Inhalten beurteilen und typografische Einstellungen nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P06",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p06-type-colour/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R056",
+      "section": "Typografie und Lesbarkeit",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P06",
+      "reason": "Lesbarkeit mit realen Inhalten beurteilen und typografische Einstellungen nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P06",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p06-type-colour/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R057",
+      "section": "Icons und Bildzeichen",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P07",
+      "reason": "Den gesamten Iconsatz mit Beschriftungen vergleichen; Einzelbilder reichen oft nicht.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P07",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p07-icon-ensemble/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R058",
+      "section": "Icons und Bildzeichen",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": "P07",
+      "reason": "Den gesamten Iconsatz mit Beschriftungen vergleichen; Einzelbilder reichen oft nicht.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R059",
+      "section": "Icons und Bildzeichen",
+      "reference_type": "Screenshot",
+      "collection_priority": "B",
+      "suggested_package": "P07",
+      "reason": "Den gesamten Iconsatz mit Beschriftungen vergleichen; Einzelbilder reichen oft nicht.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P07",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p07-icon-ensemble/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R060",
+      "section": "Icons und Bildzeichen",
+      "reference_type": "Screenshot",
+      "collection_priority": "B",
+      "suggested_package": "P07",
+      "reason": "Den gesamten Iconsatz mit Beschriftungen vergleichen; Einzelbilder reichen oft nicht.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P07",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p07-icon-ensemble/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R061",
+      "section": "Icons und Bildzeichen",
+      "reference_type": "Screenshot",
+      "collection_priority": "B",
+      "suggested_package": "P07",
+      "reason": "Den gesamten Iconsatz mit Beschriftungen vergleichen; Einzelbilder reichen oft nicht.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P07",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p07-icon-ensemble/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R062",
+      "section": "Icons und Bildzeichen",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P07",
+      "reason": "Den gesamten Iconsatz mit Beschriftungen vergleichen; Einzelbilder reichen oft nicht.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P07",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p07-icon-ensemble/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R063",
+      "section": "Icons und Bildzeichen",
+      "reference_type": "Screenshot",
+      "collection_priority": "B",
+      "suggested_package": "P07",
+      "reason": "Den gesamten Iconsatz mit Beschriftungen vergleichen; Einzelbilder reichen oft nicht.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R064",
+      "section": "Icons und Bildzeichen",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P07",
+      "reason": "Den gesamten Iconsatz mit Beschriftungen vergleichen; Einzelbilder reichen oft nicht.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N01",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/accessibility.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R065",
+      "section": "Formulare und Reduzierung von Eingaben",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Eingabe, Übernahme und Korrektur tatsächlich ausführen; Layout separat betrachten.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R066",
+      "section": "Formulare und Reduzierung von Eingaben",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Eingabe, Übernahme und Korrektur tatsächlich ausführen; Layout separat betrachten.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R067",
+      "section": "Formulare und Reduzierung von Eingaben",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P01",
+      "reason": "Eingabe, Übernahme und Korrektur tatsächlich ausführen; Layout separat betrachten.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P01",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p01-form-layout/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R068",
+      "section": "Formulare und Reduzierung von Eingaben",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Eingabe, Übernahme und Korrektur tatsächlich ausführen; Layout separat betrachten.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P09",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p09-data-reuse/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R069",
+      "section": "Formulare und Reduzierung von Eingaben",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Eingabe, Übernahme und Korrektur tatsächlich ausführen; Layout separat betrachten.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P09",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p09-data-reuse/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R070",
+      "section": "Formulare und Reduzierung von Eingaben",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Eingabe, Übernahme und Korrektur tatsächlich ausführen; Layout separat betrachten.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P09",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p09-data-reuse/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R071",
+      "section": "Formulare und Reduzierung von Eingaben",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Eingabe, Übernahme und Korrektur tatsächlich ausführen; Layout separat betrachten.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P09",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p09-data-reuse/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R072",
+      "section": "Formulare und Reduzierung von Eingaben",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Eingabe, Übernahme und Korrektur tatsächlich ausführen; Layout separat betrachten.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P03",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p03-validation/pattern.md"
+        },
+        {
+          "pattern_id": "P10",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p10-precise-input/pattern.md"
+        },
+        {
+          "pattern_id": "P17",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p17-pagination/pattern.md"
+        },
+        {
+          "pattern_id": "P19",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p19-name-conflict/pattern.md"
+        },
+        {
+          "pattern_id": "P26",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p26-input-output-groups/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R073",
+      "section": "Zielflächen und präzise Bedienung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Sichtbare und tatsächliche Trefferfläche sowie genaue Manipulation vergleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P02",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p02-control-states/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R074",
+      "section": "Zielflächen und präzise Bedienung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Sichtbare und tatsächliche Trefferfläche sowie genaue Manipulation vergleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P02",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p02-control-states/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R075",
+      "section": "Zielflächen und präzise Bedienung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Sichtbare und tatsächliche Trefferfläche sowie genaue Manipulation vergleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P09",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p09-data-reuse/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R076",
+      "section": "Zielflächen und präzise Bedienung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Sichtbare und tatsächliche Trefferfläche sowie genaue Manipulation vergleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P02",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p02-control-states/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R077",
+      "section": "Zielflächen und präzise Bedienung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Sichtbare und tatsächliche Trefferfläche sowie genaue Manipulation vergleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P02",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p02-control-states/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R078",
+      "section": "Zielflächen und präzise Bedienung",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Sichtbare und tatsächliche Trefferfläche sowie genaue Manipulation vergleichen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P10",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p10-precise-input/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R079",
+      "section": "Zielflächen und präzise Bedienung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Sichtbare und tatsächliche Trefferfläche sowie genaue Manipulation vergleichen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P11",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p11-overlap-snap/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R080",
+      "section": "Zielflächen und präzise Bedienung",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P02",
+      "reason": "Sichtbare und tatsächliche Trefferfläche sowie genaue Manipulation vergleichen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P22",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p22-touch-cancel/pattern.md"
+        },
+        {
+          "note_id": "N01",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/accessibility.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R081",
+      "section": "Rückmeldungen und Fehlermeldungen",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Meldung im betroffenen Zustand zeigen und den auslösenden Ablauf ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P03",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p03-validation/pattern.md"
+        },
+        {
+          "pattern_id": "P04",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p04-process/pattern.md"
+        },
+        {
+          "pattern_id": "P10",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p10-precise-input/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R082",
+      "section": "Rückmeldungen und Fehlermeldungen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Meldung im betroffenen Zustand zeigen und den auslösenden Ablauf ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P03",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p03-validation/pattern.md"
+        },
+        {
+          "pattern_id": "P10",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p10-precise-input/pattern.md"
+        },
+        {
+          "pattern_id": "P19",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p19-name-conflict/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R083",
+      "section": "Rückmeldungen und Fehlermeldungen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Meldung im betroffenen Zustand zeigen und den auslösenden Ablauf ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P03",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p03-validation/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R084",
+      "section": "Rückmeldungen und Fehlermeldungen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Meldung im betroffenen Zustand zeigen und den auslösenden Ablauf ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P03",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p03-validation/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R085",
+      "section": "Rückmeldungen und Fehlermeldungen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Meldung im betroffenen Zustand zeigen und den auslösenden Ablauf ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P03",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p03-validation/pattern.md"
+        },
+        {
+          "pattern_id": "P19",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p19-name-conflict/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R086",
+      "section": "Rückmeldungen und Fehlermeldungen",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Meldung im betroffenen Zustand zeigen und den auslösenden Ablauf ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P03",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p03-validation/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R087",
+      "section": "Rückmeldungen und Fehlermeldungen",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P03",
+      "reason": "Meldung im betroffenen Zustand zeigen und den auslösenden Ablauf ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P03",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p03-validation/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R088",
+      "section": "Rückmeldungen und Fehlermeldungen",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P03",
+      "reason": "Meldung im betroffenen Zustand zeigen und den auslösenden Ablauf ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R089",
+      "section": "Fortschritt und Aufmerksamkeit",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Mehrere Prozesszustände und den Übergang zwischen ihnen nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P04",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p04-process/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R090",
+      "section": "Fortschritt und Aufmerksamkeit",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Mehrere Prozesszustände und den Übergang zwischen ihnen nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P04",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p04-process/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R091",
+      "section": "Fortschritt und Aufmerksamkeit",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Mehrere Prozesszustände und den Übergang zwischen ihnen nachvollziehen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P04",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p04-process/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R092",
+      "section": "Fortschritt und Aufmerksamkeit",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Mehrere Prozesszustände und den Übergang zwischen ihnen nachvollziehen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P16",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p16-event-history/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R093",
+      "section": "Fortschritt und Aufmerksamkeit",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Mehrere Prozesszustände und den Übergang zwischen ihnen nachvollziehen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P16",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p16-event-history/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R094",
+      "section": "Fortschritt und Aufmerksamkeit",
+      "reference_type": "Screenshot",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Mehrere Prozesszustände und den Übergang zwischen ihnen nachvollziehen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P04",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p04-process/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R095",
+      "section": "Fortschritt und Aufmerksamkeit",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Mehrere Prozesszustände und den Übergang zwischen ihnen nachvollziehen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P25",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p25-motion-control/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R096",
+      "section": "Fortschritt und Aufmerksamkeit",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Mehrere Prozesszustände und den Übergang zwischen ihnen nachvollziehen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R097",
+      "section": "Kontrolle über Prozesse und Wiederverwendung",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Abbruch, Pause, Wiederaufnahme oder Wiederverwendung als Verhalten ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P04",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p04-process/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R098",
+      "section": "Kontrolle über Prozesse und Wiederverwendung",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": "P04",
+      "reason": "Abbruch, Pause, Wiederaufnahme oder Wiederverwendung als Verhalten ausführen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N04",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/process-and-recovery.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R099",
+      "section": "Kontrolle über Prozesse und Wiederverwendung",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Abbruch, Pause, Wiederaufnahme oder Wiederverwendung als Verhalten ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P04",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p04-process/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R100",
+      "section": "Kontrolle über Prozesse und Wiederverwendung",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Abbruch, Pause, Wiederaufnahme oder Wiederverwendung als Verhalten ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P15",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p15-undo-redo/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R101",
+      "section": "Kontrolle über Prozesse und Wiederverwendung",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Abbruch, Pause, Wiederaufnahme oder Wiederverwendung als Verhalten ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P13",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p13-guided-draft/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R102",
+      "section": "Kontrolle über Prozesse und Wiederverwendung",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Abbruch, Pause, Wiederaufnahme oder Wiederverwendung als Verhalten ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N04",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/process-and-recovery.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R103",
+      "section": "Kontrolle über Prozesse und Wiederverwendung",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Abbruch, Pause, Wiederaufnahme oder Wiederverwendung als Verhalten ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P19",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p19-name-conflict/pattern.md"
+        },
+        {
+          "note_id": "N04",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/process-and-recovery.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R104",
+      "section": "Kontrolle über Prozesse und Wiederverwendung",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P04",
+      "reason": "Abbruch, Pause, Wiederaufnahme oder Wiederverwendung als Verhalten ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N04",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/process-and-recovery.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R105",
+      "section": "Stabile Anordnung und Übergänge",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P05",
+      "reason": "Ausgangs- und Zielzustand sowie Kontext und Positionen vor und nach der Änderung prüfen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P05",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p05-navigation/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R106",
+      "section": "Stabile Anordnung und Übergänge",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P05",
+      "reason": "Ausgangs- und Zielzustand sowie Kontext und Positionen vor und nach der Änderung prüfen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P12",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p12-visible-modes/pattern.md"
+        },
+        {
+          "pattern_id": "P15",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p15-undo-redo/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R107",
+      "section": "Stabile Anordnung und Übergänge",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P05",
+      "reason": "Ausgangs- und Zielzustand sowie Kontext und Positionen vor und nach der Änderung prüfen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P05",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p05-navigation/pattern.md"
+        },
+        {
+          "pattern_id": "P14",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p14-context-search/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R108",
+      "section": "Stabile Anordnung und Übergänge",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P05",
+      "reason": "Ausgangs- und Zielzustand sowie Kontext und Positionen vor und nach der Änderung prüfen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P14",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p14-context-search/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R109",
+      "section": "Stabile Anordnung und Übergänge",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P05",
+      "reason": "Ausgangs- und Zielzustand sowie Kontext und Positionen vor und nach der Änderung prüfen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R110",
+      "section": "Stabile Anordnung und Übergänge",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P05",
+      "reason": "Ausgangs- und Zielzustand sowie Kontext und Positionen vor und nach der Änderung prüfen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P20",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p20-reorder-preview/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R111",
+      "section": "Stabile Anordnung und Übergänge",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P05",
+      "reason": "Ausgangs- und Zielzustand sowie Kontext und Positionen vor und nach der Änderung prüfen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P05",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p05-navigation/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R112",
+      "section": "Stabile Anordnung und Übergänge",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P05",
+      "reason": "Ausgangs- und Zielzustand sowie Kontext und Positionen vor und nach der Änderung prüfen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P08",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p08-dialog-focus/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R113",
+      "section": "Navigation und Orientierung",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": "P05",
+      "reason": "Position und erreichbare Ziele zeigen; Navigation und Rückweg ausführen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P05",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p05-navigation/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R114",
+      "section": "Navigation und Orientierung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P05",
+      "reason": "Position und erreichbare Ziele zeigen; Navigation und Rückweg ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P05",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p05-navigation/pattern.md"
+        },
+        {
+          "pattern_id": "P17",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p17-pagination/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R115",
+      "section": "Navigation und Orientierung",
+      "reference_type": "Screenshot",
+      "collection_priority": "B",
+      "suggested_package": "P05",
+      "reason": "Position und erreichbare Ziele zeigen; Navigation und Rückweg ausführen.",
+      "verification": "Gerenderte Ansicht und Kontext tatsächlich betrachten.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P05",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p05-navigation/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R116",
+      "section": "Navigation und Orientierung",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": "P05",
+      "reason": "Position und erreichbare Ziele zeigen; Navigation und Rückweg ausführen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R117",
+      "section": "Navigation und Orientierung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P05",
+      "reason": "Position und erreichbare Ziele zeigen; Navigation und Rückweg ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P05",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p05-navigation/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R118",
+      "section": "Navigation und Orientierung",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P05",
+      "reason": "Position und erreichbare Ziele zeigen; Navigation und Rückweg ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P21",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p21-load-more/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R119",
+      "section": "Navigation und Orientierung",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P05",
+      "reason": "Position und erreichbare Ziele zeigen; Navigation und Rückweg ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P17",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p17-pagination/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R120",
+      "section": "Navigation und Orientierung",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P05",
+      "reason": "Position und erreichbare Ziele zeigen; Navigation und Rückweg ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P21",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p21-load-more/pattern.md"
+        },
+        {
+          "note_id": "N04",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/process-and-recovery.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R121",
+      "section": "Modi und Eingabefokus",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": "P08",
+      "reason": "Modus sichtbar machen und die davon abhängige Eingabe tatsächlich ausprobieren.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R122",
+      "section": "Modi und Eingabefokus",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": "P08",
+      "reason": "Modus sichtbar machen und die davon abhängige Eingabe tatsächlich ausprobieren.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R123",
+      "section": "Modi und Eingabefokus",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P08",
+      "reason": "Modus sichtbar machen und die davon abhängige Eingabe tatsächlich ausprobieren.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P12",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p12-visible-modes/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R124",
+      "section": "Modi und Eingabefokus",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Modus sichtbar machen und die davon abhängige Eingabe tatsächlich ausprobieren.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P08",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p08-dialog-focus/pattern.md"
+        },
+        {
+          "pattern_id": "P12",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p12-visible-modes/pattern.md"
+        },
+        {
+          "pattern_id": "P13",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p13-guided-draft/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R125",
+      "section": "Modi und Eingabefokus",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P08",
+      "reason": "Modus sichtbar machen und die davon abhängige Eingabe tatsächlich ausprobieren.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P08",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p08-dialog-focus/pattern.md"
+        },
+        {
+          "pattern_id": "P12",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p12-visible-modes/pattern.md"
+        },
+        {
+          "pattern_id": "P13",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p13-guided-draft/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R126",
+      "section": "Modi und Eingabefokus",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P08",
+      "reason": "Modus sichtbar machen und die davon abhängige Eingabe tatsächlich ausprobieren.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P08",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p08-dialog-focus/pattern.md"
+        },
+        {
+          "pattern_id": "P16",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p16-event-history/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R127",
+      "section": "Modi und Eingabefokus",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P08",
+      "reason": "Modus sichtbar machen und die davon abhängige Eingabe tatsächlich ausprobieren.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R128",
+      "section": "Modi und Eingabefokus",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Modus sichtbar machen und die davon abhängige Eingabe tatsächlich ausprobieren.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P08",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p08-dialog-focus/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R129",
+      "section": "Anpassbarkeit und alternative Bedienwege",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Alternative Bedienung und Wiederherstellung von Einstellungen tatsächlich ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P18",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p18-visible-shortcuts/pattern.md"
+        },
+        {
+          "pattern_id": "P20",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p20-reorder-preview/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R130",
+      "section": "Anpassbarkeit und alternative Bedienwege",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Alternative Bedienung und Wiederherstellung von Einstellungen tatsächlich ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P18",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p18-visible-shortcuts/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R131",
+      "section": "Anpassbarkeit und alternative Bedienwege",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Alternative Bedienung und Wiederherstellung von Einstellungen tatsächlich ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P22",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p22-touch-cancel/pattern.md"
+        },
+        {
+          "note_id": "N01",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/accessibility.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R132",
+      "section": "Anpassbarkeit und alternative Bedienwege",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Alternative Bedienung und Wiederherstellung von Einstellungen tatsächlich ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P23",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p23-view-settings/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R133",
+      "section": "Anpassbarkeit und alternative Bedienwege",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Alternative Bedienung und Wiederherstellung von Einstellungen tatsächlich ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P23",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p23-view-settings/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R134",
+      "section": "Anpassbarkeit und alternative Bedienwege",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Alternative Bedienung und Wiederherstellung von Einstellungen tatsächlich ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P23",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p23-view-settings/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R135",
+      "section": "Anpassbarkeit und alternative Bedienwege",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Alternative Bedienung und Wiederherstellung von Einstellungen tatsächlich ausführen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R136",
+      "section": "Anpassbarkeit und alternative Bedienwege",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Alternative Bedienung und Wiederherstellung von Einstellungen tatsächlich ausführen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P13",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p13-guided-draft/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R137",
+      "section": "Konventionen und Sprache",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Konvention und Formulierung am fachlichen Kontext begründen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R138",
+      "section": "Konventionen und Sprache",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Konvention und Formulierung am fachlichen Kontext begründen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Regeltext genügt zunächst",
+      "references": []
+    },
+    {
+      "rule_id": "R139",
+      "section": "Konventionen und Sprache",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": null,
+      "reason": "Konvention und Formulierung am fachlichen Kontext begründen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R140",
+      "section": "Konventionen und Sprache",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Konvention und Formulierung am fachlichen Kontext begründen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N02",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/language-localization.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R141",
+      "section": "Konventionen und Sprache",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Konvention und Formulierung am fachlichen Kontext begründen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N02",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/language-localization.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R142",
+      "section": "Konventionen und Sprache",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Konvention und Formulierung am fachlichen Kontext begründen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N02",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/language-localization.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R143",
+      "section": "Konventionen und Sprache",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Konvention und Formulierung am fachlichen Kontext begründen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N02",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/language-localization.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R144",
+      "section": "Konventionen und Sprache",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Konvention und Formulierung am fachlichen Kontext begründen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N02",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/language-localization.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R145",
+      "section": "Barrierefreiheit",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": "P08",
+      "reason": "Alternative Wahrnehmung und Bedienung ausführen; sichtbare Merkmale nur ergänzend zeigen.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P25",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p25-motion-control/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R146",
+      "section": "Barrierefreiheit",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P08",
+      "reason": "Alternative Wahrnehmung und Bedienung ausführen; sichtbare Merkmale nur ergänzend zeigen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P14",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p14-context-search/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R147",
+      "section": "Barrierefreiheit",
+      "reference_type": "Beides",
+      "collection_priority": "A",
+      "suggested_package": "P08",
+      "reason": "Alternative Wahrnehmung und Bedienung ausführen; sichtbare Merkmale nur ergänzend zeigen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P09",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p09-data-reuse/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R148",
+      "section": "Barrierefreiheit",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P08",
+      "reason": "Alternative Wahrnehmung und Bedienung ausführen; sichtbare Merkmale nur ergänzend zeigen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P24",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p24-accessible-semantics/pattern.md"
+        },
+        {
+          "note_id": "N01",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/accessibility.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R149",
+      "section": "Barrierefreiheit",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P08",
+      "reason": "Alternative Wahrnehmung und Bedienung ausführen; sichtbare Merkmale nur ergänzend zeigen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P24",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p24-accessible-semantics/pattern.md"
+        },
+        {
+          "note_id": "N01",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/accessibility.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R150",
+      "section": "Barrierefreiheit",
+      "reference_type": "Code",
+      "collection_priority": "A",
+      "suggested_package": "P08",
+      "reason": "Alternative Wahrnehmung und Bedienung ausführen; sichtbare Merkmale nur ergänzend zeigen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "pattern_id": "P08",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p08-dialog-focus/pattern.md"
+        },
+        {
+          "pattern_id": "P11",
+          "kind": "pattern",
+          "status": "reviewed-candidate",
+          "documentation": "../assets/patterns/p11-overlap-snap/pattern.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R151",
+      "section": "Barrierefreiheit",
+      "reference_type": "Code",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Alternative Wahrnehmung und Bedienung ausführen; sichtbare Merkmale nur ergänzend zeigen.",
+      "verification": "Demonstrierten Ablauf oder semantische Eigenschaft tatsächlich prüfen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R152",
+      "section": "Barrierefreiheit",
+      "reference_type": "Beides",
+      "collection_priority": "B",
+      "suggested_package": "P08",
+      "reason": "Alternative Wahrnehmung und Bedienung ausführen; sichtbare Merkmale nur ergänzend zeigen.",
+      "verification": "Gleiches Rendering und zugehörige Implementierung prüfen; relevante Interaktion ausführen.",
+      "reference_status": "bei Bedarf ergänzen; noch kein Material hinterlegt",
+      "references": []
+    },
+    {
+      "rule_id": "R153",
+      "section": "Gestaltungsentscheidungen überprüfen",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Eine kurze methodische Aufgaben- und Ergebnisnotiz liefert mehr Nutzen als ein UI-Widget.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N03",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/usability-evaluation.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R154",
+      "section": "Gestaltungsentscheidungen überprüfen",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Eine kurze methodische Aufgaben- und Ergebnisnotiz liefert mehr Nutzen als ein UI-Widget.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N03",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/usability-evaluation.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R155",
+      "section": "Gestaltungsentscheidungen überprüfen",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Eine kurze methodische Aufgaben- und Ergebnisnotiz liefert mehr Nutzen als ein UI-Widget.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N03",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/usability-evaluation.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R156",
+      "section": "Gestaltungsentscheidungen überprüfen",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Eine kurze methodische Aufgaben- und Ergebnisnotiz liefert mehr Nutzen als ein UI-Widget.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N03",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/usability-evaluation.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R157",
+      "section": "Gestaltungsentscheidungen überprüfen",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Eine kurze methodische Aufgaben- und Ergebnisnotiz liefert mehr Nutzen als ein UI-Widget.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N03",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/usability-evaluation.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R158",
+      "section": "Gestaltungsentscheidungen überprüfen",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Eine kurze methodische Aufgaben- und Ergebnisnotiz liefert mehr Nutzen als ein UI-Widget.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N03",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/usability-evaluation.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R159",
+      "section": "Gestaltungsentscheidungen überprüfen",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Eine kurze methodische Aufgaben- und Ergebnisnotiz liefert mehr Nutzen als ein UI-Widget.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N03",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/usability-evaluation.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R160",
+      "section": "Gestaltungsentscheidungen überprüfen",
+      "reference_type": "Ablaufnotiz",
+      "collection_priority": "C",
+      "suggested_package": null,
+      "reason": "Eine kurze methodische Aufgaben- und Ergebnisnotiz liefert mehr Nutzen als ein UI-Widget.",
+      "verification": "Entscheidung beziehungsweise Vorgehen anhand einer realen Aufgabe nachvollziehen.",
+      "reference_status": "Material vorhanden; keine Projektfreigabe",
+      "references": [
+        {
+          "note_id": "N03",
+          "kind": "note",
+          "status": "Arbeitsnotiz",
+          "documentation": "../references/notes/usability-evaluation.md"
+        }
+      ]
+    }
+  ]
+}

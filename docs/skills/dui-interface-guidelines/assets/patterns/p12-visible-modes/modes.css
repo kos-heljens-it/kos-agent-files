@@ -1,0 +1,32 @@
+:root { font-family: "Segoe UI", system-ui, sans-serif; color: #1d3437; background: #f2f4f1; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.5; }
+button, textarea { font: inherit; }
+:focus-visible { outline: 3px solid #17665c; outline-offset: 3px; }
+.reference, .surface, footer { width: min(44rem, calc(100% - 2rem)); margin-inline: auto; }
+.reference { padding: 2rem 0 1.5rem; font-size: .9rem; font-weight: 650; }
+.reference span { border: 1px solid #8c9d97; border-radius: .3rem; padding: .2rem .5rem; margin-right: .55rem; font-size: .72rem; }
+.surface { padding: clamp(1.5rem, 5vw, 3rem); background: #fff; border: 1px solid #dce3dd; border-radius: .6rem; }
+.eyebrow { margin: 0 0 .5rem; color: #536568; font-size: .75rem; font-weight: 650; letter-spacing: .06em; }
+h1 { margin: 0; font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.25; letter-spacing: -.035em; }
+.intro { color: #536568; margin: .75rem 0 2.5rem; }
+.mode-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .5rem; }
+h2 { margin: 0; font-size: 1.0625rem; }
+.mode-heading p { margin: 0; color: #31594d; font-size: .8125rem; font-weight: 600; }
+.modes { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: .9rem; }
+button { min-height: 2.875rem; padding: .65rem 1rem; border: 1px solid #9daca9; border-radius: .35rem; background: #fff; color: #31594d; font-weight: 600; cursor: pointer; }
+.modes button[aria-pressed="true"] { border: 2px solid #17665c; padding: calc(.65rem - 1px) calc(1rem - 1px); background: #e0ede5; color: #174d42; }
+.modes button:hover { background: #edf4ee; }
+.hint { color: #536568; font-size: .875rem; }
+.field { margin-top: 2rem; }
+label { display: block; font-size: .875rem; font-weight: 600; }
+textarea { display: block; width: 100%; margin-top: .4rem; padding: .7rem; border: 1px solid #9daca9; border-radius: .35rem; background: #fff; color: #1d3437; resize: vertical; }
+textarea[readonly] { background: #f4f7f4; }
+.actions { display: flex; justify-content: flex-end; margin-top: .75rem; }
+#save { background: #17665c; border-color: #17665c; color: #fff; }
+#save:disabled { background: #e3e9e5; border-color: #e3e9e5; color: #536568; cursor: not-allowed; }
+#save span { margin-left: .6rem; }
+.status { color: #245447; font-size: .875rem; }
+.status:empty { margin: 0; }
+footer { padding: 1.5rem 0 2rem; color: #536568; font-size: .8125rem; }
+@media (max-width: 38rem) { .intro { margin-bottom: 2rem; } #save { width: 100%; } }

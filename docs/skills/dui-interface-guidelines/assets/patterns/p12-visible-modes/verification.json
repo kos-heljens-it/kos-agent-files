@@ -1,0 +1,21 @@
+{
+  "pattern": "P12",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "cb9af2cc2c3a4d31ca71819af6748e68a01c905be6637d6ec77bcf6a7edf90aa",
+    "modes.css": "8ee3d0f0c34f574b5d1a77926d3f2b04db53a866793baf149ca2be6a2094f7d0",
+    "modes.js": "6da7ee30ecee9c28f139697251a9be82e29d7c4c15e47dbc0198ad8757e89a10"
+  },
+  "results": [
+    {
+      "check": "Sichtbarer Modus, vorhandene deaktivierte Aktion, Entwurfserhalt und Fokus nach Übernahme",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

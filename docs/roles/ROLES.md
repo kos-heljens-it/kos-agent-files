@@ -14,13 +14,13 @@ Diese Datei definiert das Rollenmodell und ist die Lookup-Datei für kontextabh�
 
 [MUST_IF] Wenn ein weiterer Verantwortungsbereich im Task relevant wird, muss die zugehörige Rolle nachgeladen werden.
 
-[MUST_IF] Wenn für eine relevante Rolle eine technologiespezifische Regeldatei über [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md) relevant ist, muss der Agent zusätzlich die allgemeine Regeldatei derselben Rolle lesen.
+[MUST_IF] Wenn für eine relevante Rolle eine technologiespezifische Regeldatei über [TECHNOLOGIES.md](../TECHNOLOGIES.md) relevant ist, muss der Agent zusätzlich die allgemeine Regeldatei derselben Rolle lesen.
 
 ## Rollenagnostische Leitplanken
 
 [MUST] Regeln für das Rollensystem oder alle Rollen gehören in diese Datei; rollenspezifische Regeln gehören in die passende Rollendatei.
 
-[MUST] Allgemeine Agent-Governance ohne Rollenbezug gehört in [AGENTS.md](https://heljens-it-services.github.io/agent-files/AGENTS.md).
+[MUST] Allgemeine Agent-Governance ohne Rollenbezug gehört in [AGENTS.md](../AGENTS.md).
 
 [MUST_IF] Wenn Rollen eingeführt oder entkoppelt werden, müssen bestehende Regeln auf ihren fachlich allgemeinsten Scope klassifiziert werden.
 
@@ -30,16 +30,16 @@ Diese Datei definiert das Rollenmodell und ist die Lookup-Datei für kontextabh�
 
 | Rolle | Regeldatei | Lesen und verwenden, wenn | Zweck |
 |---|---|---|---|
-| Designer | [DESIGNER.md](https://heljens-it-services.github.io/agent-files/roles/designer/DESIGNER.md) | Gestalterische Problemklärung, visuelle Exploration, Prototyping, Designentscheidungen oder Design-Reviews relevant sind. | Technologieübergreifende Designregeln. |
-| Developer | [DEVELOPER.md](https://heljens-it-services.github.io/agent-files/roles/developer/DEVELOPER.md) | Architektur, Implementierung, Refactoring, Code-Review oder technische Planung relevant sind. | Technologieübergreifende Entwicklungsregeln. |
-| Planner | [PLANNER.md](https://heljens-it-services.github.io/agent-files/roles/planner/PLANNER.md) | GitHub Issues oder projektweite, Human-freigegebene Implementierungspläne erstellt, fachlich geplant, strukturiert, zerlegt, typisiert, verknüpft, priorisiert oder auf Abschluss geprüft werden. | Leitplanken für Issues und projektweite Phasenpläne. |
-| Tester | [TESTER.md](https://heljens-it-services.github.io/agent-files/roles/tester/TESTER.md) | Teststrategie, Testentwurf, Testerstellung, Testwartung, Regression, Verifikation oder erforderliche Checks relevant sind. | Technologieübergreifende Testregeln. |
+| Designer | [DESIGNER.md](designer/DESIGNER.md) | Gestalterische Problemklärung, visuelle Exploration, Prototyping, Designentscheidungen oder Design-Reviews relevant sind. | Technologieübergreifende Designregeln. |
+| Developer | [DEVELOPER.md](developer/DEVELOPER.md) | Architektur, Implementierung, Refactoring, Code-Review oder technische Planung relevant sind. | Technologieübergreifende Entwicklungsregeln. |
+| Planner | [PLANNER.md](planner/PLANNER.md) | GitHub Issues oder projektweite, Human-freigegebene Implementierungspläne erstellt, fachlich geplant, strukturiert, zerlegt, typisiert, verknüpft, priorisiert oder auf Abschluss geprüft werden. | Leitplanken für Issues und projektweite Phasenpläne. |
+| Tester | [TESTER.md](tester/TESTER.md) | Teststrategie, Testentwurf, Testerstellung, Testwartung, Regression, Verifikation oder erforderliche Checks relevant sind. | Technologieübergreifende Testregeln. |
 
 ## Codex-Laufzeitabbildung
 
 Für projektweite Implementierungspläne und Acceptance-Gap-Planung ist `Planner` verantwortlich; für graphweite Acceptance und die Bewertung des Status `no-checks-required` ist `Tester` verantwortlich.
 
-[MUST_IF] Wenn Codex-Custom-Agents verfügbar sind, muss Designer-Verantwortung an `designer`, Planner-Verantwortung an `planner`, Developer-Verantwortung an `developer` und Tester-Verantwortung an `tester` delegiert werden.
+[ALLOW_IF] Wenn Delegation im aktuellen Auftrag und in der Laufzeit erlaubt ist und einen konkreten Nutzen hat, darf Verantwortung an `designer`, `planner`, `developer` oder `tester` delegiert werden. Verfügbarkeit allein erzwingt keine Delegation.
 
 [ALLOW_IF] Bei kombinierten Verantwortungen darf der koordinierende Hauptagent die Arbeit sequenziell auf mehrere SubAgents verteilen, sofern jeder Agent nur seinen klar abgegrenzten Verantwortungsbereich übernimmt.
 
@@ -51,4 +51,4 @@ Für projektweite Implementierungspläne und Acceptance-Gap-Planung ist `Planner
 
 [MUST_NOT] Verschiedene SubAgents dürfen nicht unkoordiniert parallel schreibend auf demselben Worktree arbeiten. Parallele Delegation ist auf konfliktfreie Lese-, Analyse- oder Review-Schritte zu begrenzen.
 
-[ALLOW_IF] Wenn die Laufzeit keine Codex-Custom-Agents unterstützt, führt der aktuelle Agent dieselben Verantwortungen nach den fachlichen Rollenregeln selbst aus.
+[ALLOW] Der aktuelle Agent darf die relevanten Verantwortungen selbst ausführen; dieselben fachlichen Rollenregeln gelten.

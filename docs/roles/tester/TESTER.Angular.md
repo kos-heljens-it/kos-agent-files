@@ -1,10 +1,10 @@
 # TESTER.Angular.md
 
-Stand: 2026-10-13
+Stand: 2026-10-30
 
 ## Zweck
 
-Diese Datei definiert Testregeln für Angular-Anwendungen. Allgemeine Tester-Regeln werden über [TESTER.md](https://heljens-it-services.github.io/agent-files/roles/tester/TESTER.md), weitere technologiespezifische Regeldateien über [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md) aufgelöst.
+Diese Datei definiert Testregeln für Angular-Anwendungen. Allgemeine Tester-Regeln werden über [TESTER.md](TESTER.md), weitere technologiespezifische Regeldateien über [TECHNOLOGIES.md](../../TECHNOLOGIES.md) aufgelöst.
 
 ## Tests
 
@@ -14,4 +14,4 @@ Diese Datei definiert Testregeln für Angular-Anwendungen. Allgemeine Tester-Reg
 
 [MUST_NOT] Produktivcode darf `src/app/spec/` oder `@spec` nicht importieren.
 
-[MUST] Für Playwright-Tests gilt [TESTER.Angular.Playwright.md](https://heljens-it-services.github.io/agent-files/roles/tester/TESTER.Angular.Playwright.md).
+[MUST] Für Playwright-Tests gilt [TESTER.Angular.Playwright.md](TESTER.Angular.Playwright.md).

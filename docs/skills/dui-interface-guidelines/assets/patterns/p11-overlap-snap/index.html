@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P11 Überlappende Objekte positionieren</title>
+  <link rel="stylesheet" href="objects.css">
+  <script src="objects.js" defer></script>
+</head>
+<body>
+  <header class="reference"><span>P11</span> Auswahl und Positionierung</header>
+  <main class="surface">
+    <p class="eyebrow">ARBEITSBEREICH / ANORDNUNG</p>
+    <h1>Objekte anordnen</h1>
+    <p class="intro">Wählen Sie ein Objekt und verschieben Sie es auf der Fläche. Bei Überlappung können Sie es auch über die Liste auswählen.</p>
+    <fieldset class="selection">
+      <legend>Objekt auswählen</legend>
+      <label><input type="radio" name="selection" value="a" checked> Objekt A</label>
+      <label><input type="radio" name="selection" value="b"> Objekt B</label>
+    </fieldset>
+    <div class="board-wrap">
+      <svg id="board" viewBox="0 0 600 300" role="group" aria-label="Zeichenfläche mit zwei verschiebbaren Objekten">
+        <defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0H0V10" fill="none" stroke="#dce8e1" stroke-width="1"/></pattern></defs>
+        <rect class="board-background" width="600" height="300" fill="url(#grid)"/>
+        <g data-shape="a" transform="translate(120 60)" tabindex="0" role="button" aria-label="Objekt A verschieben" aria-pressed="true" class="selected"><rect width="200" height="100" rx="8"/><text x="100" y="55" text-anchor="middle">Objekt A</text></g>
+        <g data-shape="b" transform="translate(180 100)" tabindex="0" role="button" aria-label="Objekt B verschieben" aria-pressed="false"><rect width="200" height="100" rx="8"/><text x="100" y="55" text-anchor="middle">Objekt B</text></g>
+      </svg>
+    </div>
+    <p class="hint">Mit Maus oder Finger ziehen. Ein fokussiertes Objekt kann mit den Pfeiltasten pixelweise verschoben werden.</p>
+    <label class="snap"><input id="snap" type="checkbox" checked> Beim Ziehen am 10-Pixel-Raster ausrichten</label>
+    <section aria-labelledby="position-heading">
+      <div class="heading"><h2 id="position-heading">Position von Objekt A</h2><span>Pixel</span></div>
+      <p class="hint" id="coordinates-hint">Die Zahlenfelder erlauben eine genaue Position, auch bei aktiviertem Raster.</p>
+      <div class="fields">
+        <div><label for="x">Horizontal</label><input id="x" type="number" min="0" max="400" step="1" value="120" aria-describedby="coordinates-hint x-error"><p class="error" id="x-error" hidden></p></div>
+        <div><label for="y">Vertikal</label><input id="y" type="number" min="0" max="200" step="1" value="60" aria-describedby="coordinates-hint y-error"><p class="error" id="y-error" hidden></p></div>
+      </div>
+    </section>
+    <div class="actions"><button type="button" id="reset">Ausgangsanordnung wiederherstellen</button></div>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </main>
+  <footer>Lokale Vorschau mit zwei Beispielobjekten; Änderungen werden nicht gespeichert.</footer>
+</body>
+</html>

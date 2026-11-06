@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>P01 Formularlayout · DUI Referenzen</title>
+    <link rel="stylesheet" href="form-layout.css">
+    <script src="demo.js" defer></script>
+  </head>
+  <body>
+    <header class="reference-bar" aria-label="Referenzbibliothek">
+      <a class="reference-name" href="index.html"><span class="reference-number">P01</span> Formularlayout</a>
+      <nav class="reference-views" aria-label="Darstellungsvarianten">
+        <a href="index.html" data-view="reference" aria-current="page">Referenz</a>
+        <a href="index.html?view=counterexample" data-view="counterexample">Gegenbeispiel</a>
+      </nav>
+    </header>
+
+    <div class="reference-context">
+      <p id="reference-caption">HTML/CSS-Muster mit Beispieldaten. Ein Kandidat für die persönliche Referenzbibliothek.</p>
+      <details>
+        <summary>Welche Gestaltungsentscheidungen zeigt diese Referenz?</summary>
+        <ul>
+          <li>Gemeinsame Kanten und Textanfänge statt vieler einzelner Fluchtlinien (R009–R014).</li>
+          <li>Fachliche Gruppen mit mehr Abstand zwischen als innerhalb der Gruppen (R017–R019).</li>
+          <li>Labels oberhalb ihrer Felder, auch bei längeren Beschriftungen (R066).</li>
+          <li>Exklusive Laptop-Auswahl und unabhängige Zusatzoptionen (R067).</li>
+          <li>Konkrete Aktionen, Handlungsabschluss rechts bei Leserichtung von links nach rechts (R025–R028).</li>
+        </ul>
+      </details>
+    </div>
+
+    <main class="example" aria-labelledby="page-title">
+      <header class="page-heading">
+        <p class="eyebrow">Tagungsplanung / Beiträge</p>
+        <div class="heading-row">
+          <h1 id="page-title">Vortrag planen</h1>
+          <span class="state-label" id="editing-state">In Bearbeitung</span>
+        </div>
+        <p class="page-description">Angaben zum Vortrag, zur Person und zur benötigten Ausstattung.</p>
+      </header>
+
+      <div class="workspace">
+        <aside class="schedule" aria-labelledby="schedule-heading">
+          <p class="eyebrow">Bereits zugewiesen</p>
+          <h2 id="schedule-heading">Ihr Vortragstermin</h2>
+          <dl class="schedule-details">
+            <div><dt>Datum</dt><dd>12. November 2026</dd></div>
+            <div><dt>Uhrzeit</dt><dd>10:30–11:00 Uhr</dd></div>
+            <div><dt>Raum</dt><dd>B.2.12</dd></div>
+          </dl>
+          <p class="schedule-note">Für Änderungen am Termin wenden Sie sich an die Tagungsorganisation.</p>
+        </aside>
+        <form id="talk-form" class="talk-form">
+          <section class="form-section" aria-labelledby="talk-heading">
+            <div class="section-heading">
+              <span class="section-number" aria-hidden="true">01</span>
+              <h2 id="talk-heading">Vortrag</h2>
+            </div>
+            <div class="fields">
+              <div class="field field--full">
+                <label for="talk-title">Titel des Vortrags</label>
+                <input id="talk-title" name="title" value="Interfaces, die Orientierung geben" required>
+              </div>
+              <div class="field field--half">
+                <label for="talk-language">Vortragssprache</label>
+                <select id="talk-language" name="language">
+                  <option value="de">Deutsch</option>
+                  <option value="en">Englisch</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="talk-abstract">Kurzbeschreibung</label>
+                <textarea id="talk-abstract" name="abstract" rows="3">Wie klare Anordnungen, verständliche Aktionen und lokale Rückmeldungen die Nutzung von Oberflächen erleichtern.</textarea>
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="speaker-heading">
+            <div class="section-heading">
+              <span class="section-number" aria-hidden="true">02</span>
+              <h2 id="speaker-heading">Vortragende Person</h2>
+            </div>
+            <div class="fields">
+              <div class="field field--half">
+                <label for="academic-title">Akademischer Titel <span class="optional">(optional)</span></label>
+                <select id="academic-title" name="academicTitle">
+                  <option value="">Kein Titel</option>
+                  <option value="Dr.">Dr.</option>
+                  <option value="Prof. Dr.">Prof. Dr.</option>
+                </select>
+              </div>
+              <div class="field field--half field--new-row">
+                <label for="given-name">Vorname</label>
+                <input id="given-name" name="givenName" autocomplete="given-name" value="Mara" required>
+              </div>
+              <div class="field field--half">
+                <label for="family-name">Nachname</label>
+                <input id="family-name" name="familyName" autocomplete="family-name" value="Lehmann" required>
+              </div>
+              <div class="field field--full">
+                <label for="organization">Organisation</label>
+                <input id="organization" name="organization" autocomplete="organization" value="Universität Paderborn">
+              </div>
+              <div class="field field--full">
+                <label for="contact-email">E-Mail-Adresse der zuständigen Kontaktperson</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" value="mara.lehmann@example.org" required>
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="equipment-heading">
+            <div class="section-heading">
+              <span class="section-number" aria-hidden="true">03</span>
+              <h2 id="equipment-heading">Ausstattung</h2>
+            </div>
+            <fieldset class="choice-group">
+              <legend>Laptop</legend>
+              <div class="radio-options">
+                <label class="choice"><input type="radio" name="laptop" value="own" checked><span>Eigener Laptop</span></label>
+                <label class="choice"><input type="radio" name="laptop" value="provided"><span>Laptop bereitstellen</span></label>
+                <label class="choice"><input type="radio" name="laptop" value="none"><span>Kein Laptop</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="choice-group">
+              <legend>Weitere Ausstattung</legend>
+              <div class="checkbox-options">
+                <label class="choice"><input type="checkbox" name="projector" checked><span>Projektor bereitstellen</span></label>
+                <label class="choice"><input type="checkbox" name="board"><span>Tafel bereitstellen</span></label>
+              </div>
+            </fieldset>
+          </section>
+
+          <section class="form-section" aria-labelledby="organization-heading">
+            <div class="section-heading">
+              <span class="section-number" aria-hidden="true">04</span>
+              <h2 id="organization-heading">Organisation</h2>
+            </div>
+            <fieldset class="choice-group">
+              <legend>Foto und Video</legend>
+              <div class="checkbox-options">
+                <label class="choice"><input type="checkbox" name="photos" checked><span>Fotografieren erlauben</span></label>
+                <label class="choice"><input type="checkbox" name="recording"><span>Vortrag aufzeichnen</span></label>
+              </div>
+            </fieldset>
+            <div class="field field--full">
+              <label for="organizer-notes">Bemerkungen für die Organisation <span class="optional">(optional)</span></label>
+              <textarea id="organizer-notes" name="notes" rows="2" placeholder="Zum Beispiel Hinweise zur Ausstattung"></textarea>
+            </div>
+          </section>
+
+          <footer class="form-actions">
+            <button class="button button--secondary" type="reset" id="reset-button">Änderungen zurücksetzen</button>
+            <button class="button button--primary" type="submit" id="submit-button">Vortrag übernehmen <span aria-hidden="true">→</span></button>
+          </footer>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </main>
+    <footer class="reference-footer">P01 · Formularlayout · Lokale Vorschau ohne Serververbindung. Übernommene Angaben bleiben nur bis zum Neuladen erhalten.</footer>
+  </body>
+</html>

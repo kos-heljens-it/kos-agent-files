@@ -1,0 +1,21 @@
+{
+  "pattern": "P20",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "9d53284e13deb5e5951442edd0907aaced5caf964df59c971d67e2d922310f1c",
+    "pattern.css": "7ec979ddb78565669c68b191b9520fd85bf17728b73f3225e14f563e4172bfea",
+    "pattern.js": "dc613331c92616a1501e3ee225f90c20b1d706697d949ba2fb85912b49540e63"
+  },
+  "results": [
+    {
+      "check": "Einfügelinie vor dem Loslassen, Mausablage, Abbruch außerhalb und alternative Schaltflächen mit Fokus",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

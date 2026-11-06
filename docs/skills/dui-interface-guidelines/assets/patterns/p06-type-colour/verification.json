@@ -1,0 +1,22 @@
+{
+  "pattern": "P06",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "476a94339c61b0d05bc707355a2d010a00f7314fba52a100061a32f9e1f12dd8",
+    "type-colour.css": "2e83a94cc9ac04da7eca0e6bcf7ab56a097c49d64a8e07c380f238706f4e3d51",
+    "type-colour.js": "9741a58648ed297af74a75676e1542959a7e89d4c55462bffbfd1fd07f4b7b35"
+  },
+  "results": [
+    {
+      "check": "Hell/Dunkel umschaltbar; Textkontrast der dunklen Beispielansicht",
+      "status": "passed",
+      "contrast": 11.916767433589447
+    },
+    {
+      "check": "390 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

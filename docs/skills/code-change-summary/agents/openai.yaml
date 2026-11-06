@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Change Summary"
+  short_description: "Änderungen und Abläufe für menschliches Review erklären"
+  default_prompt: "Verwende $code-change-summary, um den ausgewählten Änderungssatz mit Dateien, Vorher/Nachher, Begründung, Methoden und geänderten Abläufen für mein Code-Review zu erklären."

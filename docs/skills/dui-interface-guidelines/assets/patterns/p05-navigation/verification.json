@@ -1,0 +1,25 @@
+{
+  "pattern": "P05",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokale Navigation; keine Angular- oder Backend-Integration.",
+  "source_sha256": {
+    "index.html": "d7c751bcbc75f383e372c103249d32874f634659e40bd02ece20cb4d6e9d21ab",
+    "navigation.css": "689cdd20fcbae71ec34aaefd78904c874c3d7a24703d96ecfd85a54a18834c1a",
+    "navigation.js": "80248f39b333eaa5e44075c26774d8bd8f5a1512c8592887a6b037f5eb0b7b73"
+  },
+  "results": [
+    {
+      "check": "Sichtbare Hauptnavigation, stabile Position, Kategorien, direkter Link und Browserverlauf",
+      "status": "passed"
+    },
+    {
+      "check": "Hauptnavigation und aktive Kategorie bei 390 px sichtbar, ohne horizontalen Überlauf",
+      "status": "passed"
+    },
+    {
+      "check": "Keine JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

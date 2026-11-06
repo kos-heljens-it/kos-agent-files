@@ -1,10 +1,10 @@
 # DEVELOPER.Angular.md
 
-Stand: 2026-10-13
+Stand: 2026-10-30
 
 ## Zweck
 
-Diese Datei gilt für Angular. Allgemeine Developer-Regeln werden über [DEVELOPER.md](https://heljens-it-services.github.io/agent-files/roles/developer/DEVELOPER.md), weitere technologiespezifische Regeldateien über [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md) aufgelöst.
+Diese Datei gilt für Angular. Allgemeine Developer-Regeln werden über [DEVELOPER.md](DEVELOPER.md), weitere technologiespezifische Regeldateien über [TECHNOLOGIES.md](../../TECHNOLOGIES.md) aufgelöst.
 
 ## Architektur
 
@@ -71,7 +71,7 @@ src/app/
 
 ## Qualitätssicherung
 
-[MUST] Angular-Projekte müssen [Prettier](https://heljens-it-services.github.io/agent-files/config/angular/quality/prettier.json), [ESLint](https://heljens-it-services.github.io/agent-files/config/angular/quality/eslint.config.mjs), [dependency-cruiser](https://heljens-it-services.github.io/agent-files/config/angular/quality/dependency-cruiser.cjs) und Knip verwenden.
+[MUST] Angular-Projekte müssen [Prettier](../../config/angular/quality/prettier.json), [ESLint](../../config/angular/quality/eslint.config.mjs), [dependency-cruiser](../../config/angular/quality/dependency-cruiser.cjs) und Knip verwenden.
 
 [MUST_IF] Die Referenzkonfigurationen müssen nur bei Projekt-Setup, fehlender QA-Konfiguration oder Änderungen an der QA-Konfiguration gelesen werden.
 

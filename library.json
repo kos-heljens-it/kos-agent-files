@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "repository": "kos-heljens-it/kos-agent-files",
+  "pages_base_url": "https://kos-heljens-it.github.io/kos-agent-files/",
+  "publication_branch": "main",
+  "upstream_repository": "Heljens-IT-Services/agent-files"
+}

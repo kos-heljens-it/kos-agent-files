@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P05 Navigation und Orientierung</title>
+  <link rel="stylesheet" href="navigation.css">
+  <script src="navigation.js" defer></script>
+</head>
+<body>
+  <header class="reference"><span>P05</span> Navigation und Orientierung</header>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">▦</span><span>Arbeitsraum<small>Teamübersicht</small></span></div>
+      <nav class="primary-nav" aria-label="Hauptnavigation">
+        <p>ARBEITSBEREICH</p>
+        <a href="#uebersicht/aktuell" data-main="uebersicht" aria-current="page"><span aria-hidden="true">◫</span> Übersicht</a>
+        <a href="#projekte/aktiv" data-main="projekte"><span aria-hidden="true">▤</span> Projekte</a>
+        <a href="#team/mitglieder" data-main="team"><span aria-hidden="true">◉</span> Team</a>
+      </nav>
+      <div class="sidebar-note">Ein gemeinsamer Überblick über die Arbeit im Team.</div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar"><span>Arbeitsbereich</span><span class="topbar-person">ML <span>Mara Lehmann</span></span></header>
+      <main id="content">
+        <nav class="breadcrumbs" aria-label="Brotkrumennavigation"><a href="#uebersicht/aktuell">Arbeitsbereich</a><span aria-hidden="true">/</span><span id="current-location" aria-current="page">Übersicht</span></nav>
+        <p class="eyebrow">TEAMÜBERSICHT</p>
+        <h1 id="page-title">Übersicht</h1>
+        <p class="lead" id="page-description">Die wichtigsten Informationen für Ihre laufende Arbeit.</p>
+        <nav class="category-nav" aria-label="Kategorien" id="category-nav"></nav>
+        <section class="panel" data-panel="uebersicht/aktuell">
+          <div class="section-title"><div><p class="eyebrow">IM ÜBERBLICK</p><h2>Aktuelle Arbeit</h2></div><span class="muted">3 Einträge</span></div>
+          <div class="items"><article><div><h3>Designsystem überarbeiten</h3><p>Komponenten und Zustände abstimmen</p></div><span class="badge">In Arbeit</span></article><article><div><h3>Feedback auswerten</h3><p>Rückmeldungen aus dem letzten Review</p></div><span class="badge">In Arbeit</span></article><article><div><h3>Planung vorbereiten</h3><p>Themen für das nächste Treffen sammeln</p></div><span class="badge badge--quiet">Offen</span></article></div>
+        </section>
+        <section class="panel" data-panel="uebersicht/eintraege" hidden><div class="section-title"><div><p class="eyebrow">VERLAUF</p><h2>Letzte Einträge</h2></div><span class="muted">2 Einträge</span></div><div class="items"><article><div><h3>Designsystem überarbeiten</h3><p>Heute · 09:30 Uhr</p></div><span class="badge">Aktualisiert</span></article><article><div><h3>Feedback auswerten</h3><p>Gestern · 15:15 Uhr</p></div><span class="badge badge--quiet">Erstellt</span></article></div></section>
+        <section class="panel" data-panel="projekte/aktiv" hidden><div class="section-title"><div><p class="eyebrow">AKTUELLE PROJEKTE</p><h2>Aktive Projekte</h2></div><span class="muted">2 Projekte</span></div><div class="items"><article><div><h3>Designsystem</h3><p>Gemeinsame Oberflächen und Komponenten</p></div><span class="badge">Aktiv</span></article><article><div><h3>Teamportal</h3><p>Informationen für die Zusammenarbeit</p></div><span class="badge">Aktiv</span></article></div></section>
+        <section class="panel" data-panel="projekte/archiv" hidden><div class="section-title"><div><p class="eyebrow">ABGESCHLOSSEN</p><h2>Archivierte Projekte</h2></div><span class="muted">1 Projekt</span></div><div class="items"><article><div><h3>Intranet-Relaunch</h3><p>Abgeschlossenes Projekt</p></div><span class="badge badge--quiet">Archiviert</span></article></div></section>
+        <section class="panel" data-panel="team/mitglieder" hidden><div class="section-title"><div><p class="eyebrow">ZUSAMMENARBEIT</p><h2>Mitglieder</h2></div><span class="muted">2 Personen</span></div><div class="items"><article><div><h3>Mara Lehmann</h3><p>Design und Konzeption</p></div><span class="badge">Aktiv</span></article><article><div><h3>Alex Winter</h3><p>Entwicklung</p></div><span class="badge">Aktiv</span></article></div></section>
+        <section class="panel" data-panel="team/einladungen" hidden><div class="section-title"><div><p class="eyebrow">ZUSAMMENARBEIT</p><h2>Einladungen</h2></div><span class="muted">Keine Einladungen</span></div><p class="empty">Zurzeit sind keine Einladungen offen.</p></section>
+      </main>
+    </div>
+  </div>
+  <footer>Lokales Navigationsmuster mit Beispieldaten · Die Adresszeile und der Browserverlauf steuern die Ansicht.</footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "pattern": "P27",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "205b80caa0e4c68682ec4ebd754aaa916090e6108b470638d7b0488bd46eab88",
+    "pattern.css": "20eff293ae15064790c72cb2fea869af7608bc676802f356aa845ef8f260fce6",
+    "pattern.js": "f4ce31916b5b7e96e193a7da38f4cca7ca975f062fabc061fc5c98bfb5043e41"
+  },
+  "results": [
+    {
+      "check": "Zuordnung von Bezeichnung, Status und Aktion in drei Zeilen und Tastaturauswahl",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "pattern": "P07",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "742e3dd5f78ca36e41adef099f5073c058ecd4ff702eca19271971a1d0c2f4e8",
+    "icons.css": "01bb39c34f06f4d1fa3077f8026f79abdee45a3312be0d9be6c5c74da275fdb7",
+    "icons.js": "a37fe09a6be8145d9d0dd726c7f5805d6ca6ee1e80e444a27417dc04244a5ce0"
+  },
+  "results": [
+    {
+      "check": "Textbeschriftete Icons, Auswahlzustand, Tastatur und Filterergebnis",
+      "status": "passed"
+    },
+    {
+      "check": "Alle Kategorien ohne horizontalen Überlauf bei 390 und 320 px",
+      "status": "passed"
+    },
+    {
+      "check": "Keine JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

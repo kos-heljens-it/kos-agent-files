@@ -1,0 +1,57 @@
+{
+  "notes": [
+    {
+      "id": "N01",
+      "title": "Bedienung und zugängliche Semantik",
+      "documentation": "references/notes/accessibility.md",
+      "rule_ids": [
+        "R064",
+        "R080",
+        "R131",
+        "R148",
+        "R149"
+      ]
+    },
+    {
+      "id": "N02",
+      "title": "Sprache und Lokalisierung",
+      "documentation": "references/notes/language-localization.md",
+      "rule_ids": [
+        "R008",
+        "R051",
+        "R140",
+        "R141",
+        "R142",
+        "R143",
+        "R144"
+      ]
+    },
+    {
+      "id": "N03",
+      "title": "Gestaltung in der Nutzung prüfen",
+      "documentation": "references/notes/usability-evaluation.md",
+      "rule_ids": [
+        "R153",
+        "R154",
+        "R155",
+        "R156",
+        "R157",
+        "R158",
+        "R159",
+        "R160"
+      ]
+    },
+    {
+      "id": "N04",
+      "title": "Prozesse, Wiederaufnahme und Anschlussaktionen",
+      "documentation": "references/notes/process-and-recovery.md",
+      "rule_ids": [
+        "R098",
+        "R102",
+        "R103",
+        "R104",
+        "R120"
+      ]
+    }
+  ]
+}

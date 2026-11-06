@@ -1,0 +1,21 @@
+{
+  "pattern": "P10",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "c8bea6ed978c0961d2f6232680e76af96f71d6d2fcf10d61bd0385777dacf262",
+    "precision.css": "1f35271205ca7a219b0085602f2d252bea10df1a790f5e3b2b354da50d921ab8",
+    "precision.js": "f1d99da977e5751d85a348cc509cbbd0d296b33e785079160e61169904b5de9f"
+  },
+  "results": [
+    {
+      "check": "Sekundengenaue Eingabe, kenntliche Rundung, Regler und Erhalt ungültiger Werte",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

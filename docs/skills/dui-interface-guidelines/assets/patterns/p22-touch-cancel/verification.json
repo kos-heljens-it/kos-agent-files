@@ -1,0 +1,21 @@
+{
+  "pattern": "P22",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "7716dd44ffb3abe5e87ae4858c59be2db378bd783e8b781b26878e02dd772c6a",
+    "pattern.css": "00c88a32021bcf56c0f160ef308d24d3b915495a5093a1dbae6b199de04aa26d",
+    "pattern.js": "282a627f2f8043a76e45e0169db394c2829541c9ea21895adad79c52580aba3b"
+  },
+  "results": [
+    {
+      "check": "Emulierter Touch: Auslösen bei Loslassen, Abbruch außerhalb und touchCancel; zusätzlich Tastatur mit Leertaste",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>P13 Freiwilliger Ablauf und Zwischenstand</title><link rel="stylesheet" href="pattern.css"><script src="pattern.js" defer></script></head>
+<body><header class="reference"><span>P13</span> Freiwilliger Ablauf und Zwischenstand</header><main>
+<p class="eyebrow">PROJEKT / ANFRAGE</p><h1>Anfrage vorbereiten</h1>
+<p class="intro">Erfassen Sie die Anfrage frei oder lassen Sie sich durch zwei Schritte führen. Ein Zwischenstand ist auch unvollständig möglich.</p>
+<div class="method"><button type="button" id="free" aria-pressed="true">Frei bearbeiten</button><button type="button" id="guide" aria-pressed="false">Schrittweise bearbeiten</button></div>
+<p class="hint" id="mode-note">Freie Bearbeitung: Beide Felder sind sichtbar.</p>
+<form id="form" novalidate>
+<p id="step-info" class="step" hidden></p>
+<section id="name-section" class="group"><h2 id="name-heading" tabindex="-1">1. Thema</h2><label for="title">Titel der Anfrage</label><input type="text" id="title" autocomplete="off" aria-describedby="title-error"><p id="title-error" class="error" hidden>Bitte geben Sie einen Titel ein, bevor Sie die Anfrage prüfen.</p></section>
+<section id="details-section" class="group"><h2 id="details-heading" tabindex="-1">2. Beschreibung</h2><label for="details">Was soll geklärt werden?</label><textarea id="details" rows="4"></textarea><p class="hint">Die Beschreibung kann zunächst leer bleiben.</p></section>
+<div class="draft-actions" aria-label="Zwischenstand"><button type="button" id="draft">Zwischenstand merken</button><button type="button" id="restore" disabled>Zwischenstand wiederherstellen</button></div><p class="hint">Der gemerkte Zwischenstand ist nur in dieser Vorschau verfügbar. Wiederherstellen ersetzt die aktuellen Eingaben.</p>
+<div class="actions"><button type="button" id="back" hidden>← Zurück</button><button type="button" id="next" class="primary" hidden>Beschreibung →</button><button type="submit" id="review" class="primary">Anfrage prüfen →</button></div>
+</form><p id="status" class="status" role="status"></p>
+</main><footer>Lokale Vorschau. Daten werden nicht dauerhaft gespeichert.</footer></body></html>

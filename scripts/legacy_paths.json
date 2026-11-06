@@ -1,0 +1,190 @@
+{
+  "skills/brainstorming.md": {
+    "skill": "brainstorming",
+    "mode": ""
+  },
+  "skills/code-analysis.md": {
+    "skill": "code-analysis",
+    "mode": "analyze"
+  },
+  "skills/code-implementation-planning.md": {
+    "skill": "code-implementation-planning",
+    "mode": ""
+  },
+  "skills/code-implementation.md": {
+    "skill": "code-implementation",
+    "mode": ""
+  },
+  "skills/code-minimization.md": {
+    "skill": "code-minimization",
+    "mode": ""
+  },
+  "skills/code-reading.md": {
+    "skill": "code-analysis",
+    "mode": "read"
+  },
+  "skills/code-testing.md": {
+    "skill": "code-testing",
+    "mode": ""
+  },
+  "skills/code_diff-review.md": {
+    "skill": "code-diff-review",
+    "mode": ""
+  },
+  "skills/code_refactoring.md": {
+    "skill": "code-refactoring",
+    "mode": "local"
+  },
+  "skills/design-prototyping.md": {
+    "skill": "design-prototyping",
+    "mode": ""
+  },
+  "skills/design-review.md": {
+    "skill": "design-review",
+    "mode": ""
+  },
+  "skills/documentation.md": {
+    "skill": "documentation",
+    "mode": ""
+  },
+  "skills/github_branch-checkout-from-default.md": {
+    "skill": "git-branch-operations",
+    "mode": "create"
+  },
+  "skills/github_commit-history-reading.md": {
+    "skill": "commit-history-summary",
+    "mode": "read"
+  },
+  "skills/github_commit.md": {
+    "skill": "git-commit-push",
+    "mode": "commit"
+  },
+  "skills/github_default-branch-update.md": {
+    "skill": "git-branch-operations",
+    "mode": "update-default"
+  },
+  "skills/github_integration-branch-update.md": {
+    "skill": "git-branch-operations",
+    "mode": "update-integration"
+  },
+  "skills/github_issue-creation.md": {
+    "skill": "github-issue-ops",
+    "mode": "create"
+  },
+  "skills/github_issue-reading.md": {
+    "skill": "github-issue-ops",
+    "mode": "read"
+  },
+  "skills/github_pr-checks-observation.md": {
+    "skill": "github-pr-ops",
+    "mode": "checks"
+  },
+  "skills/github_pr-creation.md": {
+    "skill": "github-pr-ops",
+    "mode": "create"
+  },
+  "skills/github_pr-merge.md": {
+    "skill": "github-pr-ops",
+    "mode": "merge"
+  },
+  "skills/github_push.md": {
+    "skill": "git-commit-push",
+    "mode": "push"
+  },
+  "skills/github_relationship-setting.md": {
+    "skill": "github-issue-ops",
+    "mode": "relationship"
+  },
+  "skills/github_repository-baseline-configuration.md": {
+    "skill": "repository-baseline-configuration",
+    "mode": ""
+  },
+  "skills/github_type-setting.md": {
+    "skill": "github-issue-ops",
+    "mode": "type"
+  },
+  "skills/requirements-clarification.md": {
+    "skill": "requirements-clarification",
+    "mode": ""
+  },
+  "skills/research.md": {
+    "skill": "research",
+    "mode": ""
+  },
+  "workflows/bugfix-from-default.md": {
+    "skill": "bugfix",
+    "mode": "from-default"
+  },
+  "workflows/bugfix.md": {
+    "skill": "bugfix",
+    "mode": ""
+  },
+  "workflows/commit-history-summary.md": {
+    "skill": "commit-history-summary",
+    "mode": ""
+  },
+  "workflows/commit-push.md": {
+    "skill": "git-commit-push",
+    "mode": "commit-push"
+  },
+  "workflows/design-exploration.md": {
+    "skill": "design-exploration",
+    "mode": ""
+  },
+  "workflows/feature-finish.md": {
+    "skill": "feature-finish",
+    "mode": ""
+  },
+  "workflows/insight-to-issue.md": {
+    "skill": "insight-to-issue",
+    "mode": ""
+  },
+  "workflows/instruction-improvement-issue.md": {
+    "skill": "insight-to-issue",
+    "mode": "instruction"
+  },
+  "workflows/issue-acceptance-convergence.md": {
+    "skill": "issue-acceptance-convergence",
+    "mode": ""
+  },
+  "workflows/issue-graph-implementation.md": {
+    "skill": "issue-graph-implementation",
+    "mode": ""
+  },
+  "workflows/issue-implementation.md": {
+    "skill": "issue-implementation",
+    "mode": ""
+  },
+  "workflows/issue-sanitize.md": {
+    "skill": "issue-sanitize",
+    "mode": ""
+  },
+  "workflows/issue-to-pr.md": {
+    "skill": "issue-to-pr",
+    "mode": ""
+  },
+  "workflows/issue-to-sub-issues-flat.md": {
+    "skill": "issue-to-sub-issues",
+    "mode": "flat"
+  },
+  "workflows/issue-to-sub-issues.md": {
+    "skill": "issue-to-sub-issues",
+    "mode": ""
+  },
+  "workflows/online-publication-check.md": {
+    "skill": "online-publication-check",
+    "mode": ""
+  },
+  "workflows/project-implementation-planning.md": {
+    "skill": "project-implementation-planning",
+    "mode": ""
+  },
+  "workflows/refactoring-secure.md": {
+    "skill": "code-refactoring",
+    "mode": "secure"
+  },
+  "workflows/release.md": {
+    "skill": "release",
+    "mode": ""
+  }
+}

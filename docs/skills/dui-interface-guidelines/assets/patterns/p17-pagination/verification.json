@@ -1,0 +1,21 @@
+{
+  "pattern": "P17",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "55a084904c0bedb7032b9b14c691b661ce1f11a13990346b35506ad0cb4d120d",
+    "pattern.css": "2b2ea5e912bce393aa0bc4229cbcc228a409485d4806e6062472b911ab431c72",
+    "pattern.js": "cfacfcbc37eb78a257a82e5a7e8e9ee2820a9a9cfd79653733a1d4360322dadc"
+  },
+  "results": [
+    {
+      "check": "Seitengrenzen, Vor und Zurück, Direktsprung, lokale Fehlermeldung und Fokus nach Navigation",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

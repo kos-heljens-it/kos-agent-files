@@ -1,0 +1,21 @@
+{
+  "pattern": "P16",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "af3db5a953efb0b273a7bfbfbd30a119ea76db1aa63d935d7c841df585c3a51e",
+    "pattern.css": "7eeb6ad80dd0e1504be11353469e2e0f83752f855f054349c7ac1b5135a59b95",
+    "pattern.js": "618231e5c3c0a3a492a4f9d61da15043b2933ba63051741acedc258d492c9c74"
+  },
+  "results": [
+    {
+      "check": "Simulierter Vorgang, zwei auffindbare Ereignisse und Erhalt von Eingabe und Fokus",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

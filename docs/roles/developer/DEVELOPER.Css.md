@@ -1,10 +1,10 @@
 # DEVELOPER.Css.md
 
-Stand: 2026-10-13
+Stand: 2026-10-30
 
 ## Zweck
 
-Diese Datei gilt für CSS, Styling und präsentationsnahe UI-Regeln. Zugehörige allgemeine Developer-Regeln werden über [DEVELOPER.md](https://heljens-it-services.github.io/agent-files/roles/developer/DEVELOPER.md), weitere technologiespezifische Regeldateien über [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md) aufgelöst.
+Diese Datei gilt für CSS, Styling und präsentationsnahe UI-Regeln. Zugehörige allgemeine Developer-Regeln werden über [DEVELOPER.md](DEVELOPER.md), weitere technologiespezifische Regeldateien über [TECHNOLOGIES.md](../../TECHNOLOGIES.md) aufgelöst.
 
 ## Styling, UI und Accessibility
 

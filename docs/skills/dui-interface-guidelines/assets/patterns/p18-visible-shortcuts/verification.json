@@ -1,0 +1,21 @@
+{
+  "pattern": "P18",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "ecd549554a579412b40de1b8781aa47d273ce420ab0184bc43092a11834fb016",
+    "pattern.css": "e3e6bb22e9eed64f495d61d61a271f9866fddec0a6cdc95ebed502d1219e215a",
+    "pattern.js": "b7c52aa0978fd65100d03c2b4b58eadf7021ae706505b02ceb88d589d9a08a38"
+  },
+  "results": [
+    {
+      "check": "Sichtbare Aktion, benanntes Tastenkürzel im Arbeitsbereich, Ausschluss von Texteingaben und zusätzlichen Modifikatoren",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

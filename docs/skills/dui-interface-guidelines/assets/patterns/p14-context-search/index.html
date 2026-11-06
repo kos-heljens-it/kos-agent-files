@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>P14 Suche im räumlichen Kontext</title><link rel="stylesheet" href="pattern.css"><script src="pattern.js" defer></script></head>
+<body><header class="reference"><span>P14</span> Suche im räumlichen Kontext</header><main>
+<p class="eyebrow">PROJEKT / ÜBERSICHT</p><h1>Bereiche finden</h1>
+<p class="intro">Die Suche markiert passende Bereiche in der bestehenden Übersicht. Alle Bereiche bleiben an ihrem Platz.</p>
+<label for="search">Bereich suchen</label><input type="text" id="search" autocomplete="off" placeholder="Zum Beispiel: Planung" aria-describedby="search-help"><p class="hint" id="search-help">Name oder Beschreibung eingeben. Die Suche verändert die Anordnung nicht.</p>
+<p id="results" class="results" role="status" aria-live="polite">Alle 6 Bereiche werden angezeigt.</p>
+<section class="board" aria-label="Projektbereiche">
+<article class="card" data-search="planung termine meilensteine"><p class="match">Treffer</p><h2>Planung</h2><p>Termine und Meilensteine</p></article>
+<article class="card" data-search="entwurf layout oberfläche"><p class="match">Treffer</p><h2>Entwurf</h2><p>Layout und Oberfläche</p></article>
+<article class="card" data-search="forschung interviews erkenntnisse"><p class="match">Treffer</p><h2>Forschung</h2><p>Interviews und Erkenntnisse</p></article>
+<article class="card" data-search="umsetzung komponenten code"><p class="match">Treffer</p><h2>Umsetzung</h2><p>Komponenten und Code</p></article>
+<article class="card" data-search="prüfung qualität tests"><p class="match">Treffer</p><h2>Prüfung</h2><p>Qualität und Tests</p></article>
+<article class="card" data-search="übergabe dokumentation ergebnisse"><p class="match">Treffer</p><h2>Übergabe</h2><p>Dokumentation und Ergebnisse</p></article>
+</section><div class="actions"><button type="button" id="clear">Suche zurücksetzen</button></div>
+</main><footer>Lokale Vorschau. Daten werden nicht dauerhaft gespeichert.</footer></body></html>

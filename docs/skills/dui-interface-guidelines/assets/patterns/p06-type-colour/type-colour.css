@@ -1,0 +1,135 @@
+:root {
+  font-family:"Segoe UI",system-ui,sans-serif;
+  --bg:#f2f4f1;
+  --surface:#fff;
+  --text:#1d3437;
+  --muted:#536568;
+  --border:#dce3dd;
+  --accent:#17665c;
+  --chip:#e3f0e6;
+  --chip-text:#28543d;
+  color:var(--text);
+  background:var(--bg)
+}
+:root[data-theme="dark"] {
+  --bg:#182320;
+  --surface:#24332f;
+  --text:#eef5ef;
+  --muted:#c4d4c9;
+  --border:#51685c;
+  --accent:#a8ddc6;
+  --chip:#345549;
+  --chip-text:#e6f9ed
+}
+* {
+  box-sizing:border-box
+}
+body {
+  margin:0;
+  line-height:1.6
+}
+button {
+  font:inherit
+}
+:focus-visible {
+  outline:3px solid var(--accent);
+  outline-offset:3px
+}
+.reference,.surface,footer {
+  width:min(44rem,calc(100% - 2rem));
+  margin-inline:auto
+}
+.reference {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:2rem 0 1.5rem;
+  font-size:.9rem;
+  font-weight:650
+}
+.reference span {
+  border:1px solid var(--muted);
+  border-radius:.3rem;
+  padding:.2rem .5rem;
+  margin-right:.55rem;
+  font-size:.72rem
+}
+.reference button {
+  min-height:2.75rem;
+  padding:.5rem .8rem;
+  border:1px solid var(--muted);
+  border-radius:.35rem;
+  background:var(--surface);
+  color:var(--text);
+  cursor:pointer
+}
+.surface {
+  padding:clamp(1.5rem,5vw,3rem);
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:.6rem
+}
+.eyebrow {
+  margin:0 0 .5rem;
+  color:var(--muted);
+  font-size:.75rem;
+  font-weight:650;
+  letter-spacing:.06em
+}
+h1 {
+  margin:0;
+  font-size:clamp(1.75rem,3vw,2.25rem);
+  line-height:1.25;
+  letter-spacing:-.035em
+}
+.intro {
+  margin:.75rem 0 2.5rem;
+  color:var(--muted)
+}
+h2 {
+  margin:0;
+  font-size:1.15rem
+}
+section+section {
+  margin-top:2.5rem
+}
+section p {
+  margin:.7rem 0;
+  color:var(--text)
+}
+a {
+  color:var(--accent);
+  text-underline-offset:.2em
+}
+.rows {
+  margin-top:1.25rem;
+  border-top:1px solid var(--border)
+}
+.rows>div {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:.75rem;
+  padding:1rem 0;
+  border-bottom:1px solid var(--border)
+}
+.badge {
+  border-radius:2rem;
+  padding:.2rem .6rem;
+  background:var(--chip);
+  color:var(--chip-text);
+  font-size:.8rem
+}
+.quiet {
+  background:var(--surface);
+  color:var(--text);
+  border:1px solid var(--border)
+}
+footer {
+  padding:1.5rem 0 2rem;
+  color:var(--muted);
+  font-size:.8125rem
+}

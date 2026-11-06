@@ -1,0 +1,29 @@
+{
+  "pattern": "P03",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokale Simulation; keine Angular- oder Backend-Integration.",
+  "source_sha256": {
+    "index.html": "1f659347ce6ec8654093b1ded46a14790274757f8adf16dd29f831d2412b6bc9",
+    "validation.css": "5f988a809a6fe4047710f55ffb17ceffe7a099e901db46ca456f3cadf2a28002",
+    "validation.js": "d8312e7031b3b89daeb48b2b41b4dd22431d3bc56e88d1fc1a5f43caa8b9ea42"
+  },
+  "results": [
+    {
+      "check": "Feldfehler, Fokus und Erhalt der Eingabe",
+      "status": "passed"
+    },
+    {
+      "check": "Unmittelbare Rückmeldung, simulierter Fehler und erfolgreicher erneuter Versuch",
+      "status": "passed"
+    },
+    {
+      "check": "Feldfehler bei 390 px ohne horizontalen Überlauf",
+      "status": "passed"
+    },
+    {
+      "check": "Keine JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

@@ -1,21 +1,18 @@
 # TESTER.md
 
-Stand: 2026-10-13
+Stand: 2026-10-30
 
 ## Zweck
 
-Diese Datei definiert technologieübergreifende Tester-Regeln. Technologiespezifische Regeldateien werden über [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md) aufgelöst.
+Diese Datei definiert technologieübergreifende Tester-Regeln. Technologiespezifische Regeldateien werden über [TECHNOLOGIES.md](../../TECHNOLOGIES.md) aufgelöst.
 
-## Codex-Ausführung
-
-[MUST_IF] Wenn ein `tester`-SubAgent verfügbar ist, muss Tester-Verantwortung an ihn delegiert werden. Die fachlichen und technologiespezifischen Regeln bleiben dabei maßgeblich.
 
 ## Priorität innerhalb der Tester-Rolle
 
 [PRIORITY] Bei widersprüchlichen Regeldateien innerhalb der Tester-Rolle gilt innerhalb ihres jeweiligen Scopes diese Reihenfolge:
 
-1. Passende technologiespezifische Regeldatei aus [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md).
-2. [TESTER.md](https://heljens-it-services.github.io/agent-files/roles/tester/TESTER.md).
+1. Passende technologiespezifische Regeldatei aus [TECHNOLOGIES.md](../../TECHNOLOGIES.md).
+2. [TESTER.md](TESTER.md).
 
 [PRIORITY] Bei mehreren passenden `TESTER.*.md`-Dateien hat die spezifischere Regel nur innerhalb ihres ausdrücklich beschriebenen Scopes Vorrang vor einer allgemeineren Regel.
 
@@ -57,7 +54,7 @@ Diese Datei definiert technologieübergreifende Tester-Regeln. Technologiespezif
 
 ## Graphweite Acceptance
 
-[MUST] Bei einer graphweiten Acceptance-Prüfung muss der Tester Root und jedes rekursiv erreichbare Child gegen den aktuellen integrierten Stand prüfen und pro Akzeptanzkriterium Status sowie Evidenz dokumentieren.
+[MUST] Bei einer graphweiten Acceptance-Prüfung muss der Tester Root und jedes rekursiv erreichbare Child gegen den exakt bezeichneten Stand des Aufrufers prüfen und pro Kriterium Status sowie Evidenz dokumentieren. Vor dem PR ist der implementierte Branch-Head zulässig; nach Merge ist der im tatsächlichen Zielbranch integrierte Stand erforderlich. Beide Evidenzarten ausdrücklich unterscheiden.
 
 [MUST_NOT] Ein Issue-, Commit-, PR- oder früherer Teststatus darf allein keinen Acceptance-Nachweis ersetzen.
 
