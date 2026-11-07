@@ -106,7 +106,12 @@ def skill_record(path: Path) -> dict:
     if not body.strip():
         raise ValueError("Skill-Anweisungen fehlen")
     files = []
-    for resource in sorted(path.parent.rglob("*")):
+    # Path ordering follows the host filesystem's case rules. Sort portable
+    # relative strings instead so Windows and Linux emit the same file order.
+    for resource in sorted(
+        path.parent.rglob("*"),
+        key=lambda item: item.relative_to(path.parent).as_posix(),
+    ):
         if resource.is_symlink() or not resource.resolve().is_relative_to(path.parent.resolve()):
             raise ValueError("Ressource verlässt den Skill-Ordner oder ist ein Symlink")
         if not resource.is_file():

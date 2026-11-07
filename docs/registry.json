@@ -30,6 +30,11 @@
       "path": "skills/adr-authoring/SKILL.md",
       "files": [
         {
+          "path": "skills/adr-authoring/SKILL.md",
+          "sha256": "ab60bb8ccc437c42bf2e7ce3ff9ffbc295ad862377be1b75459077002530a0a6",
+          "hash_encoding": "utf8-lf"
+        },
+        {
           "path": "skills/adr-authoring/agents/openai.yaml",
           "sha256": "84c86773f14ab05c756d5a0204d885abb681b9c3622533d9864bdebcd32c7027",
           "hash_encoding": "utf8-lf"
@@ -37,11 +42,6 @@
         {
           "path": "skills/adr-authoring/assets/adr.md",
           "sha256": "5465c88c9f54cfcd82a0f00e3c07e9835d75da469aafe8cf093c8c633e209bbd",
-          "hash_encoding": "utf8-lf"
-        },
-        {
-          "path": "skills/adr-authoring/SKILL.md",
-          "sha256": "ab60bb8ccc437c42bf2e7ce3ff9ffbc295ad862377be1b75459077002530a0a6",
           "hash_encoding": "utf8-lf"
         }
       ]
@@ -59,13 +59,13 @@
       "path": "skills/approved-pr-closeout/SKILL.md",
       "files": [
         {
-          "path": "skills/approved-pr-closeout/agents/openai.yaml",
-          "sha256": "b20aa0cd110659957f7325a9fb75c2843e8bf00934c0b047963a94d6cff8b8fc",
+          "path": "skills/approved-pr-closeout/SKILL.md",
+          "sha256": "8b43a6050a241bc971d107fb934c391c202bd019b76380c35d9602fd70944adf",
           "hash_encoding": "utf8-lf"
         },
         {
-          "path": "skills/approved-pr-closeout/SKILL.md",
-          "sha256": "8b43a6050a241bc971d107fb934c391c202bd019b76380c35d9602fd70944adf",
+          "path": "skills/approved-pr-closeout/agents/openai.yaml",
+          "sha256": "b20aa0cd110659957f7325a9fb75c2843e8bf00934c0b047963a94d6cff8b8fc",
           "hash_encoding": "utf8-lf"
         }
       ]
@@ -125,6 +125,11 @@
       "path": "skills/c4-modeling/SKILL.md",
       "files": [
         {
+          "path": "skills/c4-modeling/SKILL.md",
+          "sha256": "babaab1cc14c6de56145070298957b9b118860f2fa878f4c82313d7ce90d4085",
+          "hash_encoding": "utf8-lf"
+        },
+        {
           "path": "skills/c4-modeling/agents/openai.yaml",
           "sha256": "4b9f64882e12418c3ffa4579cf87d68e651d86a04636e3e63c3bb6f748c85d35",
           "hash_encoding": "utf8-lf"
@@ -137,11 +142,6 @@
         {
           "path": "skills/c4-modeling/assets/context.md",
           "sha256": "6819c8d0a631ef1fcc427194169ef3f87aaf2acff547691fb1cdeb9b91811a14",
-          "hash_encoding": "utf8-lf"
-        },
-        {
-          "path": "skills/c4-modeling/SKILL.md",
-          "sha256": "babaab1cc14c6de56145070298957b9b118860f2fa878f4c82313d7ce90d4085",
           "hash_encoding": "utf8-lf"
         }
       ]
@@ -158,6 +158,11 @@
       "version": "1.0.0",
       "path": "skills/code-analysis/SKILL.md",
       "files": [
+        {
+          "path": "skills/code-analysis/SKILL.md",
+          "sha256": "3994a0173896707f6571986eb9186f7071cd1eec5799d1108b40f1a2758924bb",
+          "hash_encoding": "utf8-lf"
+        },
         {
           "path": "skills/code-analysis/references/data-flow-analysis.md",
           "sha256": "9b8ddd605413b2eafa84d94042ba5527e4403969a2f17a9319e2869d1e0fb483",
@@ -177,11 +182,6 @@
           "path": "skills/code-analysis/references/regression-analysis.md",
           "sha256": "2b16f36395378e47ee87f4f5b85d7af36bdea26477b0d27a28f7eb675e7eceb0",
           "hash_encoding": "utf8-lf"
-        },
-        {
-          "path": "skills/code-analysis/SKILL.md",
-          "sha256": "3994a0173896707f6571986eb9186f7071cd1eec5799d1108b40f1a2758924bb",
-          "hash_encoding": "utf8-lf"
         }
       ]
     },
@@ -197,6 +197,11 @@
       "path": "skills/code-change-summary/SKILL.md",
       "files": [
         {
+          "path": "skills/code-change-summary/SKILL.md",
+          "sha256": "23c21cd00457352b3147328c00f4a873a560f464318ede2ae05bf882a390fed5",
+          "hash_encoding": "utf8-lf"
+        },
+        {
           "path": "skills/code-change-summary/agents/openai.yaml",
           "sha256": "5b40a14fe96139f66f11a363c5ffed4e02395d110726dc1350c670b09ba3f257",
           "hash_encoding": "utf8-lf"
@@ -204,11 +209,6 @@
         {
           "path": "skills/code-change-summary/assets/review-summary.md",
           "sha256": "6445a67fafa9863c419156fe5a8e130b80aa87479cf438a623f436ee356cbf3f",
-          "hash_encoding": "utf8-lf"
-        },
-        {
-          "path": "skills/code-change-summary/SKILL.md",
-          "sha256": "23c21cd00457352b3147328c00f4a873a560f464318ede2ae05bf882a390fed5",
           "hash_encoding": "utf8-lf"
         }
       ]
@@ -299,13 +299,13 @@
       "path": "skills/code-refactoring/SKILL.md",
       "files": [
         {
-          "path": "skills/code-refactoring/references/secure.md",
-          "sha256": "abcc33a004d020acbcf10c5dd182f6c8ba931f9ee52822c085d5ac6c87d10a89",
+          "path": "skills/code-refactoring/SKILL.md",
+          "sha256": "a33c91472283baaf0ff9543f750af7e17273643456cebe8d81f7df358bdea53f",
           "hash_encoding": "utf8-lf"
         },
         {
-          "path": "skills/code-refactoring/SKILL.md",
-          "sha256": "a33c91472283baaf0ff9543f750af7e17273643456cebe8d81f7df358bdea53f",
+          "path": "skills/code-refactoring/references/secure.md",
+          "sha256": "abcc33a004d020acbcf10c5dd182f6c8ba931f9ee52822c085d5ac6c87d10a89",
           "hash_encoding": "utf8-lf"
         }
       ]
@@ -342,13 +342,13 @@
       "path": "skills/commit-history-summary/SKILL.md",
       "files": [
         {
-          "path": "skills/commit-history-summary/references/history-reading.md",
-          "sha256": "968458d58404588649e09359da8a8e6766961115fc87867da0997b95c245633e",
+          "path": "skills/commit-history-summary/SKILL.md",
+          "sha256": "b4f93d897ea69f00a4e269e75b512079eb5c80c2cbd0e3f56318c304188d4c59",
           "hash_encoding": "utf8-lf"
         },
         {
-          "path": "skills/commit-history-summary/SKILL.md",
-          "sha256": "b4f93d897ea69f00a4e269e75b512079eb5c80c2cbd0e3f56318c304188d4c59",
+          "path": "skills/commit-history-summary/references/history-reading.md",
+          "sha256": "968458d58404588649e09359da8a8e6766961115fc87867da0997b95c245633e",
           "hash_encoding": "utf8-lf"
         }
       ]
@@ -442,6 +442,11 @@
       "version": "1.0.0",
       "path": "skills/dui-interface-guidelines/SKILL.md",
       "files": [
+        {
+          "path": "skills/dui-interface-guidelines/SKILL.md",
+          "sha256": "571fda757dbf8c417014402601d5d3381493633bc4a81e96cb93d6498c19b220",
+          "hash_encoding": "utf8-lf"
+        },
         {
           "path": "skills/dui-interface-guidelines/agents/openai.yaml",
           "sha256": "77af86db1c99846308c2813283ce2a94ae9257015d683555d716a0091a46e6c3",
@@ -1651,11 +1656,6 @@
           "path": "skills/dui-interface-guidelines/references/workflow.md",
           "sha256": "08b9143e089b21657c8ff975cd10cda739589dd2d71486764e49472cd5cb506f",
           "hash_encoding": "utf8-lf"
-        },
-        {
-          "path": "skills/dui-interface-guidelines/SKILL.md",
-          "sha256": "571fda757dbf8c417014402601d5d3381493633bc4a81e96cb93d6498c19b220",
-          "hash_encoding": "utf8-lf"
         }
       ]
     },
@@ -1729,6 +1729,11 @@
       "path": "skills/github-issue-ops/SKILL.md",
       "files": [
         {
+          "path": "skills/github-issue-ops/SKILL.md",
+          "sha256": "3f72e7b8c500b724ba029fa1c950a1e055f827f6b7ca7c75c630fde82d70198e",
+          "hash_encoding": "utf8-lf"
+        },
+        {
           "path": "skills/github-issue-ops/references/create.md",
           "sha256": "738ef70636dbdd6dd6185c56d4624b9a23939e8d277a5d845951f859c8f66206",
           "hash_encoding": "utf8-lf"
@@ -1747,11 +1752,6 @@
           "path": "skills/github-issue-ops/references/type.md",
           "sha256": "cd32d9a049bb605385335ca05ada14fca90e46f8e722e53b2dcd10269beca136",
           "hash_encoding": "utf8-lf"
-        },
-        {
-          "path": "skills/github-issue-ops/SKILL.md",
-          "sha256": "3f72e7b8c500b724ba029fa1c950a1e055f827f6b7ca7c75c630fde82d70198e",
-          "hash_encoding": "utf8-lf"
         }
       ]
     },
@@ -1768,6 +1768,11 @@
       "path": "skills/github-pr-ops/SKILL.md",
       "files": [
         {
+          "path": "skills/github-pr-ops/SKILL.md",
+          "sha256": "8b9f3bae38e1f747b23bbab01c91c813cb2edec9086e45ac86b811e9a82079bc",
+          "hash_encoding": "utf8-lf"
+        },
+        {
           "path": "skills/github-pr-ops/references/checks.md",
           "sha256": "5eea077b1532b31ec792b029396898720c8590772af2a2f3a15d7e01d0de86a9",
           "hash_encoding": "utf8-lf"
@@ -1780,11 +1785,6 @@
         {
           "path": "skills/github-pr-ops/references/merge.md",
           "sha256": "d777d52f6ad6468d2c6d623c895a4752417f32d763fa6d5de0a0db4f4251471b",
-          "hash_encoding": "utf8-lf"
-        },
-        {
-          "path": "skills/github-pr-ops/SKILL.md",
-          "sha256": "8b9f3bae38e1f747b23bbab01c91c813cb2edec9086e45ac86b811e9a82079bc",
           "hash_encoding": "utf8-lf"
         }
       ]
@@ -1926,13 +1926,13 @@
       "path": "skills/issue-to-sub-issues/SKILL.md",
       "files": [
         {
-          "path": "skills/issue-to-sub-issues/references/flat.md",
-          "sha256": "1e46c5b3663aeeb88ae664816131785a0bdb241659f2c388cd2a4ad1e39a2949",
+          "path": "skills/issue-to-sub-issues/SKILL.md",
+          "sha256": "7cb95f39474a5fdbbd3f255841c077c63bc1ac590d7266756c514f42c21f8887",
           "hash_encoding": "utf8-lf"
         },
         {
-          "path": "skills/issue-to-sub-issues/SKILL.md",
-          "sha256": "7cb95f39474a5fdbbd3f255841c077c63bc1ac590d7266756c514f42c21f8887",
+          "path": "skills/issue-to-sub-issues/references/flat.md",
+          "sha256": "1e46c5b3663aeeb88ae664816131785a0bdb241659f2c388cd2a4ad1e39a2949",
           "hash_encoding": "utf8-lf"
         }
       ]
@@ -1987,6 +1987,11 @@
       "path": "skills/project-design/SKILL.md",
       "files": [
         {
+          "path": "skills/project-design/SKILL.md",
+          "sha256": "51cb115eb8a3d285a78546d89ad537f78c5a76e5cc6fe99b611f14a06fab7ce0",
+          "hash_encoding": "utf8-lf"
+        },
+        {
           "path": "skills/project-design/agents/openai.yaml",
           "sha256": "a574969209c2a6ee49eeb6bf3ddb126dcda4417d7e94bb876de12198c03572ce",
           "hash_encoding": "utf8-lf"
@@ -1999,11 +2004,6 @@
         {
           "path": "skills/project-design/references/heljens-handoff.md",
           "sha256": "35093c3ac25462a65570e8dd942043bbb6c8a7a0973847def1e14acbe515f5b9",
-          "hash_encoding": "utf8-lf"
-        },
-        {
-          "path": "skills/project-design/SKILL.md",
-          "sha256": "51cb115eb8a3d285a78546d89ad537f78c5a76e5cc6fe99b611f14a06fab7ce0",
           "hash_encoding": "utf8-lf"
         }
       ]
@@ -2116,6 +2116,11 @@
       "path": "skills/sequence-modeling/SKILL.md",
       "files": [
         {
+          "path": "skills/sequence-modeling/SKILL.md",
+          "sha256": "57f9b9483b24fec5b0e5bb7a0a800026488eca6115d836fa4103e5b2e29875a8",
+          "hash_encoding": "utf8-lf"
+        },
+        {
           "path": "skills/sequence-modeling/agents/openai.yaml",
           "sha256": "4eb447945e7bac752d6927d6bd4eaf18286da1fb58de83f42c5525cb556fa55c",
           "hash_encoding": "utf8-lf"
@@ -2123,11 +2128,6 @@
         {
           "path": "skills/sequence-modeling/assets/sequence.md",
           "sha256": "80ce0b7830baa11cbd0fabd774d40357aba368bc7311930e180b5e1a582dfb47",
-          "hash_encoding": "utf8-lf"
-        },
-        {
-          "path": "skills/sequence-modeling/SKILL.md",
-          "sha256": "57f9b9483b24fec5b0e5bb7a0a800026488eca6115d836fa4103e5b2e29875a8",
           "hash_encoding": "utf8-lf"
         }
       ]
@@ -2144,6 +2144,11 @@
       "path": "skills/user-story-specification/SKILL.md",
       "files": [
         {
+          "path": "skills/user-story-specification/SKILL.md",
+          "sha256": "4f0258f28a4681a491fb1a74bcef8807e19533b39d9451c00eaa18194ce7f302",
+          "hash_encoding": "utf8-lf"
+        },
+        {
           "path": "skills/user-story-specification/agents/openai.yaml",
           "sha256": "885982dc450c395a1c2ec2a9e84405cda9da60468bde65906b32b5a732d93037",
           "hash_encoding": "utf8-lf"
@@ -2151,11 +2156,6 @@
         {
           "path": "skills/user-story-specification/assets/story.md",
           "sha256": "12617ba927093e7f6c378b43368b037bfa5d7bdd917d90173f4118bfc316bc7e",
-          "hash_encoding": "utf8-lf"
-        },
-        {
-          "path": "skills/user-story-specification/SKILL.md",
-          "sha256": "4f0258f28a4681a491fb1a74bcef8807e19533b39d9451c00eaa18194ce7f302",
           "hash_encoding": "utf8-lf"
         }
       ]
