@@ -1,10 +1,10 @@
 # DEVELOPER.TypeScript.md
 
-Stand: 2026-08-21
+Stand: 2026-10-30
 
 ## Zweck
 
-Diese Datei gilt für TypeScript. Zugehörige allgemeine Developer-Regeln werden über [DEVELOPER.md](https://heljens-it-services.github.io/agent-files/roles/developer/DEVELOPER.md), weitere technologiespezifische Regeldateien über [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md) aufgelöst.
+Diese Datei gilt für TypeScript. Zugehörige allgemeine Developer-Regeln werden über [DEVELOPER.md](DEVELOPER.md), weitere technologiespezifische Regeldateien über [TECHNOLOGIES.md](../../TECHNOLOGIES.md) aufgelöst.
 
 ## Qualität und Code
 

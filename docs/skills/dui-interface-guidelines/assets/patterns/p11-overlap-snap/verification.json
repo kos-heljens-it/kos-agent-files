@@ -1,0 +1,21 @@
+{
+  "pattern": "P11",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "e75ab9027a293d7010e80b46be20cb16877e079d3b513ffc105a9b48bed2c132",
+    "objects.css": "2bcafb1a4701afec6091873123433a59b0d8358392b22b95760529bccd35864d",
+    "objects.js": "1694f0d8d6ce7a5bb9a79a8e28213bc84b2fc5b96b8037ea42a42b9cccc6527d"
+  },
+  "results": [
+    {
+      "check": "Alternative Auswahl, exakte Eingabe, Pfeiltasten, Ziehen mit und ohne Raster und Fehlereingaben",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P09 Eingaben wiederverwenden</title>
+  <link rel="stylesheet" href="reuse.css">
+  <script src="reuse.js" defer></script>
+</head>
+<body>
+  <header class="reference"><span>P09</span> Eingaben wiederverwenden</header>
+  <main class="surface">
+    <p class="eyebrow">BESTELLUNG / ADRESSEN</p>
+    <h1>Lieferung vorbereiten</h1>
+    <p class="intro">Geben Sie die Lieferadresse ein. Die Rechnungsadresse kann bei Bedarf abweichen.</p>
+    <form id="order-form" novalidate>
+      <section aria-labelledby="delivery-title">
+        <h2 id="delivery-title">Lieferadresse</h2>
+        <div class="fields">
+          <div class="field full"><label for="delivery-name">Name</label><input id="delivery-name" name="delivery-name" autocomplete="shipping name" value="Mara Lehmann" required></div>
+          <div class="field full"><label for="delivery-street">Straße und Hausnummer</label><input id="delivery-street" name="delivery-street" autocomplete="shipping street-address" value="Beispielstraße 12" required></div>
+          <div class="field"><label for="delivery-postcode">Postleitzahl</label><input id="delivery-postcode" name="delivery-postcode" autocomplete="shipping postal-code" value="33100" required></div>
+          <div class="field"><label for="delivery-city">Ort</label><input id="delivery-city" name="delivery-city" autocomplete="shipping address-level2" value="Paderborn" required></div>
+          <div class="field full"><label for="delivery-country">Land</label><select id="delivery-country" name="delivery-country" autocomplete="shipping country"><option value="DE">Deutschland</option><option value="AT">Österreich</option><option value="CH">Schweiz</option></select></div>
+        </div>
+      </section>
+      <section class="period" aria-labelledby="period-title">
+        <h2 id="period-title">Gewünschter Lieferzeitraum <span class="optional">(optional)</span></h2>
+        <p class="helper">Wenn Sie einen Zeitraum angeben, muss das Ende am selben Tag oder danach liegen.</p>
+        <div class="fields"><div class="field"><label for="start">Von</label><input id="start" name="start" type="date" aria-describedby="start-error"><p class="error" id="start-error" hidden></p></div><div class="field"><label for="end">Bis</label><input id="end" name="end" type="date" aria-describedby="end-error"><p class="error" id="end-error" hidden></p></div></div>
+      </section>
+      <div class="invoice-choice"><label for="use-invoice"><input id="use-invoice" type="checkbox" aria-controls="invoice-details"> Abweichende Rechnungsadresse verwenden</label></div>
+      <details id="invoice-details" hidden>
+        <summary>Rechnungsadresse bearbeiten</summary>
+        <div class="invoice">
+          <p class="helper">Die Lieferadresse dient als Ausgangspunkt. Sie können die Rechnungsadresse ändern.</p>
+          <button type="button" class="copy" id="copy-address">Lieferadresse erneut übernehmen</button>
+          <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+          <div class="fields">
+            <div class="field full"><label for="invoice-name">Name</label><input id="invoice-name" name="invoice-name" autocomplete="billing name"></div>
+            <div class="field full"><label for="invoice-street">Straße und Hausnummer</label><input id="invoice-street" name="invoice-street" autocomplete="billing street-address"></div>
+            <div class="field"><label for="invoice-postcode">Postleitzahl</label><input id="invoice-postcode" name="invoice-postcode" autocomplete="billing postal-code"></div>
+            <div class="field"><label for="invoice-city">Ort</label><input id="invoice-city" name="invoice-city" autocomplete="billing address-level2"></div>
+            <div class="field full"><label for="invoice-country">Land</label><select id="invoice-country" name="invoice-country" autocomplete="billing country"><option value="DE">Deutschland</option><option value="AT">Österreich</option><option value="CH">Schweiz</option></select></div>
+          </div>
+        </div>
+      </details>
+      <div class="actions"><button type="submit" class="primary">Angaben prüfen <span aria-hidden="true">→</span></button></div>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+  <footer>Lokale Vorschau mit Beispieldaten. Es werden keine Daten übertragen oder gespeichert.</footer>
+</body>
+</html>

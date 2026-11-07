@@ -1,0 +1,33 @@
+
+:root { font-family: "Segoe UI", system-ui, sans-serif; color: #1d3437; background: #f2f4f1; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.5; }
+button, input, textarea { font: inherit; }
+:focus-visible { outline: 3px solid #17665c; outline-offset: 3px; }
+.reference, main, footer { width: min(48rem, calc(100% - 2rem)); margin-inline: auto; }
+.reference { padding: 2rem 0 1.5rem; font-size: .9rem; font-weight: 650; }
+.reference span { border: 1px solid #8c9d97; border-radius: .3rem; padding: .2rem .5rem; margin-right: .55rem; font-size: .72rem; }
+main { padding: clamp(1.5rem, 5vw, 3rem); background: #fff; border: 1px solid #dce3dd; border-radius: .6rem; }
+.eyebrow { margin: 0 0 .5rem; color: #536568; font-size: .75rem; font-weight: 650; letter-spacing: .06em; }
+h1 { margin: 0; font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.25; letter-spacing: -.035em; }
+h2 { margin: 0 0 .75rem; font-size: 1.15rem; }
+.intro { color: #536568; margin: .75rem 0 2rem; }
+label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: .4rem; }
+input[type=text], textarea { width: 100%; padding: .7rem; border: 1px solid #9daca9; border-radius: .35rem; color: #1d3437; background: white; }
+textarea { resize: vertical; }
+button { min-height: 2.875rem; padding: .65rem 1rem; border: 1px solid #9daca9; border-radius: .35rem; background: #fff; color: #215a4e; font-weight: 600; cursor: pointer; }
+button:hover:not(:disabled) { background: #edf4ee; }
+button.primary { background: #17665c; border-color: #17665c; color: white; }
+button.primary:hover { background: #125248; }
+button:disabled { color: #687a74; background: #e7ece8; border-color: #e7ece8; cursor: not-allowed; }
+.hint { color: #536568; font-size: .875rem; }
+.status { color: #245447; font-size: .875rem; min-height: 1.4em; }
+.actions { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; padding-top: 1.5rem; margin-top: 1.5rem; border-top: 1px solid #dce3dd; }
+.group { margin: 1.5rem 0; }
+[hidden] { display: none !important; }
+footer { padding: 1.5rem 0 2rem; color: #536568; font-size: .8125rem; }
+@media(max-width: 38rem) { .actions button { flex: 1 1 100%; } }
+
+
+#action { min-width: 12rem; touch-action: manipulation; }
+.result { font-weight:650; margin-top:1.5rem; }

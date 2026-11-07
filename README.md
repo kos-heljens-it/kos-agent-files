@@ -1,71 +1,44 @@
-# agent-files
+# KOS Agent Files
 
-`agent-files` enthält die verbindlich veröffentlichten Agent- und Developer-Anweisungen von Heljens IT Services.
+Gemeinsame Heljens-Regeln und persönliche Skills für OpenAI/Codex. Capabilities
+und mehrstufige Workflows verwenden dasselbe `SKILL.md`-Format.
 
-Das Repository ist bewusst einfach aufgebaut: Die relevanten Markdown-Dateien liegen unter `docs/` und werden von GitHub Pages unmittelbar veröffentlicht. Es gibt keine separate HTML-, CSS- oder Build-Schicht.
+Der Fork integriert neun persönliche Skills einschließlich DUI-Richtlinien mit
+R001–R160, 28 Mustern und Bildreferenzen. Das Gesamtpaket enthält 41 kanonische
+Skills; alte URLs bleiben präzise Verweise auf ihre Nachfolger und Operationsmodi.
 
-## GitHub Pages
+## Nutzung
 
-Die veröffentlichte Referenz liegt unter:
+Veröffentlichter Einstieg nach aktiviertem Pages-Deployment:
+[AGENTS.md](https://kos-heljens-it.github.io/kos-agent-files/AGENTS.md),
+[Skill-Katalog](https://kos-heljens-it.github.io/kos-agent-files/skills/SKILLS.md),
+[Registry](https://kos-heljens-it.github.io/kos-agent-files/registry.json).
 
-[GitHub Pages](https://heljens-it-services.github.io/agent-files/)
+Alternativ den Git-Checkout unter `docs/` lesen. Die aktuelle Auslieferung erfolgt
+per HTTP oder Git; Pages installiert keine nativen Skills im Host. Das Kopieren
+einzelner Ordner allein stellt die verlinkten gemeinsamen Rollen-/Governance-Quellen
+nicht bereit. Eine spätere native Paketinstallation muss diese Pfadauflösung erhalten.
 
-Dieses Repository ist ein GitHub-Pages-Projekt. Die Pages-Ausgabe wird aus dem Branch `main` und dem Ordner `docs/` bereitgestellt.
+## Pflege und Prüfungen
 
-Die Dateien sind direkt unter festen Markdown-URLs erreichbar, zum Beispiel:
+Python 3.12+ verwenden:
 
-- [AGENTS.md](https://heljens-it-services.github.io/agent-files/AGENTS.md)
-- [ROLES.md](https://heljens-it-services.github.io/agent-files/roles/ROLES.md)
-- [SKILLS.md](https://heljens-it-services.github.io/agent-files/skills/SKILLS.md)
-- [WORKFLOWS.md](https://heljens-it-services.github.io/agent-files/workflows/WORKFLOWS.md)
+```text
+python -m pip install -r requirements-dev.txt
+python scripts/skill_registry.py --write
+python scripts/lint_docs.py
+python -m unittest discover -s scripts -p "test_*.py"
+```
 
-Andere Repositories und Projekte sollen auf diese URLs verweisen, wenn sie die aktuell gültigen Arbeitsanweisungen für KI-Agenten, Codex oder vergleichbare Entwicklungsassistenten referenzieren wollen.
+Der Generator pflegt versionierte Kataloge; der Linter verändert keine Dateien.
+Pages veröffentlicht direkt aus `main` und `/docs`, ohne Build-Schritt.
+`docs/.nojekyll` erhält Frontmatter und Template-Platzhalter unverändert.
 
-## Zweck
+`library.json` konfiguriert den Fork und seine Pages-Basis. Für die spätere
+Upstream-Übernahme diese Konfiguration und die wenigen absoluten Einstiegslinks
+anpassen. Interne Skill-Links bleiben relativ.
 
-Das Repository dient als zentrale, online referenzierbare Single Source of Truth für Agent- und Developer-Anweisungen.
-
-Die Markdown-Dateien sind von deontischer Logik inspiriert. Sie arbeiten mit expliziten Regelmarkern, um Verpflichtungen, Verbote, Erlaubnisse, Prioritäten und bedingte Geltungsbereiche für Agents und Entwicklungsassistenten klar und maschinenlesbar zu formulieren.
-
-Typische Nutzung:
-
-- `AGENTS.md` sowie die Lookup-Dateien `ROLES.md`, `SKILLS.md` und `WORKFLOWS.md` als Pflichtlektüre referenzieren
-- Rollen-, Skill- und Workflow-Dateien anhand der beschriebenen Situationen nur bei Task-Relevanz einlesen
-- eine zusätzliche `PROJECT.md` für Versionsbasis sowie fachliche und technische Projektspezifika pflegen
-- projektbezogene und technologiespezifische Developer-Regeln zentral bereitstellen
-- andere Repositories auf stabile, direkt aufrufbare Markdown-Dateien verweisen lassen
-
-## Struktur
-
-Die allgemeinen Arbeitsregeln liegen unter `docs/`. Rollen, Skills und Workflows liegen in eigenen Unterordnern und sind über verpflichtende Lookup-Dateien erschlossen.
-
-Aktuell relevante Dateien sind:
-
-| Pfad | URL | Zweck |
-|---|---|---|
-| `docs/AGENTS.md` | [AGENTS.md](https://heljens-it-services.github.io/agent-files/AGENTS.md) | Pflichtlektüre, Prioritäten und Konfliktlogik für Agents. |
-| `docs/roles/ROLES.md` | [ROLES.md](https://heljens-it-services.github.io/agent-files/roles/ROLES.md) | Lookup-Datei für Rollen. |
-| `docs/roles/developer/DEVELOPER.md` | [DEVELOPER.md](https://heljens-it-services.github.io/agent-files/roles/developer/DEVELOPER.md) | Allgemeine technologieübergreifende Entwicklungsregeln. |
-| `docs/roles/developer/DEVELOPER.*.md` | [Developer-Rollen](https://heljens-it-services.github.io/agent-files/roles/ROLES.md) | Technologiespezifische Entwicklungsregeln. |
-| `docs/skills/SKILLS.md` | [SKILLS.md](https://heljens-it-services.github.io/agent-files/skills/SKILLS.md) | Lookup-Datei für atomare Agenten-Skills. |
-| `docs/workflows/WORKFLOWS.md` | [WORKFLOWS.md](https://heljens-it-services.github.io/agent-files/workflows/WORKFLOWS.md) | Lookup-Datei für Workflows. |
-
-## Pflege
-
-Die Dateien unter `docs/` sind die veröffentlichten Quelldateien.
-
-Änderungen an den Agent- und Developer-Anweisungen erfolgen direkt in diesen Markdown-Dateien. Es gibt bewusst keine separate Generierung und keinen zusätzlichen Sync-Schritt.
-
-Die Regeln verwenden dazu Marker wie `MUST`, `MUST_IF`, `MUST_NOT`, `ALLOW`, `ALLOW_IF`, `SHOULD`, `OPTIONAL` und `PRIORITY`, damit die normative Bedeutung jeder Anweisung möglichst eindeutig bleibt.
-
-Konsumierende Projekt-Repositories müssen zusätzlich eine eigene `PROJECT.md` halten. Diese Datei enthält mindestens die Versionsbasis des konkreten Projekts und kann fachliche oder technische Leitplanken festhalten, die nur für dieses Projekt gelten. Sie ist nicht Teil der allgemeinen veröffentlichten Referenz unter GitHub Pages, sondern bewusst als projektspezifische Ergänzung gedacht.
-
-### Skills und Workflows pflegen
-
-Die verbindlichen Pflegekonventionen für Skills und Workflows, die Abschnittsstruktur und die automatische Konsistenzprüfung stehen in [PROJECT.md](PROJECT.md).
-
-## Verwendung in Projekten
-
-Andere Repositories können direkt auf die Pflichtlektüre unter GitHub Pages verweisen: [AGENTS.md](https://heljens-it-services.github.io/agent-files/AGENTS.md), [ROLES.md](https://heljens-it-services.github.io/agent-files/roles/ROLES.md), [SKILLS.md](https://heljens-it-services.github.io/agent-files/skills/SKILLS.md) und [WORKFLOWS.md](https://heljens-it-services.github.io/agent-files/workflows/WORKFLOWS.md).
-
-Damit ist klar, welche Fassung jeweils veröffentlicht und referenziert wird.
+Die Architektur- und Metadatenvereinbarung für den zukünftigen autonomia-Harness
+steht im [Registry-Vertrag](docs/REGISTRY.md), die bisherigen Pfade in der
+[Kompatibilitätstabelle](docs/COMPATIBILITY.md). MCP und .NET-Ausführung folgen
+später; die Migration setzt sie nicht voraus.

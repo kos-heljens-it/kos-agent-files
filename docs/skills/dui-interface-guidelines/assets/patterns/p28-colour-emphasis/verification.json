@@ -1,0 +1,21 @@
+{
+  "pattern": "P28",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "087710441a6d9e375e9bc9450d9c69da86a67c14c577da173cd6754580b6e6d4",
+    "pattern.css": "2d2dcd3edf7a3116a3df0da5241419ae7156b336400712489e0879f723967b59",
+    "pattern.js": "6e5d1d2ace6cc609871925451d2b5527827c48af2f1b47e2f183da700bc426d8"
+  },
+  "results": [
+    {
+      "check": "Lokaler Feldfehler und Korrektur, Erhalt der Eingabe, konkrete Rückmeldung und Textkontrast der Fehlerfarbe",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

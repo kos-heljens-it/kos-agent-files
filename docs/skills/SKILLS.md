@@ -1,87 +1,53 @@
-# SKILLS.md
+# Skill-Katalog
 
-## Zweck
+<!-- Automatisch gepflegt: python scripts/skill_registry.py --write -->
 
-Diese Datei ist die Lookup-Datei für atomare, wiederverwendbare Agenten-Skills.
+Ein gemeinsamer Katalog für atomare Fähigkeiten und zusammengesetzte Verfahren.
+Nur den passenden Skill und seine im aktuellen Schritt benötigten Referenzen laden.
+Capabilities nennen Einsatzphasen; Workflows nennen abgedeckte Phasen. Die Listen sind keine Ausführungsreihenfolge.
 
-## Verwendung
+[Registry-Vertrag](../REGISTRY.md) · [Maschinenkatalog](../registry.json)
 
-[MUST_IF] Der Agent muss mehrere passende Skill-Dateien lesen und befolgen, wenn mehrere beschriebene Situationen eintreten und kein passender Workflow den zusammenhängenden Ablauf festlegt.
-
-## Skills
-
-| ID | Skill | Direkter Alias | Lesen und verwenden, wenn | URL | Zweck |
-|---|---|---|---|---|---|
-| `requirements-clarification` | Requirements Clarification | - | Anforderungen, Ziele, Nicht-Ziele oder Scope-Grenzen unklar sind. | [requirements-clarification.md](https://heljens-it-services.github.io/agent-files/skills/requirements-clarification.md) | Anforderungen und Scope klären. |
-| `brainstorming` | Brainstorming | - | Denk- oder Lösungsrichtungen interaktiv entwickelt und abgewogen werden sollen. | [brainstorming.md](https://heljens-it-services.github.io/agent-files/skills/brainstorming.md) | Lösungsrichtungen entwickeln. |
-| `code-analysis` | Code Analysis | - | Code, Branches, Legacy-Bereiche oder Fehlverhalten bewertet werden sollen. | [code-analysis.md](https://heljens-it-services.github.io/agent-files/skills/code-analysis.md) | Technischen Bestand einordnen. |
-| `code-diff-review` | Code Diff Review | - | Ein Änderungssatz auf Scope, Risiken oder Nebeneffekte geprüft werden soll. | [code_diff-review.md](https://heljens-it-services.github.io/agent-files/skills/code_diff-review.md) | Änderungen reviewen. |
-| `code-implementation` | Code Implementation | - | Eine geklärte Verhaltens-, Logik-, Feature- oder API-Änderung umgesetzt werden soll. | [code-implementation.md](https://heljens-it-services.github.io/agent-files/skills/code-implementation.md) | Codeänderungen implementieren. |
-| `code-implementation-planning` | Code Implementation Planning | - | Vorhandener Kontext in einen konkreten technischen Umsetzungsplan überführt werden soll. | [code-implementation-planning.md](https://heljens-it-services.github.io/agent-files/skills/code-implementation-planning.md) | Implementierung planen. |
-| `code-minimization` | Code Minimization | `/minimize` | Ein lokal funktionierender Änderungssatz auf unnötige, nicht hinreichend begründete Bestandteile reduziert werden soll. | [code-minimization.md](https://heljens-it-services.github.io/agent-files/skills/code-minimization.md) | Änderungssätze evidenzgetrieben minimieren. |
-| `code-reading` | Code Reading | - | Bestehender Code gezielt in den Agenten-Kontext geladen werden muss. | [code-reading.md](https://heljens-it-services.github.io/agent-files/skills/code-reading.md) | Codekontext erfassen. |
-| `code-refactoring` | Code Refactoring | `/refactor` | Struktur ohne beabsichtigte Verhaltensänderung verbessert werden soll. | [code_refactoring.md](https://heljens-it-services.github.io/agent-files/skills/code_refactoring.md) | Code strukturieren. |
-| `code-testing` | Code Testing | `/testing`<br>`/testing <test-mode>` | Eine Änderung mit Build-, Test-, E2E- oder manuellen Prüfschritten verifiziert werden soll. | [code-testing.md](https://heljens-it-services.github.io/agent-files/skills/code-testing.md) | Änderungen gezielt oder kontextbezogen verifizieren. |
-| `design-prototyping` | Design Prototyping | `/design-prototype` | Eine Designrichtung als leichtes renderbares Artefakt visualisiert werden soll. | [design-prototyping.md](https://heljens-it-services.github.io/agent-files/skills/design-prototyping.md) | Designideen schnell visualisieren. |
-| `design-review` | Design Review | `/design-review` | Ein tatsächliches visuelles oder interaktives Ergebnis betrachtet, bewertet oder mit Varianten verglichen werden soll. | [design-review.md](https://heljens-it-services.github.io/agent-files/skills/design-review.md) | Designs visuell prüfen und Iterationen ableiten. |
-| `documentation` | Documentation | - | Dokumentation erstellt, aktualisiert oder umstrukturiert werden soll. | [documentation.md](https://heljens-it-services.github.io/agent-files/skills/documentation.md) | Dokumentation pflegen. |
-| `github-branch-checkout-from-default` | GitHub Branch Checkout From Default | - | Ein Arbeitsbranch von der aktuellen Standardbasis erstellt oder bestätigt werden soll. | [github_branch-checkout-from-default.md](https://heljens-it-services.github.io/agent-files/skills/github_branch-checkout-from-default.md) | Arbeitsbranch vorbereiten. |
-| `github-commit` | GitHub Commit | `/commit` | Fertige lokale Änderungen logisch geschnitten und ohne Push committet werden sollen. | [github_commit.md](https://heljens-it-services.github.io/agent-files/skills/github_commit.md) | Lokale Commits erstellen. |
-| `commit-history-reading` | Commit History Reading | - | Commits und gemergte Pull Requests eines Repositorys für einen Zeitraum vollständig gelesen werden sollen. | [github_commit-history-reading.md](https://heljens-it-services.github.io/agent-files/skills/github_commit-history-reading.md) | Änderungshistorie erfassen. |
-| `default-branch-update` | Default Branch Update | - | Nach einem verifizierten Merge sicher auf den aktualisierten Default-Branch gewechselt werden soll. | [github_default-branch-update.md](https://heljens-it-services.github.io/agent-files/skills/github_default-branch-update.md) | Default-Branch aktualisieren. |
-| `integration-branch-update` | Integration Branch Update | - | Nach einem verifizierten Feature-Merge sicher auf `develop` gewechselt und der Branch aktualisiert werden soll. | [github_integration-branch-update.md](https://heljens-it-services.github.io/agent-files/skills/github_integration-branch-update.md) | Integrationsbranch aktualisieren. |
-| `issue-creation` | Issue Creation | - | Ein strukturiertes GitHub-Issue aus vorhandenem Kontext erstellt werden soll. | [github_issue-creation.md](https://heljens-it-services.github.io/agent-files/skills/github_issue-creation.md) | Issue erstellen. |
-| `issue-reading` | Issue Reading | - | Ein GitHub-Issue und seine Kommentare gelesen werden müssen. | [github_issue-reading.md](https://heljens-it-services.github.io/agent-files/skills/github_issue-reading.md) | Issue-Kontext erfassen. |
-| `pr-checks-observation` | PR Checks Observation | - | Erforderliche Pull-Request-Checks bis zu einem terminalen Zustand beobachtet werden sollen. | [github_pr-checks-observation.md](https://heljens-it-services.github.io/agent-files/skills/github_pr-checks-observation.md) | Pull-Request-Checks beobachten. |
-| `pr-creation` | PR Creation | - | Ein Pull Request mit Titel, Body, Base und Head erstellt oder wiederverwendet werden soll. | [github_pr-creation.md](https://heljens-it-services.github.io/agent-files/skills/github_pr-creation.md) | Pull Request bereitstellen. |
-| `github-pr-merge` | GitHub PR Merge | - | Ein freigegebener Pull Request regelkonform gemergt werden soll. | [github_pr-merge.md](https://heljens-it-services.github.io/agent-files/skills/github_pr-merge.md) | Pull Request mergen. |
-| `github-push` | GitHub Push | `/push` | Vorhandene lokale Commits ohne neuen Commit auf den konfigurierten Upstream gepusht werden sollen. | [github_push.md](https://heljens-it-services.github.io/agent-files/skills/github_push.md) | Lokale Commits pushen. |
-| `repository-baseline-configuration` | Repository Baseline Configuration | - | Die standardisierte GitHub-Basiskonfiguration eines Repositorys geprüft oder ergänzt werden soll. | [github_repository-baseline-configuration.md](https://heljens-it-services.github.io/agent-files/skills/github_repository-baseline-configuration.md) | GitHub-Repository-Basis pflegen. |
-| `relationship-setting` | Relationship Setting | - | Native GitHub-Relationships wie Blocked-by oder Parent/Child gesetzt werden sollen. | [github_relationship-setting.md](https://heljens-it-services.github.io/agent-files/skills/github_relationship-setting.md) | Issue-Beziehungen pflegen. |
-| `type-setting` | Type Setting | - | Der native GitHub-Issue-Type eines bestehenden oder neu erstellten Issues gesetzt werden soll. | [github_type-setting.md](https://heljens-it-services.github.io/agent-files/skills/github_type-setting.md) | Issue-Type pflegen. |
-| `research` | Research | - | Web-, Repository-, Issue- oder PR-Kontext recherchiert und zusammengefasst werden soll. | [research.md](https://heljens-it-services.github.io/agent-files/skills/research.md) | Kontext recherchieren. |
-
-## Codex-Default-Zuordnung
-
-Die Zuordnung beschreibt die fachliche Standardverantwortung unter Codex. Ein Workflow darf sie für einen konkreten Schritt bewusst überschreiben, ohne die fachlichen Regeln des Skills zu umgehen.
-
-| Skill-ID | Standard unter Codex | Ausführungshinweis |
-|---|---|---|
-| `requirements-clarification` | `planner` | Ziel, Scope und offene Anforderungen klären. |
-| `brainstorming` | `planner` | Optionen strukturieren und Entscheidungen vorbereiten. |
-| `code-analysis` | `developer` | Technische Ursachen, Risiken und Abhängigkeiten bewerten. |
-| `code-diff-review` | `developer` | Technischen Änderungssatz prüfen; fachliche Testbewertung bleibt beim Tester. |
-| `code-implementation` | `developer` | Geplante Codeänderungen umsetzen. |
-| `code-implementation-planning` | `planner` | Technische Arbeitspakete aus geklärtem Kontext planen. |
-| `code-minimization` | `developer` | Bestehende Änderungsteile mutierend auf belegte Notwendigkeit reduzieren. |
-| `code-reading` | `developer` | Codekontext für technische Folgearbeit erfassen. |
-| `code-refactoring` | `developer` | Verhaltenserhaltende Strukturänderungen umsetzen. |
-| `code-testing` | `tester` | Build-, Test-, E2E- und manuelle Verifikation ausführen. |
-| `design-prototyping` | `designer` | Leichte visuelle Designartefakte für Exploration und Vergleich erzeugen. |
-| `design-review` | `designer` | Gerenderte Designs visuell bewerten, vergleichen und Iterationen ableiten. |
-| `documentation` | `main/orchestrator` | Dokumentationsscope und veröffentlichte Regelwirkung koordinieren; workflowbezogen delegierbar. |
-| `github-branch-checkout-from-default` | `main/orchestrator` | Branchwechsel und Basiswahl koordinieren; nicht parallel delegieren. |
-| `github-commit` | `main/orchestrator` | Commit-Scope und lokale Git-Mutation koordinieren. |
-| `commit-history-reading` | `main/orchestrator` | Repositoryhistorie als Workflow-Kontext lesen. |
-| `default-branch-update` | `main/orchestrator` | Integrationsbranch nach verifiziertem Merge aktualisieren. |
-| `integration-branch-update` | `main/orchestrator` | `develop` nach verifiziertem Merge aktualisieren. |
-| `issue-creation` | `planner` | Issues fachlich strukturieren; Mutation durch den Orchestrator kontrollieren. |
-| `issue-reading` | `planner` | Issue-Ziel, Scope, Typen und Beziehungen erfassen. |
-| `pr-checks-observation` | `tester` | Erforderliche Checks und deren terminalen Zustand bewerten. |
-| `pr-creation` | `main/orchestrator` | PR-Schnitt, Closure-Semantik und externe Mutation koordinieren. |
-| `github-pr-merge` | `main/orchestrator` | Freigabe, Merge-Gates und Merge-Mutation koordinieren. |
-| `github-push` | `main/orchestrator` | Upstream und externe Push-Mutation kontrollieren. |
-| `repository-baseline-configuration` | `main/orchestrator` | Repositoryweite Sollbestände und externe Wirkung koordinieren. |
-| `relationship-setting` | `planner` | Beziehung fachlich ableiten; Mutation nur kontrolliert durch den Workflow. |
-| `type-setting` | `planner` | Issue-Type fachlich ableiten; Mutation nur kontrolliert durch den Workflow. |
-| `research` | `main/orchestrator` | Je nach Gegenstand an Planner, Developer, Tester oder Designer delegierbar. |
-
-## Delegation und Fallback
-
-[MUST] Der Hauptagent bleibt Orchestrator für zusammengesetzte Abläufe, rollenübergreifende Entscheidungen und mutierende administrative Schritte.
-
-[MUST_IF] Wenn ein mutierender Skill von einem SubAgent ausgeführt wird, muss der aufrufende Workflow Scope, Berechtigung, Reihenfolge und anschließende Verifikation eindeutig festlegen.
-
-Übergabe, Rückgabe und die Grenzen paralleler Delegation regelt ausschließlich [ROLES.md](https://heljens-it-services.github.io/agent-files/roles/ROLES.md) im Abschnitt `Codex-Laufzeitabbildung`.
-
-[ALLOW_IF] Ohne Codex-Custom-Agents führt der aktuelle Agent die Skills selbst nach denselben fachlichen Regeln aus.
+| Skill | Phase | Art | Verwendung |
+|---|---|---|---|
+| [adr-authoring](adr-authoring/SKILL.md) | `design, planning` | `capability` | Dokumentiert wesentliche Architekturentscheidungen mit Kontext, Alternativen, Folgen und echtem Freigabestatus als ADR aus vorhandenen Entscheidungsgrundlagen. |
+| [approved-pr-closeout](approved-pr-closeout/SKILL.md) | `integration, acceptance, closeout` | `workflow` | Schließt einen vom User ausdrücklich freigegebenen Pull Request nach geprüftem Merge mit Issue-Acceptance, AC-Pflege und sicherer Branch-Bereinigung ab. |
+| [brainstorming](brainstorming/SKILL.md) | `discovery, analysis, design, planning` | `capability` | Entwickelt und vergleicht Lösungsoptionen bei offenen fachlichen oder technischen Richtungsentscheidungen. |
+| [bugfix](bugfix/SKILL.md) | `analysis, preparation, planning, implementation, verification, review, integration` | `workflow` | Reproduziert und behebt einen Fehler auf dem aktuellen Branch; from-default erstellt ausdrücklich einen neuen Branch und PR. |
+| [c4-modeling](c4-modeling/SKILL.md) | `analysis, design` | `capability` | Entwirft oder aktualisiert C4-Systemkontext L1 und Container L2 mit Mermaid flowchart und subgraph aus geklärten Anforderungen und bekanntem Projektkontext. |
+| [code-analysis](code-analysis/SKILL.md) | `analysis, verification, observation` | `capability` | Liest relevanten Code und analysiert Verhalten, Abhängigkeiten oder Fehlerursachen; Modus read erfasst nur Kontext. |
+| [code-change-summary](code-change-summary/SKILL.md) | `review, closeout` | `capability` | Erläutert einen abgegrenzten Commit-, Branch-, PR- oder lokalen Änderungssatz als Leseleitfaden für menschliches Code-Review mit Dateiüberblick, Vorher/Nachher, Begründung, Schnittstellen und veränderten Abläufen. |
+| [code-diff-review](code-diff-review/SKILL.md) | `review, integration` | `capability` | Prüft einen Diff lesend auf Korrektheit, Scope, Risiken und belegte Notwendigkeit vor der Weitergabe. |
+| [code-implementation](code-implementation/SKILL.md) | `implementation` | `capability` | Implementiert geklärtes Verhalten im vereinbarten Scope und prüft den betroffenen Stand. |
+| [code-implementation-planning](code-implementation-planning/SKILL.md) | `planning` | `capability` | Plant nicht triviale technische Änderungen mit konkreten Arbeitspaketen, aktuellen Treibern und Verifikation. |
+| [code-minimization](code-minimization/SKILL.md) | `implementation` | `capability` | Entfernt nach lokaler Konvergenz unbegründete Änderungsteile, ohne Acceptance, Security oder Invarianten zu schwächen. |
+| [code-refactoring](code-refactoring/SKILL.md) | `analysis, planning, preparation, implementation, verification, review, integration` | `workflow` | Verbessert vorhandene Struktur bei nachweisbarem Verhaltenserhalt; secure ergänzt einen beauftragten Branch-/PR-Zyklus. |
+| [code-testing](code-testing/SKILL.md) | `preparation, verification, acceptance, observation` | `capability` | Führt gezielte Build-, Unit-, Integrations-, E2E- oder manuelle Prüfungen aus und berichtet echte Evidenz. |
+| [commit-history-summary](commit-history-summary/SKILL.md) | `analysis, closeout` | `workflow` | Liest vollständige Commit-/Merge-Historie eines Zeitraums und liefert Rohdaten oder eine fachliche bzw. technische Zusammenfassung. |
+| [design-exploration](design-exploration/SKILL.md) | `discovery, design, review` | `workflow` | Koordiniert visuelle Richtungsfindung, Prototyping, Renderprüfung und Design-Handoff. |
+| [design-prototyping](design-prototyping/SKILL.md) | `discovery, design` | `capability` | Erstellt leichte renderbare Prototypen für eine offene visuelle oder interaktive Designentscheidung. |
+| [design-review](design-review/SKILL.md) | `design, review, acceptance` | `capability` | Bewertet tatsächlich gerenderte Oberflächen und Interaktionen gegen Ziel, Zustände und Designvorgaben. |
+| [documentation](documentation/SKILL.md) | `analysis, design, planning, closeout` | `capability` | Erstellt oder aktualisiert beauftragte Projekt- und Nutzerdokumentation aus belastbaren Quellen. |
+| [dui-interface-guidelines](dui-interface-guidelines/SKILL.md) | `design, implementation, review, acceptance` | `capability` | Wendet persönliche DUI-Gestaltungsrichtlinien bei UI-Entwurf, HTML/CSS/Angular-Implementierung und Usability-Reviews an; ordnet Bild- und Codereferenzen zu. Für Änderungen an sichtbaren Oberflächen und Interaktionen, nicht für reine Backend-, Build- oder Datenaufgaben ohne UI-Auswirkung. |
+| [feature-finish](feature-finish/SKILL.md) | `verification, review, integration` | `workflow` | Finalisiert einen beauftragten Arbeitsbranch mit Verifikation und autorisiertem Merge in den vereinbarten Integrationsbranch. |
+| [git-branch-operations](git-branch-operations/SKILL.md) | `preparation, integration, closeout` | `capability` | Erstellt einen Arbeitsbranch oder aktualisiert nach verifiziertem Merge dessen tatsächlichen Zielbranch per Fast-Forward. |
+| [git-commit-push](git-commit-push/SKILL.md) | `integration` | `workflow` | Committet und/oder pusht einen geprüften Änderungssatz; commit, push und commit-push bleiben getrennte Modi. |
+| [github-issue-ops](github-issue-ops/SKILL.md) | `intake, analysis, planning, acceptance, closeout` | `capability` | Liest GitHub-Issues oder erstellt, typisiert und verknüpft sie im ausdrücklich ausgewählten Operationsmodus. |
+| [github-pr-ops](github-pr-ops/SKILL.md) | `review, integration, closeout` | `capability` | Erstellt Pull Requests, beobachtet erforderliche Checks oder führt einen ausdrücklich autorisierten Merge aus. |
+| [insight-to-issue](insight-to-issue/SKILL.md) | `intake, analysis, planning` | `workflow` | Überführt eine beauftragte Erkenntnis oder Regelverbesserung in ein abgegrenztes GitHub-Issue. |
+| [issue-acceptance-convergence](issue-acceptance-convergence/SKILL.md) | `acceptance, planning, implementation, verification` | `workflow` | Prüft Root und Child-Graph auf PASS, GAP oder BLOCKED; converge behebt nur ausdrücklich beauftragte Gaps. |
+| [issue-graph-implementation](issue-graph-implementation/SKILL.md) | `intake, analysis, planning, preparation, implementation, verification, review, integration, acceptance` | `workflow` | Implementiert einen ausführbaren Issue-Graph sequenziell auf einem Branch bis zu einem geprüften finalen Pull Request. |
+| [issue-implementation](issue-implementation/SKILL.md) | `analysis, design, planning, preparation, implementation, verification, review, integration` | `workflow` | Implementiert und verifiziert genau eine vereinbarte Arbeitseinheit ohne graphweite Koordination oder PR-Erstellung. |
+| [issue-sanitize](issue-sanitize/SKILL.md) | `intake, planning` | `workflow` | Prüft native Issue-Types und Beziehungen eines Graphen und korrigiert eindeutig ableitbare Abweichungen im beauftragten Scope. |
+| [issue-to-pr](issue-to-pr/SKILL.md) | `verification, review, integration` | `workflow` | Prüft bereits implementierte Änderungen und bereitet Commit, Push und Pull Request vor; implementiert und mergt nicht. |
+| [issue-to-sub-issues](issue-to-sub-issues/SKILL.md) | `analysis, planning` | `workflow` | Zerlegt ein Issue rekursiv oder mit flat in genau eine materialisierte Child-Ebene. |
+| [online-publication-check](online-publication-check/SKILL.md) | `verification, observation` | `workflow` | Vergleicht veröffentlichte Rohdateien der konfigurierten GitHub-Pages-Bibliothek mit dem erwarteten Commit. |
+| [playwright-testing](playwright-testing/SKILL.md) | `verification, acceptance` | `capability` | Plant, erstellt und verifiziert automatisierte Playwright-Tests für Angular-Nutzerabläufe nach Heljens-Regeln; für E2E-Abdeckung, visuelle Referenzen und die Analyse konkreter Testfehler. |
+| [project-design](project-design/SKILL.md) | `discovery, analysis, design, planning` | `workflow` | Führt die erste Gesamtprojektierung von einer Idee, freigegebenen Phase oder einem Epic über Stories, Mermaid-Architektur und ADR bis zu einem prüfbaren Design-Paket und optionalen GitHub-Issues. |
+| [project-implementation-planning](project-implementation-planning/SKILL.md) | `discovery, analysis, planning` | `workflow` | Klärt ein projektweites Zielbild und bildet menschlich freigegebene Phasen oberhalb der Epic-Ebene. |
+| [release](release/SKILL.md) | `review, integration` | `workflow` | Veröffentlicht den freigegebenen Stand von develop nach main nach der festgelegten Repository-Release-Politik. |
+| [repository-baseline-configuration](repository-baseline-configuration/SKILL.md) | `preparation` | `capability` | Prüft oder ergänzt beauftragte Issue-Templates, Dependabot-Konfiguration und Codex-Agent-Vorlagen. |
+| [requirements-clarification](requirements-clarification/SKILL.md) | `intake, discovery, analysis, planning` | `capability` | Klärt unklare Ziele, Scope-Grenzen und Akzeptanzkriterien vor Planung oder Umsetzung. |
+| [research](research/SKILL.md) | `intake, discovery, analysis, design, planning, observation` | `capability` | Recherchiert aktuelle externe oder repositoryübergreifende Fakten mit prüfbaren Quellen. |
+| [sequence-modeling](sequence-modeling/SKILL.md) | `analysis, design` | `capability` | Spezifiziert relevante Nutzer- und Integrationsabläufe als Mermaid-Sequenzen aus vorhandenen Stories, Kriterien und Architekturgrenzen. |
+| [user-story-specification](user-story-specification/SKILL.md) | `discovery, planning` | `capability` | Formuliert fachliche User Stories und überprüfbare Akzeptanzkriterien aus geklärtem Scope als Design-Spezifikation vor der GitHub-Erstellung. |

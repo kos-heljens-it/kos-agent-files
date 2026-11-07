@@ -1,10 +1,10 @@
 # DEVELOPER.NetApplication.md
 
-Stand: 2026-10-13
+Stand: 2026-10-30
 
 ## Zweck
 
-Diese Datei gilt für geschichtete .NET-Anwendungen mit Entry-, Infrastructure- und Core-Projekten. Zugehörige allgemeine und hostspezifische Regeldateien werden über [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md) aufgelöst.
+Diese Datei gilt für geschichtete .NET-Anwendungen mit Entry-, Infrastructure- und Core-Projekten. Zugehörige allgemeine und hostspezifische Regeldateien werden über [TECHNOLOGIES.md](../../TECHNOLOGIES.md) aufgelöst.
 
 ## Zielbild
 

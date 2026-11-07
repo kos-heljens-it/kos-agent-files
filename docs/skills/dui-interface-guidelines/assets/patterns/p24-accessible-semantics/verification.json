@@ -1,0 +1,22 @@
+{
+  "pattern": "P24",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "a544d4d11712354994d9001f9d8b1950a0d12f24b4d2dacc1178a9fcebce98ec",
+    "pattern.css": "828a6d9194a73bb85d948cbe8bab7daa482e5ac28fb85b5e4e5044dca33fad7e",
+    "pattern.js": "8436cb13990403cfdb5d40734b24acba2d6be2c0a061305c0158a54a3aef9cd3",
+    "route.svg": "12d1e891aacdd1512711c4cbc740f5afbe0924655c613b05d0ef04c575cebe5c"
+  },
+  "results": [
+    {
+      "check": "Berechnete Rollen und Namen für Gruppe, Optionen, Bild und Iconbutton; Zustandswechsel per Tastatur",
+      "status": "passed"
+    },
+    {
+      "check": "Keine JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

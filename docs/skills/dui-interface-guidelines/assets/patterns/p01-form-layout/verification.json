@@ -1,0 +1,84 @@
+{
+  "pattern": "P01",
+  "browser": "156.0.4314.50",
+  "channel": "msedge",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster; kein Angular- oder Backend-Nachweis.",
+  "source_sha256": {
+    "index.html": "88b9956be3627f46bf55f5b540d45bd7aaa5cee89592cd0a26129414a6bc8d7d",
+    "form-layout.css": "882d15ef8ce75b318fb87033260d9571880437acbacbc9eabfefb42fba30ddd7",
+    "demo.js": "e4714c9a3a369229046a34d0914b5e65748c776b9e5d7f80fb0f2db9c6762a4d"
+  },
+  "results": [
+    {
+      "check": "Layout 1440x1100",
+      "status": "passed",
+      "horizontalOverflow": false,
+      "overflow": [],
+      "missingLabels": []
+    },
+    {
+      "check": "Fluchtlinien, Aktionsposition und Gruppenabstände",
+      "status": "passed",
+      "positions": [
+        193,
+        193,
+        193,
+        193,
+        193,
+        193
+      ],
+      "primaryRight": 967,
+      "formRight": 967,
+      "actionGap": 386.84375,
+      "withinGroup": 16,
+      "betweenGroups": 44
+    },
+    {
+      "check": "Layout 768x1024",
+      "status": "passed",
+      "horizontalOverflow": false,
+      "overflow": [],
+      "missingLabels": []
+    },
+    {
+      "check": "Layout 390x844",
+      "status": "passed",
+      "horizontalOverflow": false,
+      "overflow": [],
+      "missingLabels": []
+    },
+    {
+      "check": "Layout 320x740",
+      "status": "passed",
+      "horizontalOverflow": false,
+      "overflow": [],
+      "missingLabels": []
+    },
+    {
+      "check": "Lange Beschriftungen bei 390px",
+      "status": "passed",
+      "horizontalOverflow": false,
+      "overflow": [],
+      "missingLabels": []
+    },
+    {
+      "check": "Textvergrößerung 200 Prozent bei 768px",
+      "status": "passed",
+      "horizontalOverflow": false,
+      "overflow": [],
+      "missingLabels": []
+    },
+    {
+      "check": "Tastaturreihenfolge, exklusive Radioauswahl, unabhängige Checkboxen, Übernehmen und Zurücksetzen",
+      "status": "passed"
+    },
+    {
+      "check": "Gegenbeispiel eindeutig als ungeeignet gekennzeichnet",
+      "status": "passed"
+    },
+    {
+      "check": "Keine JavaScript-Fehler und keine HTTP-Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

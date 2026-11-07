@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P04 Vorgänge und Fortschritt</title>
+<link rel="stylesheet" href="process.css">
+<script src="process.js" defer>
+</script>
+</head>
+<body>
+<header class="reference">
+<span>P04</span> Vorgänge und Fortschritt</header>
+<main class="surface">
+<p class="eyebrow">ARBEITSBEREICH / EXPORT</p>
+<h1>Dokumente exportieren</h1>
+<p class="intro">Zehn Beispieldokumente werden für den Export vorbereitet.</p>
+<section aria-labelledby="progress-title">
+<div class="heading">
+<h2 id="progress-title">Export</h2>
+<span id="progress-text">0 von 10 Dokumenten</span>
+</div>
+<progress id="progress" max="10" value="0" aria-label="Exportfortschritt">
+</progress>
+<p class="detail" id="detail">Noch nicht gestartet.</p>
+<p class="status" id="status" role="status" aria-live="polite">
+</p>
+<div class="actions">
+<button type="button" class="secondary" id="cancel" hidden>Export abbrechen</button>
+<div class="right">
+<button type="button" class="secondary" id="pause" hidden>Export pausieren</button>
+<button type="button" class="primary" id="start">Export starten</button>
+</div>
+</div>
+</section>
+</main>
+<footer>Lokale Simulation: Es werden keine Dateien exportiert. Nach dem Abbruch beginnt ein neuer Export bei null.</footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+interface:
+  display_name: "DUI Interface Guidelines"
+  short_description: "Persönliche DUI-Regeln für Design und Frontend"
+  default_prompt: "Nutze $dui-interface-guidelines für die vereinbarte UI-Aufgabe und prüfe die relevanten Gestaltungsregeln am Ergebnis."
+
+policy:
+  allow_implicit_invocation: true

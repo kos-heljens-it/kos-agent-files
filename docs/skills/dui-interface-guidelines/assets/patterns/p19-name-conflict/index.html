@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>P19 Namenskonflikt direkt lösen</title><link rel="stylesheet" href="pattern.css"><script src="pattern.js" defer></script></head>
+<body><header class="reference"><span>P19</span> Namenskonflikt direkt lösen</header><main>
+<p class="eyebrow">ARBEITSBEREICH / DOKUMENT</p><h1>Dokument vorbereiten</h1>
+<p class="intro">Wählen Sie einen Namen und ergänzen Sie eine Notiz. Falls der Name bereits verwendet wird, können Sie ihn direkt ändern und erneut versuchen.</p>
+<form id="document-form" novalidate><div class="group"><label for="name">Dokumentname</label><input id="name" type="text" value="Projektplan" aria-describedby="name-hint name-error"><p id="name-hint" class="hint">Für die Vorschau sind „Projektplan“ und „Budget 2026“ bereits vergeben.</p><p id="name-error" class="error" hidden></p></div>
+<div class="group"><label for="note">Notiz zum Dokument</label><textarea id="note" rows="4">Die nächsten Schritte zusammenfassen.</textarea></div>
+<div class="actions"><span></span><button class="primary" type="submit">Dokument vorbereiten →</button></div></form>
+<p id="status" class="status" role="status"></p>
+</main><footer>Lokale Vorschau ohne Produktanbindung; Daten werden nicht dauerhaft gespeichert.</footer></body></html>

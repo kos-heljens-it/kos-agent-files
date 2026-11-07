@@ -2,73 +2,36 @@
 
 ## Zweck
 
-Dieses Repository veröffentlicht die zentralen Agent-, Developer-, Skill- und Workflow-Anweisungen von Heljens IT Services über GitHub Pages.
+Der Fork integriert die gemeinsamen Heljens-Regeln und persönlichen Skills für
+OpenAI/Codex sowie den späteren autonomia-SkillRegistry.
 
 ## Versionsbasis
 
-Die veröffentlichten Quelldateien liegen unter `docs/`. GitHub Pages stellt sie aus dem Branch `main` bereit.
+Kanonische Quellen liegen unter `docs/`. Pages verteilt Rohdateien aus `main` und
+`/docs`; `.nojekyll` verhindert Jekyll-Verarbeitung. Zielrepository und Pages-Basis
+stehen in `library.json`. Prüfung: Python 3.12+ und `requirements-dev.txt`.
 
 ## Fachliche Leitplanken
 
-[MUST] Die Markdown-Dateien unter `docs/` bilden die fachliche Single Source of Truth für konsumierende Agenten und Projekt-Repositories.
+[MUST] Capabilities und Workflows als `docs/skills/<name>/SKILL.md` pflegen. `name` und `description` sind Pflicht; `metadata` enthält `version`, `schema-version`, `kind` und je nach Art `usable_in_phases` oder `covers_phases` als Zeichenfolgen gemäß [Registry-Vertrag](docs/REGISTRY.md).
 
-[MUST] Repository-lokale Einstiegspunkte wie `AGENTS.md` dürfen auf die veröffentlichten globalen Regeln verweisen, müssen dabei aber einen funktionsfähigen Abrufweg für Agents beschreiben.
+[MUST] Bisherige URLs bleiben präzise Kompatibilitätsverweise auf kanonische Skills und gegebenenfalls den bisherigen Modus. Keine zweite vollständige Regelkopie pflegen.
+
+[MUST] OpenAI/Codex-Metadaten und die fachlichen Rollen-/Technologieverträge erhalten. Gemini-/Antigravity-Manifeste und Hooks sind nicht Teil dieser Migration.
+
+[MUST] Der Hybrid-Ansatz bestimmt die Metadaten-Schnittstelle; MCP, .NET-Harness und dynamische DAG-Ausführung werden hier noch nicht implementiert.
 
 ## Technische Leitplanken
 
-[MUST] Änderungen an veröffentlichten Regeln müssen direkt in den Markdown-Dateien unter `docs/` erfolgen.
+[MUST] Jede Markdown-Datei unter `docs/` muss als Agentenquelle über interne Links ab `docs/AGENTS.md` erreichbar sein. Interne Links relativ halten. Assets/Templates dürfen absichtliche Platzhalter enthalten.
 
-[MUST] Die online veröffentlichten Codex-Agent-Vorlagen unter `docs/codex/agents/` müssen inhaltsgleich mit den ausführbaren Mustervorlagen unter `.codex/agents/` gepflegt werden.
+[MUST] Die vier veröffentlichten Codex-TOML-Vorlagen bleiben mit `.codex/agents/` inhaltsgleich. Importierte `agents/openai.yaml` erhalten; keine nebenläufige Modellmigration.
 
-[MUST_NOT] Es darf kein separater Build- oder Generierungsschritt vorausgesetzt werden, solange GitHub Pages die versionierten Dateien unter `docs/` direkt verteilt.
+[MUST] Nach Änderungen an Skills, Ressourcen, Kompatibilitätsmapping oder Publikationsbasis `python scripts/skill_registry.py --write` ausführen und die versionierten Kataloge mitpflegen. Pages verteilt die versionierten Dateien direkt; kein Build ist erforderlich.
 
-[MUST] Jede Markdown-Datei unter `docs/` muss für konsumierende Agents bestimmt, über GitHub Pages abrufbar und ausgehend von `docs/AGENTS.md` durch interne Markdown-Links erreichbar sein.
+[MUST] Vor einem Commit `python scripts/lint_docs.py` und `python -m unittest discover -s scripts -p "test_*.py"` fehlerfrei ausführen. Der Linter bleibt ein reiner Lesecheck.
 
-### Online-Publikation prüfen
+[MUST_IF] Wenn eine inhaltlich geänderte Datei eine `Stand:`-Zeile trägt, muss diese auf das Änderungsdatum gesetzt werden.
 
-Nach einem Release oder bei Zweifeln an Erreichbarkeit, Vernetzung oder Aktualität der veröffentlichten Agent Files wird der Workflow [`online-publication-check`](https://heljens-it-services.github.io/agent-files/workflows/online-publication-check.md) verwendet. Er verändert keine versionierten Dateien und keinen externen Zustand; seine Schritte und Erfolgsbedingungen stehen ausschließlich in der Workflow-Datei.
-
-Empfohlene Basisabfragen:
-
-```powershell
-git fetch origin
-git rev-parse origin/main
-gh api repos/Heljens-IT-Services/agent-files/pages
-gh api repos/Heljens-IT-Services/agent-files/pages/builds/latest
-git ls-tree -r --name-only origin/main -- docs
-Invoke-WebRequest -Uri "https://heljens-it-services.github.io/agent-files/AGENTS.md" -UseBasicParsing
-```
-
-[MUST_IF] Wenn Browser- oder Web-Tools eine Markdown-URL nicht direkt abrufen können, muss vor einem Fehlerurteil der HTTP-Abruf per Shell versucht werden.
-
-[MUST_NOT] Nicht verlinkte Dateien unter `docs/` dürfen nicht stillschweigend als interne Dateien eingestuft werden. Interne Pflegehinweise gehören außerhalb von `docs/`.
-
-[MUST_IF] Die Prüfung muss mit konkreten Pfaden, URLs und erwarteter beziehungsweise tatsächlicher Commit-SHA fehlschlagen, sobald eine Erfolgsbedingung nicht erfüllt ist.
-
-### Skills und Workflows pflegen
-
-Skills bilden einzelne, klar abgegrenzte Fähigkeiten ab. Sie führen benötigte Vor- oder Nacharbeit nicht stillschweigend aus. Workflows kombinieren Skills in einer festgelegten Reihenfolge und definieren Bedingungen sowie Rücksprünge, ohne Skill-Regeln zu duplizieren, abzuschwächen oder zu überschreiben.
-
-| Dateityp | Verbindliche Abschnitte | Bedingte Abschnitte |
-|---|---|---|
-| Skill | `Zweck`, `Verwenden`, `Vorgehen`, `Grenzen`, `Output`, `Qualitätskriterien` | `Kommandos`, wenn konkrete Tool- oder CLI-Aufrufe relevant sind; `Artefakt`, wenn Dateien entstehen. |
-| Workflow | `Ziel`, `Verwenden`, `Verwendete Skills`, `Ablauf`, `Rücksprungregeln`, `Endergebnis` | `Verwendete Workflows` bei Orchestrierung weiterer Workflows; `Grenzen` bei besonderen Stop- oder Verbotsregeln. |
-
-`Zweck` beziehungsweise `Ziel` beschreibt den Nutzen in ein bis zwei Sätzen. `Verwenden` grenzt Trigger und Nicht-Trigger ab; `Vorgehen` beziehungsweise `Ablauf` ordnet die Schritte. `Grenzen` benennt erlaubte und verbotene Aktionen, `Output` beziehungsweise `Endergebnis` den Abschlusszustand und `Qualitätskriterien` kurze, prüfbare Regeln. Ein `Artefakt` legt Pfad, Namensschema, Inhalt und Stil fest.
-
-Zusätzliche fachliche Steuerungsabschnitte wie `Reifekriterien`, `Schnittkriterien`, `Entscheidungskriterien` oder `Priorisierung` sind erlaubt, wenn sie konkrete Entscheidungen prüfbar machen.
-
-Für die Pflege gelten folgende Konventionen:
-
-- Skill-Dateinamen beschreiben den fachlichen Scope; die Präfixe `code_` und `github_` kennzeichnen den jeweiligen Kontext.
-- Command-IDs verwenden Kleinbuchstaben und Bindestriche. Bestehende Unterstrich-Konventionen in Dateinamen dürfen erhalten bleiben.
-- Referenzierte Skills müssen vollständig aufgeführt und befolgt werden; ihre Grenzen gelten auch für extern wirksame Workflow-Schritte. Fehlt ein benötigter Skill, wird der Workflow nachgeschärft oder die Abweichung begründet. Bei blockierten Schritten gilt die Rücksprungregel oder der Blocker wird gemeldet.
-- Formulierungen bleiben knapp und operativ, bevorzugen Listen und vermeiden allgemeine Agentenphilosophien.
-
-### Konsistenzprüfung
-
-[MUST] Vor jedem Commit an Dateien unter `docs/`, `.codex/agents/` oder an der Prüfung selbst muss `python3 scripts/lint_docs.py` fehlerfrei durchlaufen. Der GitHub-Actions-Workflow `docs-lint` führt dieselbe Prüfung für Pull Requests und Pushes nach `develop` und `main` aus.
-
-[MUST] Die Prüfung ist ein reiner Lesecheck und kein Build- oder Generierungsschritt; sie darf keine Dateien unter `docs/` erzeugen oder verändern.
-
-[MUST_IF] Wenn eine Datei unter `docs/` eine `Stand:`-Zeile trägt, muss diese bei jeder inhaltlichen Änderung der Datei auf das Änderungsdatum gesetzt werden.
+Nach tatsächlicher Publikation den [Online-Check](docs/skills/online-publication-check/SKILL.md)
+gegen den erwarteten Commit ausführen. Lokale Prüfungen sind kein Pages-Deployment.

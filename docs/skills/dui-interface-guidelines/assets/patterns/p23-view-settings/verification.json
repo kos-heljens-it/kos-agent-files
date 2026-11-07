@@ -1,0 +1,21 @@
+{
+  "pattern": "P23",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "5cd657eae652c1d5eb5105477e6ce48fa826a9ab4196aae33677c63a7a71bb73",
+    "pattern.css": "e12d30a3c8b2b36693e73aa4c514ad9a7228e024a01460ade0ceff8be913334c",
+    "pattern.js": "66db26869cb61f428154d7d5e5a1e7a441c8b92dc9c84edda2078f012cc9ec3c"
+  },
+  "results": [
+    {
+      "check": "Pro Kontext ändern, Entwürfe beim Wechsel erhalten, im Browser speichern, nach Neuladen wiederverwenden, Standard zurücksetzen und Lese-/Speicherfehler melden",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

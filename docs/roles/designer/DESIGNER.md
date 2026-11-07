@@ -1,14 +1,11 @@
 # DESIGNER.md
 
-Stand: 2026-10-13
+Stand: 2026-10-30
 
 ## Zweck
 
 Diese Datei definiert technologieübergreifende Designer-Regeln für gestalterische Problemklärung, visuelle Exploration, Prototyping, Designentscheidungen und Design-Reviews.
 
-## Codex-Ausführung
-
-[MUST_IF] Wenn ein `designer`-SubAgent verfügbar ist, muss Designer-Verantwortung an ihn delegiert werden. Die fachlichen Regeln dieser Datei bleiben dabei maßgeblich.
 
 ## Grundverständnis
 

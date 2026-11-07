@@ -1,0 +1,2354 @@
+{
+  "schema_version": 2,
+  "base_url": "https://kos-heljens-it.github.io/kos-agent-files/",
+  "phases": [
+    "intake",
+    "discovery",
+    "analysis",
+    "design",
+    "planning",
+    "preparation",
+    "implementation",
+    "verification",
+    "review",
+    "integration",
+    "deployment",
+    "acceptance",
+    "closeout",
+    "observation"
+  ],
+  "skills": [
+    {
+      "name": "adr-authoring",
+      "description": "Dokumentiert wesentliche Architekturentscheidungen mit Kontext, Alternativen, Folgen und echtem Freigabestatus als ADR aus vorhandenen Entscheidungsgrundlagen.",
+      "usable_in_phases": [
+        "design",
+        "planning"
+      ],
+      "kind": "capability",
+      "version": "0.2.0",
+      "path": "skills/adr-authoring/SKILL.md",
+      "files": [
+        {
+          "path": "skills/adr-authoring/SKILL.md",
+          "sha256": "ab60bb8ccc437c42bf2e7ce3ff9ffbc295ad862377be1b75459077002530a0a6",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/adr-authoring/agents/openai.yaml",
+          "sha256": "84c86773f14ab05c756d5a0204d885abb681b9c3622533d9864bdebcd32c7027",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/adr-authoring/assets/adr.md",
+          "sha256": "5465c88c9f54cfcd82a0f00e3c07e9835d75da469aafe8cf093c8c633e209bbd",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "approved-pr-closeout",
+      "description": "Schließt einen vom User ausdrücklich freigegebenen Pull Request nach geprüftem Merge mit Issue-Acceptance, AC-Pflege und sicherer Branch-Bereinigung ab.",
+      "covers_phases": [
+        "integration",
+        "acceptance",
+        "closeout"
+      ],
+      "kind": "workflow",
+      "version": "0.2.0",
+      "path": "skills/approved-pr-closeout/SKILL.md",
+      "files": [
+        {
+          "path": "skills/approved-pr-closeout/SKILL.md",
+          "sha256": "8b43a6050a241bc971d107fb934c391c202bd019b76380c35d9602fd70944adf",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/approved-pr-closeout/agents/openai.yaml",
+          "sha256": "b20aa0cd110659957f7325a9fb75c2843e8bf00934c0b047963a94d6cff8b8fc",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "brainstorming",
+      "description": "Entwickelt und vergleicht Lösungsoptionen bei offenen fachlichen oder technischen Richtungsentscheidungen.",
+      "usable_in_phases": [
+        "discovery",
+        "analysis",
+        "design",
+        "planning"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/brainstorming/SKILL.md",
+      "files": [
+        {
+          "path": "skills/brainstorming/SKILL.md",
+          "sha256": "e165020813860a72fcf6ba710d346c891eb2236e14ecd0e38230c55a83d0d913",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "bugfix",
+      "description": "Reproduziert und behebt einen Fehler auf dem aktuellen Branch; from-default erstellt ausdrücklich einen neuen Branch und PR.",
+      "covers_phases": [
+        "analysis",
+        "preparation",
+        "planning",
+        "implementation",
+        "verification",
+        "review",
+        "integration"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/bugfix/SKILL.md",
+      "files": [
+        {
+          "path": "skills/bugfix/SKILL.md",
+          "sha256": "29b6b3e7a85d58b701e32e40a7ed11cb31a3bed61b9c89998ba47b026e25ce28",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "c4-modeling",
+      "description": "Entwirft oder aktualisiert C4-Systemkontext L1 und Container L2 mit Mermaid flowchart und subgraph aus geklärten Anforderungen und bekanntem Projektkontext.",
+      "usable_in_phases": [
+        "analysis",
+        "design"
+      ],
+      "kind": "capability",
+      "version": "0.2.0",
+      "path": "skills/c4-modeling/SKILL.md",
+      "files": [
+        {
+          "path": "skills/c4-modeling/SKILL.md",
+          "sha256": "babaab1cc14c6de56145070298957b9b118860f2fa878f4c82313d7ce90d4085",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/c4-modeling/agents/openai.yaml",
+          "sha256": "4b9f64882e12418c3ffa4579cf87d68e651d86a04636e3e63c3bb6f748c85d35",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/c4-modeling/assets/container.md",
+          "sha256": "bd0bf2f80e1c26d8f9dbad4dc15aaf912456cbd45147486d4aee3cf5de7e1c0c",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/c4-modeling/assets/context.md",
+          "sha256": "6819c8d0a631ef1fcc427194169ef3f87aaf2acff547691fb1cdeb9b91811a14",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "code-analysis",
+      "description": "Liest relevanten Code und analysiert Verhalten, Abhängigkeiten oder Fehlerursachen; Modus read erfasst nur Kontext.",
+      "usable_in_phases": [
+        "analysis",
+        "verification",
+        "observation"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/code-analysis/SKILL.md",
+      "files": [
+        {
+          "path": "skills/code-analysis/SKILL.md",
+          "sha256": "3994a0173896707f6571986eb9186f7071cd1eec5799d1108b40f1a2758924bb",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/code-analysis/references/data-flow-analysis.md",
+          "sha256": "9b8ddd605413b2eafa84d94042ba5527e4403969a2f17a9319e2869d1e0fb483",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/code-analysis/references/diagnostic-analysis.md",
+          "sha256": "1899004978448dff36e3b097dfbfd0ab5f86c2b1b1c2cffa237d0d84f45f3e3d",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/code-analysis/references/impact-analysis.md",
+          "sha256": "dc80fd30ee11f12f52a3dc1fab74a77e11cf81d2066e6d4aeb6865cce27d91be",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/code-analysis/references/regression-analysis.md",
+          "sha256": "2b16f36395378e47ee87f4f5b85d7af36bdea26477b0d27a28f7eb675e7eceb0",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "code-change-summary",
+      "description": "Erläutert einen abgegrenzten Commit-, Branch-, PR- oder lokalen Änderungssatz als Leseleitfaden für menschliches Code-Review mit Dateiüberblick, Vorher/Nachher, Begründung, Schnittstellen und veränderten Abläufen.",
+      "usable_in_phases": [
+        "review",
+        "closeout"
+      ],
+      "kind": "capability",
+      "version": "0.2.0",
+      "path": "skills/code-change-summary/SKILL.md",
+      "files": [
+        {
+          "path": "skills/code-change-summary/SKILL.md",
+          "sha256": "23c21cd00457352b3147328c00f4a873a560f464318ede2ae05bf882a390fed5",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/code-change-summary/agents/openai.yaml",
+          "sha256": "5b40a14fe96139f66f11a363c5ffed4e02395d110726dc1350c670b09ba3f257",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/code-change-summary/assets/review-summary.md",
+          "sha256": "6445a67fafa9863c419156fe5a8e130b80aa87479cf438a623f436ee356cbf3f",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "code-diff-review",
+      "description": "Prüft einen Diff lesend auf Korrektheit, Scope, Risiken und belegte Notwendigkeit vor der Weitergabe.",
+      "usable_in_phases": [
+        "review",
+        "integration"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/code-diff-review/SKILL.md",
+      "files": [
+        {
+          "path": "skills/code-diff-review/SKILL.md",
+          "sha256": "86f9b595df23418ff09e386cd9172deefb2ec4d307c86e4097d1072f9f90bd2b",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "code-implementation",
+      "description": "Implementiert geklärtes Verhalten im vereinbarten Scope und prüft den betroffenen Stand.",
+      "usable_in_phases": [
+        "implementation"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/code-implementation/SKILL.md",
+      "files": [
+        {
+          "path": "skills/code-implementation/SKILL.md",
+          "sha256": "fc3d30af75fd85a690223ddddef1029d185e060a6000884ef9cda01d4406a792",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "code-implementation-planning",
+      "description": "Plant nicht triviale technische Änderungen mit konkreten Arbeitspaketen, aktuellen Treibern und Verifikation.",
+      "usable_in_phases": [
+        "planning"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/code-implementation-planning/SKILL.md",
+      "files": [
+        {
+          "path": "skills/code-implementation-planning/SKILL.md",
+          "sha256": "88ca9c4a160f3646ecce2cb2debbe57681e616ac6c788efd8be300f3d2846a1d",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "code-minimization",
+      "description": "Entfernt nach lokaler Konvergenz unbegründete Änderungsteile, ohne Acceptance, Security oder Invarianten zu schwächen.",
+      "usable_in_phases": [
+        "implementation"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/code-minimization/SKILL.md",
+      "files": [
+        {
+          "path": "skills/code-minimization/SKILL.md",
+          "sha256": "9adafb299ab237f8266885002952e093e064cc76324c50a2f976b3c1d54f1a9d",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "code-refactoring",
+      "description": "Verbessert vorhandene Struktur bei nachweisbarem Verhaltenserhalt; secure ergänzt einen beauftragten Branch-/PR-Zyklus.",
+      "covers_phases": [
+        "analysis",
+        "planning",
+        "preparation",
+        "implementation",
+        "verification",
+        "review",
+        "integration"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/code-refactoring/SKILL.md",
+      "files": [
+        {
+          "path": "skills/code-refactoring/SKILL.md",
+          "sha256": "a33c91472283baaf0ff9543f750af7e17273643456cebe8d81f7df358bdea53f",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/code-refactoring/references/secure.md",
+          "sha256": "abcc33a004d020acbcf10c5dd182f6c8ba931f9ee52822c085d5ac6c87d10a89",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "code-testing",
+      "description": "Führt gezielte Build-, Unit-, Integrations-, E2E- oder manuelle Prüfungen aus und berichtet echte Evidenz.",
+      "usable_in_phases": [
+        "preparation",
+        "verification",
+        "acceptance",
+        "observation"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/code-testing/SKILL.md",
+      "files": [
+        {
+          "path": "skills/code-testing/SKILL.md",
+          "sha256": "8ae0a035bd19314365b36d48cf25522ab484239415da88c51010f566148d86fb",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "commit-history-summary",
+      "description": "Liest vollständige Commit-/Merge-Historie eines Zeitraums und liefert Rohdaten oder eine fachliche bzw. technische Zusammenfassung.",
+      "covers_phases": [
+        "analysis",
+        "closeout"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/commit-history-summary/SKILL.md",
+      "files": [
+        {
+          "path": "skills/commit-history-summary/SKILL.md",
+          "sha256": "b4f93d897ea69f00a4e269e75b512079eb5c80c2cbd0e3f56318c304188d4c59",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/commit-history-summary/references/history-reading.md",
+          "sha256": "968458d58404588649e09359da8a8e6766961115fc87867da0997b95c245633e",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "design-exploration",
+      "description": "Koordiniert visuelle Richtungsfindung, Prototyping, Renderprüfung und Design-Handoff.",
+      "covers_phases": [
+        "discovery",
+        "design",
+        "review"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/design-exploration/SKILL.md",
+      "files": [
+        {
+          "path": "skills/design-exploration/SKILL.md",
+          "sha256": "232a654fab7ee64b98373116431cc3cdd27fa82415ddc3f2df7e729209722559",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "design-prototyping",
+      "description": "Erstellt leichte renderbare Prototypen für eine offene visuelle oder interaktive Designentscheidung.",
+      "usable_in_phases": [
+        "discovery",
+        "design"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/design-prototyping/SKILL.md",
+      "files": [
+        {
+          "path": "skills/design-prototyping/SKILL.md",
+          "sha256": "72d17fc1b206d86bd5aaff977b060909ef72125992b32a37093f7b12d59d8ffe",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "design-review",
+      "description": "Bewertet tatsächlich gerenderte Oberflächen und Interaktionen gegen Ziel, Zustände und Designvorgaben.",
+      "usable_in_phases": [
+        "design",
+        "review",
+        "acceptance"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/design-review/SKILL.md",
+      "files": [
+        {
+          "path": "skills/design-review/SKILL.md",
+          "sha256": "a4e8ef1da7f5e7a94ad3bf2a5ba5fc0d2045ac4863c0e27856ab7f6a9d2f88bd",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "documentation",
+      "description": "Erstellt oder aktualisiert beauftragte Projekt- und Nutzerdokumentation aus belastbaren Quellen.",
+      "usable_in_phases": [
+        "analysis",
+        "design",
+        "planning",
+        "closeout"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/documentation/SKILL.md",
+      "files": [
+        {
+          "path": "skills/documentation/SKILL.md",
+          "sha256": "32a8d9e1b788610efe5908924bb32b253adf5af7b349be91f44fca3b804ce82b",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "dui-interface-guidelines",
+      "description": "Wendet persönliche DUI-Gestaltungsrichtlinien bei UI-Entwurf, HTML/CSS/Angular-Implementierung und Usability-Reviews an; ordnet Bild- und Codereferenzen zu. Für Änderungen an sichtbaren Oberflächen und Interaktionen, nicht für reine Backend-, Build- oder Datenaufgaben ohne UI-Auswirkung.",
+      "usable_in_phases": [
+        "design",
+        "implementation",
+        "review",
+        "acceptance"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/dui-interface-guidelines/SKILL.md",
+      "files": [
+        {
+          "path": "skills/dui-interface-guidelines/SKILL.md",
+          "sha256": "571fda757dbf8c417014402601d5d3381493633bc4a81e96cb93d6498c19b220",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/agents/openai.yaml",
+          "sha256": "77af86db1c99846308c2813283ce2a94ae9257015d683555d716a0091a46e6c3",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/index.json",
+          "sha256": "0ee4d93685a7ff28d88a54ea8cf2612aa125ccc2b5d31d599cbb99972c7ade91",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p01-form-layout/demo.js",
+          "sha256": "e4714c9a3a369229046a34d0914b5e65748c776b9e5d7f80fb0f2db9c6762a4d",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p01-form-layout/form-layout.css",
+          "sha256": "882d15ef8ce75b318fb87033260d9571880437acbacbc9eabfefb42fba30ddd7",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p01-form-layout/index.html",
+          "sha256": "88b9956be3627f46bf55f5b540d45bd7aaa5cee89592cd0a26129414a6bc8d7d",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p01-form-layout/pattern.md",
+          "sha256": "dcd53244ba9ec051c0d7bf4495834e672c1d150061d17e928c3cad07e526967d",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p01-form-layout/screenshots/counterexample-desktop.png",
+          "sha256": "d1a50c0407febcd4c17105e98d54c169334ff0639f291639619b6012907f8756",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p01-form-layout/screenshots/reference-desktop.png",
+          "sha256": "fddaecc2a0322d3ed44d7dea14770b88a18e10c88d544a6f0e9e287e97873bdd",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p01-form-layout/screenshots/reference-long-labels.png",
+          "sha256": "aaaff444ae5d1ae49a7102462a383617ab0552ef8d591a9f5e9377f205eec3e9",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p01-form-layout/screenshots/reference-mobile.png",
+          "sha256": "45ab9c7dd4aed60f080730bae79c49b30d332128d8ebda2e2518a6f1105d1eb3",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p01-form-layout/screenshots/reference-text-200.png",
+          "sha256": "60aa98d5c51791a5be2725894ff3f1fd3721e24c164b8db939cb0a0b0a4350e7",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p01-form-layout/verification.json",
+          "sha256": "e89ed57bd048b48660293479e685226d8c7b761c15897c8fbe6212582fe0e8b4",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p02-control-states/controls.css",
+          "sha256": "e4f18eb1a45cc9087298d278dd6e81ffeeb7402784371f219bf443abff87ccd4",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p02-control-states/controls.js",
+          "sha256": "09b35b280c2abc121ffc4d60a477d78e968f1f0a9365c203411fb15796a1b76f",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p02-control-states/index.html",
+          "sha256": "1c7922c4b5f95cce7e7959b5b5174bfd63851e07b55028eed88c7828f7862ae3",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p02-control-states/pattern.md",
+          "sha256": "5256b91e49358947ad6454d23510dd5874642757c728833fb55c929676bd306e",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p02-control-states/screenshots/initial.png",
+          "sha256": "5eb3a93c2347913a162bc2c4f47086649c620f35c84dcc02b58d5f53711c4b4c",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p02-control-states/screenshots/mobile.png",
+          "sha256": "00b4736753fea8357a3311c77cc98907849dfb15f61bc1fc8b5ea6567dedc256",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p02-control-states/screenshots/selected-focus.png",
+          "sha256": "087a07ff4e0f5f2c56d99435b1e584a8afc97a23e1f51fe27e495078b8247bed",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p02-control-states/verification.json",
+          "sha256": "343880984baffb9f70069556ad58fd4c8937ae66f2dce7c4907f0afee7ff0d29",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p03-validation/index.html",
+          "sha256": "1f659347ce6ec8654093b1ded46a14790274757f8adf16dd29f831d2412b6bc9",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p03-validation/pattern.md",
+          "sha256": "41488eb096dfe68ce2d8c85cfe45e59bb25f63c5d2164e87456de103e47f1a80",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p03-validation/screenshots/field-error-mobile.png",
+          "sha256": "5006b58ac2528564a2dcfcd413f3039904933894f59b2e03837cce2da3839838",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p03-validation/screenshots/field-error.png",
+          "sha256": "9f2daa856cae7b94af261d32c5507055f442c06fd9fe6dc537e30f2c4e4e102c",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p03-validation/screenshots/initial.png",
+          "sha256": "f084403cc474d94304a7ec0f861f6d3544e85aace955f30670cbed84cb0dd62a",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p03-validation/screenshots/save-error.png",
+          "sha256": "6de077a5351d5ae5fa838554f39494869c3f25fc4292a45b5d2c8d3d1a7e7279",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p03-validation/validation.css",
+          "sha256": "5f988a809a6fe4047710f55ffb17ceffe7a099e901db46ca456f3cadf2a28002",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p03-validation/validation.js",
+          "sha256": "d8312e7031b3b89daeb48b2b41b4dd22431d3bc56e88d1fc1a5f43caa8b9ea42",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p03-validation/verification.json",
+          "sha256": "ec11d9b7c04499f92137b2c0bbd4e5cd7e6893f00c46b64c519b1491ad1b6865",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p04-process/index.html",
+          "sha256": "a809a38a2753cf887f14fe9ff80589e4c76c2f1dfb3aea711d2334fc85e3d608",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p04-process/pattern.md",
+          "sha256": "b33dd05923d7e3a8c1e163601c435fd498b48c9fccac4c29d9a4da436560409e",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p04-process/process.css",
+          "sha256": "5ec47f931d62fbae9058bb1eae15d642529875d76906bb14c27ad1512b155861",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p04-process/process.js",
+          "sha256": "418805225cf521d3eb9d51c722ef96974f80ec6cff9c68abccb21b3ba7738ea1",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p04-process/screenshots/completed.png",
+          "sha256": "db094f0010b65990527c9b34caf707dc11b879f957b2f48abcf7328739537c12",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p04-process/screenshots/mobile.png",
+          "sha256": "4c82b984d02908ae9d57c1e492f9dd794d22f2bcda00f90e96d568c916911ab3",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p04-process/screenshots/paused.png",
+          "sha256": "d7e828494eef17d64faa74b06c4cf0d9bc3b2e88d7c7db3a6de34319ccefe926",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p04-process/verification.json",
+          "sha256": "4733219ed172f787e4b7233182a41db1ccc58415554496054994552a591d0740",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p05-navigation/index.html",
+          "sha256": "d7c751bcbc75f383e372c103249d32874f634659e40bd02ece20cb4d6e9d21ab",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p05-navigation/navigation.css",
+          "sha256": "689cdd20fcbae71ec34aaefd78904c874c3d7a24703d96ecfd85a54a18834c1a",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p05-navigation/navigation.js",
+          "sha256": "80248f39b333eaa5e44075c26774d8bd8f5a1512c8592887a6b037f5eb0b7b73",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p05-navigation/pattern.md",
+          "sha256": "e7002a7cdb90a142f90920153cdf0e1e2d5138dc85c0bde2dc75e10508256f61",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p05-navigation/screenshots/desktop-overview.png",
+          "sha256": "3f93b1c5177da961998edc32dcfcd93c4b5d7c26a1ce772d1ad4bddcf712b051",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p05-navigation/screenshots/desktop-projects.png",
+          "sha256": "03278e6778d1aef08cf36e4bed9877df6652abfc1d334ddf0c726116472fcf2f",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p05-navigation/screenshots/mobile-projects.png",
+          "sha256": "c2420a7b5c968cabe5d7a7d36366ade3d8ecafe2c90358b305268a373bfaac02",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p05-navigation/verification.json",
+          "sha256": "623eb73aa024ead517110ef939780cc3f288f083272238a01d42cc694c3121fb",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p06-type-colour/index.html",
+          "sha256": "6f930b4ac78ffb1d049648c51fe729461cb1b6b53813586cb29697fcacedfecb",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p06-type-colour/pattern.md",
+          "sha256": "0727c1e5f433daf8c755e6dbd4b77c3592c24171fb32d8bf9f651bb5c8403d17",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p06-type-colour/screenshots/dark.png",
+          "sha256": "f21b3d7498ca33e77c621b0a9fd5b196ec640f74d99844a4ad6e7667b64fa0cd",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p06-type-colour/screenshots/light.png",
+          "sha256": "fd14e9eed42fa7ff0596545da716603dd4a3bf94905d092924e85c9702614613",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p06-type-colour/screenshots/mobile.png",
+          "sha256": "a70b85ae03ae0f1acfe9e68c6d4c0d74d1e3eca787aab8ad7dece3d48a7250a9",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p06-type-colour/type-colour.css",
+          "sha256": "2815b052f558edc17b5e916ca868cffdcde1a7ef25720790cfe67fd4a0579d2e",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p06-type-colour/type-colour.js",
+          "sha256": "9741a58648ed297af74a75676e1542959a7e89d4c55462bffbfd1fd07f4b7b35",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p06-type-colour/verification.json",
+          "sha256": "38d2c1d218d4c4106bd9c478b6bc855d995e57b7ad1ffe1f9c60a05815eed022",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p07-icon-ensemble/icons.css",
+          "sha256": "01bb39c34f06f4d1fa3077f8026f79abdee45a3312be0d9be6c5c74da275fdb7",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p07-icon-ensemble/icons.js",
+          "sha256": "a37fe09a6be8145d9d0dd726c7f5805d6ca6ee1e80e444a27417dc04244a5ce0",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p07-icon-ensemble/index.html",
+          "sha256": "742e3dd5f78ca36e41adef099f5073c058ecd4ff702eca19271971a1d0c2f4e8",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p07-icon-ensemble/pattern.md",
+          "sha256": "3823adf4e91dce18b5f2a0ade3fa71245f337da8dd15e33ee23385544eafaca6",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p07-icon-ensemble/screenshots/all.png",
+          "sha256": "b964aa75ec04b7364aa0ab828880abd1814413b52420dbd96e5d40f906b98ef8",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p07-icon-ensemble/screenshots/documents.png",
+          "sha256": "5d21c7559944009c1298659cddf859714546defefa366876152e5d72680304ec",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p07-icon-ensemble/screenshots/mobile.png",
+          "sha256": "6c9b53b3f6ef2db001614579e571166aac316b66ce409f75d041dcd0723ea3a3",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p07-icon-ensemble/verification.json",
+          "sha256": "2e0c3d1ab6b75bedeb0b1cfa56d113a7e3d524b3a2ce2c6f82c34e694e87328b",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p08-dialog-focus/dialog.css",
+          "sha256": "f9150032c1bcb8394e91d3b3feffb543e21508d3957e870d4387f517f9ebeadf",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p08-dialog-focus/dialog.js",
+          "sha256": "9d6338ef533f708df299a71a5545f3e3f7a5bdfb9f2950e44afd648c2b57a99f",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p08-dialog-focus/index.html",
+          "sha256": "dd38a759ac566c6c32c4e3f6e1dbfa1431a0e2bcb3ffbfd265076da0152867ca",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p08-dialog-focus/pattern.md",
+          "sha256": "825ad7c75675bbde857a0441b4a7ba727e313d22b54923cf990c443a74b45e8e",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p08-dialog-focus/screenshots/dialog.png",
+          "sha256": "1f6858a964f03365098c90b71557ab0de52d3b4fd087265393b364e5a0dc2669",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p08-dialog-focus/screenshots/mobile.png",
+          "sha256": "5b5ab3779d4b37b949a9a84fbabb885966b10656a233607ed3939edac4a1f4b8",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p08-dialog-focus/verification.json",
+          "sha256": "a4f529923128d1195d9e11e55503cc6cc439c4825e822d703d81ce9ec3426fb3",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p09-data-reuse/index.html",
+          "sha256": "597198017ff056b647d50a8c5085bf771ea8af4d8c5491fb755a6eaa51a0d391",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p09-data-reuse/pattern.md",
+          "sha256": "74bbeeae829542800e4624d3b356f793eb5c65d8726f1ea02ae26021bd1b40c2",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p09-data-reuse/reuse.css",
+          "sha256": "8d5af55b5538524f8889b3340a7eae4feb71148ea394964c3732224758748647",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p09-data-reuse/reuse.js",
+          "sha256": "16b9d808243f53dceeee7736230c77fe1779657a4b57a613ab00e89c56f7593d",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p09-data-reuse/screenshots/date-error.png",
+          "sha256": "6a333b47349c5a34ad52de221f2949c5efbe9802a60417a79fa6756af15892d5",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p09-data-reuse/screenshots/default.png",
+          "sha256": "3b9bc67c9d6dc5e04bb6899ce36929ad66497af2f02414f27c6fde491aafd0b0",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p09-data-reuse/screenshots/invoice.png",
+          "sha256": "d954ef0981dd99b222cbea3845134d882669dcfa4d0d30fc6ba81530552573f1",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p09-data-reuse/screenshots/mobile.png",
+          "sha256": "dd2e18283a7753deffbace435871d11df80bbad18723ba180876928b60f4098f",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p09-data-reuse/verification.json",
+          "sha256": "cc45ba88e0811876d4ff4c6e7fa39027755c02cb567ff546bb7f80e3fb10864a",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p10-precise-input/index.html",
+          "sha256": "c8bea6ed978c0961d2f6232680e76af96f71d6d2fcf10d61bd0385777dacf262",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p10-precise-input/pattern.md",
+          "sha256": "369177bdabe2af1ecf837c1ae0ff974f55e0dd2137df70b1d73559eb20e97b72",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p10-precise-input/precision.css",
+          "sha256": "1f35271205ca7a219b0085602f2d252bea10df1a790f5e3b2b354da50d921ab8",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p10-precise-input/precision.js",
+          "sha256": "f1d99da977e5751d85a348cc509cbbd0d296b33e785079160e61169904b5de9f",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p10-precise-input/screenshots/default.png",
+          "sha256": "ed94a70adaeff6fa231fbf716cc90357081e3009cdedd1cf8eced4a1a1c96c0b",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p10-precise-input/screenshots/mobile.png",
+          "sha256": "63ab745b1a51fde711b2e3c0a3b08ce45178725874da1bf049f3fd81d81c3d78",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p10-precise-input/screenshots/precise.png",
+          "sha256": "479c5403a55de2d7bf7cfb24d0ab290e377149f00fc040d93b76adb7ca2715da",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p10-precise-input/verification.json",
+          "sha256": "2abfd46529c8017f5836eda3e87b0d3a87b335fcada82adbdca0b5529e347b92",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p11-overlap-snap/index.html",
+          "sha256": "e75ab9027a293d7010e80b46be20cb16877e079d3b513ffc105a9b48bed2c132",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p11-overlap-snap/objects.css",
+          "sha256": "2bcafb1a4701afec6091873123433a59b0d8358392b22b95760529bccd35864d",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p11-overlap-snap/objects.js",
+          "sha256": "1694f0d8d6ce7a5bb9a79a8e28213bc84b2fc5b96b8037ea42a42b9cccc6527d",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p11-overlap-snap/pattern.md",
+          "sha256": "f2cca894dbfe2ef91ee6409a80d6818c207211ed7e93890f9d473b5c54c39104",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p11-overlap-snap/screenshots/default.png",
+          "sha256": "46763725c15dde0e6460a109eeb3d26df5bc0c2858806588846ba8827d5c2192",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p11-overlap-snap/screenshots/mobile.png",
+          "sha256": "69acdf8ee35665804a640b462c1d0e203728597c8d0285a505ae2f3d53a9c56b",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p11-overlap-snap/screenshots/selected.png",
+          "sha256": "9907cefaadd100b81a0292f8244c6981e2f88d637dc364efbe1c1865d1ff9035",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p11-overlap-snap/verification.json",
+          "sha256": "5236f4fc0a6fa3c42601b93df7d1e73413114eab92ff0e41eb031ba0e97c479f",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p12-visible-modes/index.html",
+          "sha256": "cb9af2cc2c3a4d31ca71819af6748e68a01c905be6637d6ec77bcf6a7edf90aa",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p12-visible-modes/modes.css",
+          "sha256": "8ee3d0f0c34f574b5d1a77926d3f2b04db53a866793baf149ca2be6a2094f7d0",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p12-visible-modes/modes.js",
+          "sha256": "6da7ee30ecee9c28f139697251a9be82e29d7c4c15e47dbc0198ad8757e89a10",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p12-visible-modes/pattern.md",
+          "sha256": "6ee1f31a822e20b129ff7933dfb11ae3d6f233c9cbaff6ba7af6ab7caf947a76",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p12-visible-modes/screenshots/default.png",
+          "sha256": "cb89ed8509ae926e71769e8e6628093186e0e75f4cfa88a4006c3a12b5aa37cb",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p12-visible-modes/screenshots/editing.png",
+          "sha256": "02ac87badf3a514cdcfd908362608178e6a51d4ccbad1652e2122b2ac67c7434",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p12-visible-modes/screenshots/mobile.png",
+          "sha256": "2ac3f36ac20bdbaf64e4ab81e180adc6f4c26b9bc19faa2f3e37bdee7fff45fb",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p12-visible-modes/verification.json",
+          "sha256": "418c5c7ed25a5de635aae1acd296ac8687ece326def835c1bfca5b84321688ab",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p13-guided-draft/index.html",
+          "sha256": "06ce9b13bcc2c4c722263b7d50c87d4a3a9e4bea4620d32ae89deec7a8cfc43d",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p13-guided-draft/pattern.css",
+          "sha256": "61d53a91623c6db0899713a1f0a151689cf7ce5bce882cda2142d03e5f8178fd",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p13-guided-draft/pattern.js",
+          "sha256": "f961d6ea976849a5187ce68ab000d7182c1cb85fcc7d7e43c5212786a0ca026e",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p13-guided-draft/pattern.md",
+          "sha256": "4037b1bbc57b63913460f3850f8f77dfc89092f487dc332f4346d9718a78770a",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p13-guided-draft/screenshots/default.png",
+          "sha256": "20b867d4464fdecfd55fa3756a1640fb0ae5e492811e9193bc571d6dfde709b5",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p13-guided-draft/screenshots/guided.png",
+          "sha256": "5ba45c6af79ca60d8ceac2714799b269b15fe54a9b60af9837d8adc94003066e",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p13-guided-draft/screenshots/mobile.png",
+          "sha256": "24b8b1a203b1f0922c1b2539bc555393e30cd9e0ee79f990777ffc3ab2b69ad9",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p13-guided-draft/verification.json",
+          "sha256": "e5e11bbfd0b21039f397ed93061c02c1d0089e28d03a708c7b86af5c09962bd6",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p14-context-search/index.html",
+          "sha256": "515b57de8b7c49ec385d8f7caee06ffd5d28aae3280e7a2da8b18da1eff7d115",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p14-context-search/pattern.css",
+          "sha256": "13dd7907a7253e5645a7131e766d503edb1865ebd03c93d04fca9da6251ff7ce",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p14-context-search/pattern.js",
+          "sha256": "d294fe51b8d9fb842baba2186adfc366f6ecf6e5be06b3fa330d5fdfa8d39ee8",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p14-context-search/pattern.md",
+          "sha256": "31af3d4a023a6192e739c5dfeccfd2ff786d383a80de0880b97136ec9df2facd",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p14-context-search/screenshots/default.png",
+          "sha256": "8109cb0032e97bd2b9fa00792b680b2b52416725f648836aaf42ea87da603fb4",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p14-context-search/screenshots/mobile.png",
+          "sha256": "96d4f5d4e42bcbebfd604a8550b6c790121097895aba510ed5a658e02b2ee81c",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p14-context-search/screenshots/search.png",
+          "sha256": "8291d3dc88d04a8486dd6f56e2bff3fd5b80dd21eebfa27444b7281890ead43b",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p14-context-search/verification.json",
+          "sha256": "a25399e6b44a5813c1d810173fe1f758dd5981f77cae7aa93324a41b9eb67df1",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p15-undo-redo/index.html",
+          "sha256": "dd8bd6fc4f48f90efb274d2be5e50dc489ff5a29a0ad3401be8198932b031676",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p15-undo-redo/pattern.css",
+          "sha256": "e9b6c173c051f6f57f256f8612657238171d5848fa016633d1e0c5db564e3d49",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p15-undo-redo/pattern.js",
+          "sha256": "352ad431b4f49aa5b83d744788fe0c1ce2b7b1f9a625732799f40f9d61dcacd4",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p15-undo-redo/pattern.md",
+          "sha256": "1f608a109ee20edae1d93540b614a4d599d02d1f293e1d589292a415df71a238",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p15-undo-redo/screenshots/default.png",
+          "sha256": "f55f8f25078a9bd253f887507c5266a76ba30576c0765b1773d204262d07dc7d",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p15-undo-redo/screenshots/history.png",
+          "sha256": "5f02720419f4f16f0220cafc1a0734651b517e5339ab3f537e162520c70bb9eb",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p15-undo-redo/screenshots/mobile.png",
+          "sha256": "b084ff6418a38e9da87376f19260fc0847ca003d70e565e450750271f623dd2d",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p15-undo-redo/verification.json",
+          "sha256": "904c08f66260785d50462b0e6773096fd8d4eead577db640a38b6d1268a698dd",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p16-event-history/index.html",
+          "sha256": "bf12bc976e8fe392eed93e600ddb1017c5d1bfae7efdff725ea447b597ed0574",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p16-event-history/pattern.css",
+          "sha256": "323c44a12519ad04c9a0257ee3f2d216a8eb53913406aa29ea388c2f68c73ad5",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p16-event-history/pattern.js",
+          "sha256": "5fb5c358fcd14b8dbd985085b53680c20c00ac99d882d52bdb489778053a5be4",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p16-event-history/pattern.md",
+          "sha256": "e77415e52e77f1f458c6e83dbe2abf8fb30e283edeccf7ad8f6e237721fbdf19",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p16-event-history/screenshots/default.png",
+          "sha256": "f03238fdedd4160f73c8685a26cf16d2372884f3974c64d930959f9f1666362d",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p16-event-history/screenshots/events.png",
+          "sha256": "df5b86700bc209f7a70f0ade9eb9ec49a4f9718047996e012efd46812f7e4edf",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p16-event-history/screenshots/mobile.png",
+          "sha256": "357188a1084530f8c30d08003cbbe995289dc3889e3d96d93c3c2a69840665aa",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p16-event-history/verification.json",
+          "sha256": "f23566b5e365b91577feb4d53349703d2307750fbb6989910c328f6b4df1d9f4",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p17-pagination/index.html",
+          "sha256": "4fbc0f6f495f221f9885bde94e91a3ac8e089ad274c1404b389cc23077cfc5e9",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p17-pagination/pattern.css",
+          "sha256": "eae58a8097c4c95bb602e7439904ff8998f98f9d0ffcb19b80b3140867a017a5",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p17-pagination/pattern.js",
+          "sha256": "7db57b4341e0d8a0db7b8b9b1cd1f83c83a8fec46df6017395458463063a797b",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p17-pagination/pattern.md",
+          "sha256": "74bdff4b5a08b836331f39a734fb18a5fc150e8ae0a7d3233753567fb2d0a066",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p17-pagination/screenshots/default.png",
+          "sha256": "a67affea26d70d4b3b46af3943f6454b9cc4462422099b8e7bcea46d68721a1b",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p17-pagination/screenshots/last-page.png",
+          "sha256": "74c4ce658696041ec3adc15f73588ea876b1259845360c4a695acf3fb1cc03ac",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p17-pagination/screenshots/mobile.png",
+          "sha256": "498fe63b5bf49407cc5a1cf4869817b2a9544c3a10050f78bfcffc99d8429b30",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p17-pagination/verification.json",
+          "sha256": "8e5b866af9a057e09d166fd3ea5de66d91b8af025fd9db77c369a3bb815906c6",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p18-visible-shortcuts/index.html",
+          "sha256": "feb00ab2886b82bc47c38f3278f2158ced2fca83fff64b10dd915926ac38eb91",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p18-visible-shortcuts/pattern.css",
+          "sha256": "2051cb14585f6df58a5b8953d1049710ed869e11f1eece43eca6245344f263f7",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p18-visible-shortcuts/pattern.js",
+          "sha256": "70942c4f4a84ac5eac9029d27f2ec9c7861ade4b8fb01f1bb297d4e9cb2a6b28",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p18-visible-shortcuts/pattern.md",
+          "sha256": "ea7bd4ef54686c7111f424252666c7c2586c4536b017077f782e1290374f4fd1",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p18-visible-shortcuts/screenshots/default.png",
+          "sha256": "655dac0fbd90ad1c6c8b9c4de61844c2f2294ef136260a14f9acc0e8c32eb4d6",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p18-visible-shortcuts/screenshots/marked.png",
+          "sha256": "e5e4cc7fbb9f30f8d9105e16f05ed2fd28fa5cac6b499421d59510c44357bbb8",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p18-visible-shortcuts/screenshots/mobile.png",
+          "sha256": "0a9cf7829cbf7a2e5fb9a26bfa87d46ca0be880eea6086e605fa5c873bf04520",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p18-visible-shortcuts/verification.json",
+          "sha256": "07553b4ad87317dc906d5ed369760fae997d8b882c7687a2794fe4fc536e79e8",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p19-name-conflict/index.html",
+          "sha256": "8e9c9ae2cf29a82ef06c5e73e067c8cf113eb236e065085796604018a714cea1",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p19-name-conflict/pattern.css",
+          "sha256": "f9a46a9426bf537a9d1c06a6c6d5baf1f9c54daf8a54b3203d8ad54a76c7939a",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p19-name-conflict/pattern.js",
+          "sha256": "c6a6373bed22836f2a9e62a29c2bfba8f60c98ac4b30c0e24c3c08461070219b",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p19-name-conflict/pattern.md",
+          "sha256": "e0b1d6eb63a9a21be4efc030c0ae744f0c6fdd484c15103c3f628d67678dd24c",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p19-name-conflict/screenshots/conflict.png",
+          "sha256": "c322cfc315dba8530d17717a6bee8792e7d63a66e64b0e1b8bb625a53b2b8026",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p19-name-conflict/screenshots/default.png",
+          "sha256": "5e3624fd3746d486a2826cbff8268dea16070445f501cfb94d0fe82883b7473d",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p19-name-conflict/screenshots/mobile.png",
+          "sha256": "0140b0b733847f5376d72579f2a2cd8ebd919a993995f2c969e764c3ebcc9577",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p19-name-conflict/verification.json",
+          "sha256": "9f5486cf1b81e390cf571838da84458e2f81b12bf32bb7036fc5588c30b794a8",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p20-reorder-preview/index.html",
+          "sha256": "23cc751f7422fcd320abf8bb3e28087beef4c4600f4369fa298b306c4fbf3ce0",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p20-reorder-preview/pattern.css",
+          "sha256": "e0bbeb92eadb7ae9819535937c99683d5676ee99549b329b6051a3f907c104db",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p20-reorder-preview/pattern.js",
+          "sha256": "f9259d80821452eb55b8a537663942bca76f863369a8376dd7f633acc88444b1",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p20-reorder-preview/pattern.md",
+          "sha256": "ece50aa7447d5eb240f42bf33422cbda1eded24bcfeee096e6be7255a90d9703",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p20-reorder-preview/screenshots/default.png",
+          "sha256": "feda8f3763a2646db1a9569a6671c94d4f4d046f9f9389cb772cc6f741d64f58",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p20-reorder-preview/screenshots/drag-preview.png",
+          "sha256": "c949a5f88c122cf1ab456552928ff91659a7b9984dcc14bb9ac33536edd6b538",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p20-reorder-preview/screenshots/mobile.png",
+          "sha256": "d79b0f1ebbff93bab41c7f775592463179f2dca0d214ed5174dcdc151e948b97",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p20-reorder-preview/verification.json",
+          "sha256": "16479249a56d309606f631d89c46645cbcfe7b6c44ec63cbbace353dc95ece68",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p21-load-more/index.html",
+          "sha256": "04b715553589bdc7094f89876b27716ee3ce1047c2ca7863059fb36c05d6356b",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p21-load-more/pattern.css",
+          "sha256": "ef7edc5dae13204b82e60c83eb09af4d61e0ce5ef14fe61fee8af0dc1b314f8f",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p21-load-more/pattern.js",
+          "sha256": "b8afc9463e42dec5d309fc6b8dca68b22114e03facb294a2c9d5748a725dffaf",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p21-load-more/pattern.md",
+          "sha256": "68d6e6cc21417a9889668c72f8ca7b445732df5abd8fa3923073aa8ba824e676",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p21-load-more/screenshots/default.png",
+          "sha256": "b6648b12b735bbcfab3c386bcf4ca2f2d279efd0edcba751b0a13c80b9ebcfd9",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p21-load-more/screenshots/loaded.png",
+          "sha256": "5c9ebb3dee7fb8324a8f8d04a090d1563702df6e534b83af1902b9df188c452f",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p21-load-more/screenshots/mobile.png",
+          "sha256": "f11923788777ce38caa624d6121f279d7b58c3ccd99cbb2b079e6ecfbac2e799",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p21-load-more/verification.json",
+          "sha256": "42e55fba609ad21ace972061dbe3d08b2a306a1deaea611b7ede481fad91bb85",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p22-touch-cancel/index.html",
+          "sha256": "d0479423a3e5fabde0372549d3013c6fffb4c5c8fde740d99610b8002eaade33",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p22-touch-cancel/pattern.css",
+          "sha256": "0faa9f2674d8bec7544aaa9ea5275b16f3486d36a91f9849cf6093961daca1a8",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p22-touch-cancel/pattern.js",
+          "sha256": "d0577c4051f045d0dfc923296fdc16c8957242b0f479257066baebad07f5b68a",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p22-touch-cancel/pattern.md",
+          "sha256": "0268a71ab447c0864c0d99f28854638a8e0f462ab74755145a337914f0f2c691",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p22-touch-cancel/screenshots/activated.png",
+          "sha256": "51d55d6e3fb633134e1065d93da151d55efdefa6aacb4ee1f425ef032f3ecb46",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p22-touch-cancel/screenshots/default.png",
+          "sha256": "9368f20982a2d60101752d9394cf773953a5b1aa21e9be5b93c797caaa666a03",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p22-touch-cancel/screenshots/mobile.png",
+          "sha256": "13b161bba3f7afefbc2baea6f9998ed67403eec803d3154db1a19808c0737dbb",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p22-touch-cancel/verification.json",
+          "sha256": "181630dbf713844e5cf0585410c9d0ae893dad995d906bb719cf1b3c642d960a",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p23-view-settings/index.html",
+          "sha256": "02b903dbd458d9ce8d86b903c8fe0056fa5cfb473c4bd1e3262106a35cd55b4c",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p23-view-settings/pattern.css",
+          "sha256": "969734ef8804e6ddb7267c984c54e79275a2ff67c863a69eb209168854d7b72a",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p23-view-settings/pattern.js",
+          "sha256": "df9767223d71c9da4b4d23e0e64f2d0f831fb6d04983f2cca2c4aa90cb2df085",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p23-view-settings/pattern.md",
+          "sha256": "751feae57d514c75bd390972e7a18ede243f3ee8852b02a9c57ea2944a9cd2af",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p23-view-settings/screenshots/custom.png",
+          "sha256": "c2eed480d966e307e2f737bcef030d42f8443146b5dcc0df76d4a71aeea6a482",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p23-view-settings/screenshots/default.png",
+          "sha256": "82c96654bbbf9d63944171119d68d9c919d244a015d3fc7d7d5e7c34fda68d00",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p23-view-settings/screenshots/mobile.png",
+          "sha256": "b82f5253aae265ed5a6a8f37c14ee0aacf4b4ace7972ee1dcdd822e3dd5982bd",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p23-view-settings/verification.json",
+          "sha256": "4e2a0e238b0698e3ea68b8d2e84d0c6d7172711f022089fcd1519dc55a191481",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p24-accessible-semantics/index.html",
+          "sha256": "6a34cd13cddc3507cedef5ff35312509cdb3ff6265aca6e290454fa34a754e48",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p24-accessible-semantics/pattern.css",
+          "sha256": "e5ba945f895d9597aa2e554e9b8f7118b2449643d20decdb4965be750742870b",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p24-accessible-semantics/pattern.js",
+          "sha256": "07a4e48c54c77becb676d309989a9707fed3288fce04a8ac62d063c068ddaa08",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p24-accessible-semantics/pattern.md",
+          "sha256": "bec6bcd4510e6c6618f6b4152ba3e30983cf4a8bc8684577d428bdbac13ceced",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p24-accessible-semantics/route.svg",
+          "sha256": "41e161b5ed675eb7e01b16efdfa62cf9637c637bb153bbb969550aeb835f331c",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p24-accessible-semantics/verification.json",
+          "sha256": "6b4c0f34a82675380daa940651a06aa4a3ff9113db6fd8839d26956e966f4f97",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p25-motion-control/index.html",
+          "sha256": "b4ed8207ab4d1b85b1260ebed5c045670a3ab32284c02a3b3f3be0fa1da986b2",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p25-motion-control/pattern.css",
+          "sha256": "cd8527f0de347f3d861aac83a4bdff060bc07a88176daeae5bd97377611d2b7e",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p25-motion-control/pattern.js",
+          "sha256": "2dda6f73a388da81d8853c165b7ed55d4d4962d7672e375d08eb67ff748ce03d",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p25-motion-control/pattern.md",
+          "sha256": "d85f6e0d7f10c64b060ac14aaf37e3370aed216987e216dabac6b15687ff529e",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p25-motion-control/screenshots/default.png",
+          "sha256": "b31c24f400e2daa6427c9027bc6371b9ef0b45f4860d46f5095a9c0c29290ece",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p25-motion-control/screenshots/mobile.png",
+          "sha256": "0c863e585e40c7f8398b135b8958c7570f1a85e6f049374b005f77ad1eb6f2c0",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p25-motion-control/screenshots/paused.png",
+          "sha256": "6353f909f1031a04dfd5d4c39cad82fe61ba870ea9403e2b337dd85450564bbe",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p25-motion-control/screenshots/reduced.png",
+          "sha256": "4979dbb0f7c6e17298b594daccd08ac8d35064dd57db36a94b87c5cd602c4311",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p25-motion-control/verification.json",
+          "sha256": "bbca55f480e40248e84e7e39ffdd27c2d04e42a888dbcde5f9e55e45bfb5f8a3",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p26-input-output-groups/index.html",
+          "sha256": "b230a94d6986415170929c9ae662bd65ff0e07d14c7629f1bf8be14db15b2621",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p26-input-output-groups/pattern.css",
+          "sha256": "2045f8904b92284c980a0f03cb472116f5bfc39f5ad88346b1f2181e75003346",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p26-input-output-groups/pattern.js",
+          "sha256": "a6852c33282670233dc45cbc1bc65a6fe99483818cf1c03d4a1e0bd420b79449",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p26-input-output-groups/pattern.md",
+          "sha256": "20acf63c0a7a86cf6e73a69c6bc924e72362563364fc8fbf2d241e7630015e42",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p26-input-output-groups/screenshots/default.png",
+          "sha256": "3abe18ed07c983e10f889a374c5732e84040ddd498fd0921c1cf3fb719070665",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p26-input-output-groups/screenshots/invalid.png",
+          "sha256": "a8d40bab4e03655b6774542b1a1677deeb661644410f6913dbf03391fe0ceca5",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p26-input-output-groups/screenshots/mobile.png",
+          "sha256": "4f7b8bcc1572aa772e0290a3a943fe030a3c530c893ede2f6b578857540e08bc",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p26-input-output-groups/verification.json",
+          "sha256": "81e52e59bc8d11a2b324b6e59f7d374ec3afd11520108a26f9471ed6c2379fb4",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p27-spatial-relationships/index.html",
+          "sha256": "dc7dd5070a93eacc41a476a824b5970796c4b6c9f267b2e057a1fa46ec315a65",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p27-spatial-relationships/pattern.css",
+          "sha256": "15488cfd57b71de5b06cfaa5273d945fd9d98b7cc88ebfab132401b25331b189",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p27-spatial-relationships/pattern.js",
+          "sha256": "1360fb7f63c704243ae223ceacbfa7244a7a81a9228ffb2e3b43a6c48ca9dd79",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p27-spatial-relationships/pattern.md",
+          "sha256": "d56570963838b2b2ff794cf6fa09b34b16cb7828535bc9b9a214f2d45656c2ff",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p27-spatial-relationships/screenshots/default.png",
+          "sha256": "5195f6d425f8aa69df061a3fa2ab3577840f6d483e6421a0c5ed63a645cf4799",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p27-spatial-relationships/screenshots/mobile.png",
+          "sha256": "496f7e0ab15fb69d0bf919d4bc9a3a7166828875eabad03493684a476dce9c47",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p27-spatial-relationships/screenshots/selected.png",
+          "sha256": "052d840353ebf4822d0073384e22dbe761632e45b35839e00cfdc18ffaa60a00",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p27-spatial-relationships/verification.json",
+          "sha256": "4382fdb2b8a2c63603c17772f9a43389c65e52a615b25ba683f9c82f20b7afc7",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p28-colour-emphasis/index.html",
+          "sha256": "6e3f0a4a9cb8c612429f14f57eed14b9c6d8c61f5c36f3996f8d56749de645f0",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p28-colour-emphasis/pattern.css",
+          "sha256": "5171aeca4b4a072fbc0da0f58aba168b0882c90c1430142a3e5705a557b93c5f",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p28-colour-emphasis/pattern.js",
+          "sha256": "6e0cdfed5751f73086f90b826a1bb72d46372be2ce0ddcc794737143c3476c7f",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p28-colour-emphasis/pattern.md",
+          "sha256": "26cefdf855a61ca8a91751fec5c59ed3ea02ae0b0acd0a155d2cab8666119b74",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p28-colour-emphasis/screenshots/default.png",
+          "sha256": "36bad11fe8f63918f6d59ad1d9ffbafa000db581bf705265b92993faadadeb08",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p28-colour-emphasis/screenshots/error.png",
+          "sha256": "80024de832b417035fa3ef2a673fda20f56e79200856f10a7b71623f7bfaf831",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p28-colour-emphasis/screenshots/mobile.png",
+          "sha256": "abad8213a848edf68d375628c7273ea193be980ebe102cef3b6c26bcfba06d91",
+          "hash_encoding": "bytes"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/patterns/p28-colour-emphasis/verification.json",
+          "sha256": "03577dca8056dc1858d410c44e707dff6e7d346cf2b5b5c87151f3232a9dbcd3",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/assets/ui-review.md",
+          "sha256": "d2744a27ad2f49e99bf1fb30f529f8cb88a119af66e110a721dd5ef2f073f962",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/frontend-application.md",
+          "sha256": "c152944bee88351e12b6ab1432e6d6f3733c4954efe5a77e28d8fe1ac979caad",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/notes/accessibility.md",
+          "sha256": "603082cbf9bc52df68e0db283a80f3b7c82e5746fbf7d307b0669370ed562da8",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/notes/index.json",
+          "sha256": "52d1a8e5d3a89f5f23d7aace98052da54d6e5b1276e2b3f42cf0a35fc696fb18",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/notes/language-localization.md",
+          "sha256": "43a0b1949205bd6d8a2f84b689eacfae32b8ee3bdaf5b8724e21dbeeeab8e9a8",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/notes/process-and-recovery.md",
+          "sha256": "45b0e037c1f7754793eaeedf5a0710d386b752c89251fb2f0ab1be4e85a267bb",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/notes/usability-evaluation.md",
+          "sha256": "b2e85a04ccbd2270404c18fbdbaaca0e4e9d070397c22b443f090b2c1b4513e3",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/quick-index.md",
+          "sha256": "7f7bdd0cfee29d04df2993cf59ae9cdb3a736ad35cf9a49b5b48d7c9ea737440",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/reference-backlog.md",
+          "sha256": "2650b317ccb944ed025a0218789624c67eb1365bf972f4c96e85aaff637c3ead",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/reference-map.json",
+          "sha256": "ce2600c805d1a213f14596761bc79e30864c1241d1881b88da78e693b8840faf",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/reference-map.md",
+          "sha256": "7385b28ac8abe1f710c920ed44daf09eee85fe1701ed38989b7e5c4203a639de",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/reference-strategy.md",
+          "sha256": "bb7c2046f30866bb52e4e24067ebace5b17c3f63914d8a2188ffc0bb444ee180",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/rules-book.txt",
+          "sha256": "45c0d7b824e75ebcd80d46c66c19e46d0f6635dd5d763034f5002cdba81d76b2",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/dui-interface-guidelines/references/workflow.md",
+          "sha256": "08b9143e089b21657c8ff975cd10cda739589dd2d71486764e49472cd5cb506f",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "feature-finish",
+      "description": "Finalisiert einen beauftragten Arbeitsbranch mit Verifikation und autorisiertem Merge in den vereinbarten Integrationsbranch.",
+      "covers_phases": [
+        "verification",
+        "review",
+        "integration"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/feature-finish/SKILL.md",
+      "files": [
+        {
+          "path": "skills/feature-finish/SKILL.md",
+          "sha256": "c8e9753d609351f933607d0ca2d67a1406cef6ef2e7b900673caed5f784481c3",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "git-branch-operations",
+      "description": "Erstellt einen Arbeitsbranch oder aktualisiert nach verifiziertem Merge dessen tatsächlichen Zielbranch per Fast-Forward.",
+      "usable_in_phases": [
+        "preparation",
+        "integration",
+        "closeout"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/git-branch-operations/SKILL.md",
+      "files": [
+        {
+          "path": "skills/git-branch-operations/SKILL.md",
+          "sha256": "733d92490510df5f0585add5f7850a82ff692d73e65d4a90476d22653b46d4f8",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "git-commit-push",
+      "description": "Committet und/oder pusht einen geprüften Änderungssatz; commit, push und commit-push bleiben getrennte Modi.",
+      "covers_phases": [
+        "integration"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/git-commit-push/SKILL.md",
+      "files": [
+        {
+          "path": "skills/git-commit-push/SKILL.md",
+          "sha256": "10df2833784bdcf615d5af8d887043131d950138da23310a711c3f51d7dab61f",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "github-issue-ops",
+      "description": "Liest GitHub-Issues oder erstellt, typisiert und verknüpft sie im ausdrücklich ausgewählten Operationsmodus.",
+      "usable_in_phases": [
+        "intake",
+        "analysis",
+        "planning",
+        "acceptance",
+        "closeout"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/github-issue-ops/SKILL.md",
+      "files": [
+        {
+          "path": "skills/github-issue-ops/SKILL.md",
+          "sha256": "3f72e7b8c500b724ba029fa1c950a1e055f827f6b7ca7c75c630fde82d70198e",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/github-issue-ops/references/create.md",
+          "sha256": "738ef70636dbdd6dd6185c56d4624b9a23939e8d277a5d845951f859c8f66206",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/github-issue-ops/references/read.md",
+          "sha256": "abcd72a286326979bb33a5b9a089c8a72e05230b4ad76b566f323ad7e8de82b1",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/github-issue-ops/references/relationship.md",
+          "sha256": "467a6652ef656134e3106e6f2cc13f64b9fd0c63117ba3820145d8a9be5ea7c3",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/github-issue-ops/references/type.md",
+          "sha256": "cd32d9a049bb605385335ca05ada14fca90e46f8e722e53b2dcd10269beca136",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "github-pr-ops",
+      "description": "Erstellt Pull Requests, beobachtet erforderliche Checks oder führt einen ausdrücklich autorisierten Merge aus.",
+      "usable_in_phases": [
+        "review",
+        "integration",
+        "closeout"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/github-pr-ops/SKILL.md",
+      "files": [
+        {
+          "path": "skills/github-pr-ops/SKILL.md",
+          "sha256": "8b9f3bae38e1f747b23bbab01c91c813cb2edec9086e45ac86b811e9a82079bc",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/github-pr-ops/references/checks.md",
+          "sha256": "5eea077b1532b31ec792b029396898720c8590772af2a2f3a15d7e01d0de86a9",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/github-pr-ops/references/create.md",
+          "sha256": "7ac41dd9fc9dd78fe1f92e309093cdad989f774cf33ecf2a6b9150c0116d85c4",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/github-pr-ops/references/merge.md",
+          "sha256": "d777d52f6ad6468d2c6d623c895a4752417f32d763fa6d5de0a0db4f4251471b",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "insight-to-issue",
+      "description": "Überführt eine beauftragte Erkenntnis oder Regelverbesserung in ein abgegrenztes GitHub-Issue.",
+      "covers_phases": [
+        "intake",
+        "analysis",
+        "planning"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/insight-to-issue/SKILL.md",
+      "files": [
+        {
+          "path": "skills/insight-to-issue/SKILL.md",
+          "sha256": "83e0fca7eb78dba61f996c05a5d80c655fdb0bd467c60bd5c9c44519b856e16f",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "issue-acceptance-convergence",
+      "description": "Prüft Root und Child-Graph auf PASS, GAP oder BLOCKED; converge behebt nur ausdrücklich beauftragte Gaps.",
+      "covers_phases": [
+        "acceptance",
+        "planning",
+        "implementation",
+        "verification"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/issue-acceptance-convergence/SKILL.md",
+      "files": [
+        {
+          "path": "skills/issue-acceptance-convergence/SKILL.md",
+          "sha256": "a5f0be37ac92e57c571ef3a8652aed0437f8a33626f5b3f197f5eaa8b85418d5",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "issue-graph-implementation",
+      "description": "Implementiert einen ausführbaren Issue-Graph sequenziell auf einem Branch bis zu einem geprüften finalen Pull Request.",
+      "covers_phases": [
+        "intake",
+        "analysis",
+        "planning",
+        "preparation",
+        "implementation",
+        "verification",
+        "review",
+        "integration",
+        "acceptance"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/issue-graph-implementation/SKILL.md",
+      "files": [
+        {
+          "path": "skills/issue-graph-implementation/SKILL.md",
+          "sha256": "c7f77eb653d16977afd4422b9d6fe0e2df216401baf0c3f79645f0f86c3e11f5",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "issue-implementation",
+      "description": "Implementiert und verifiziert genau eine vereinbarte Arbeitseinheit ohne graphweite Koordination oder PR-Erstellung.",
+      "covers_phases": [
+        "analysis",
+        "design",
+        "planning",
+        "preparation",
+        "implementation",
+        "verification",
+        "review",
+        "integration"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/issue-implementation/SKILL.md",
+      "files": [
+        {
+          "path": "skills/issue-implementation/SKILL.md",
+          "sha256": "97b604feb13111c25b5af529606ebb953ba855ac5f04941ede06f2851daf38ce",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "issue-sanitize",
+      "description": "Prüft native Issue-Types und Beziehungen eines Graphen und korrigiert eindeutig ableitbare Abweichungen im beauftragten Scope.",
+      "covers_phases": [
+        "intake",
+        "planning"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/issue-sanitize/SKILL.md",
+      "files": [
+        {
+          "path": "skills/issue-sanitize/SKILL.md",
+          "sha256": "8a46e34d9da950f4c27e0eeb5f464ff643bb1e871015bd9b8af12b060a44ab65",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "issue-to-pr",
+      "description": "Prüft bereits implementierte Änderungen und bereitet Commit, Push und Pull Request vor; implementiert und mergt nicht.",
+      "covers_phases": [
+        "verification",
+        "review",
+        "integration"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/issue-to-pr/SKILL.md",
+      "files": [
+        {
+          "path": "skills/issue-to-pr/SKILL.md",
+          "sha256": "72e01a500c85dd67c2e63f491c025b8b00480c9ad408e4b08e331360e406fc87",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "issue-to-sub-issues",
+      "description": "Zerlegt ein Issue rekursiv oder mit flat in genau eine materialisierte Child-Ebene.",
+      "covers_phases": [
+        "analysis",
+        "planning"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/issue-to-sub-issues/SKILL.md",
+      "files": [
+        {
+          "path": "skills/issue-to-sub-issues/SKILL.md",
+          "sha256": "7cb95f39474a5fdbbd3f255841c077c63bc1ac590d7266756c514f42c21f8887",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/issue-to-sub-issues/references/flat.md",
+          "sha256": "1e46c5b3663aeeb88ae664816131785a0bdb241659f2c388cd2a4ad1e39a2949",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "online-publication-check",
+      "description": "Vergleicht veröffentlichte Rohdateien der konfigurierten GitHub-Pages-Bibliothek mit dem erwarteten Commit.",
+      "covers_phases": [
+        "verification",
+        "observation"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/online-publication-check/SKILL.md",
+      "files": [
+        {
+          "path": "skills/online-publication-check/SKILL.md",
+          "sha256": "3e782e24d344cb27751e48d54ab95dcf855662ae348671437dada525ffd50d14",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "playwright-testing",
+      "description": "Plant, erstellt und verifiziert automatisierte Playwright-Tests für Angular-Nutzerabläufe nach Heljens-Regeln; für E2E-Abdeckung, visuelle Referenzen und die Analyse konkreter Testfehler.",
+      "usable_in_phases": [
+        "verification",
+        "acceptance"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/playwright-testing/SKILL.md",
+      "files": [
+        {
+          "path": "skills/playwright-testing/SKILL.md",
+          "sha256": "acc4af25ff8dff453a0fb7ea02c14f4c54d44d4fda15bd4d90c0da15608959fa",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "project-design",
+      "description": "Führt die erste Gesamtprojektierung von einer Idee, freigegebenen Phase oder einem Epic über Stories, Mermaid-Architektur und ADR bis zu einem prüfbaren Design-Paket und optionalen GitHub-Issues.",
+      "covers_phases": [
+        "discovery",
+        "analysis",
+        "design",
+        "planning"
+      ],
+      "kind": "workflow",
+      "version": "0.2.0",
+      "path": "skills/project-design/SKILL.md",
+      "files": [
+        {
+          "path": "skills/project-design/SKILL.md",
+          "sha256": "51cb115eb8a3d285a78546d89ad537f78c5a76e5cc6fe99b611f14a06fab7ce0",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/project-design/agents/openai.yaml",
+          "sha256": "a574969209c2a6ee49eeb6bf3ddb126dcda4417d7e94bb876de12198c03572ce",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/project-design/assets/design.md",
+          "sha256": "fe82b727e2668f517dcebb2c1047863fa2a39ff1dd0c0883e87281f9688e2b21",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/project-design/references/heljens-handoff.md",
+          "sha256": "35093c3ac25462a65570e8dd942043bbb6c8a7a0973847def1e14acbe515f5b9",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "project-implementation-planning",
+      "description": "Klärt ein projektweites Zielbild und bildet menschlich freigegebene Phasen oberhalb der Epic-Ebene.",
+      "covers_phases": [
+        "discovery",
+        "analysis",
+        "planning"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/project-implementation-planning/SKILL.md",
+      "files": [
+        {
+          "path": "skills/project-implementation-planning/SKILL.md",
+          "sha256": "d4711657fa002385199eb9b950ac9182dd3bd2d87a18d48b119b3ad189787117",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "release",
+      "description": "Veröffentlicht den freigegebenen Stand von develop nach main nach der festgelegten Repository-Release-Politik.",
+      "covers_phases": [
+        "review",
+        "integration"
+      ],
+      "kind": "workflow",
+      "version": "1.0.0",
+      "path": "skills/release/SKILL.md",
+      "files": [
+        {
+          "path": "skills/release/SKILL.md",
+          "sha256": "0f42d3f2eeba2cbb6e1c0b9a2993d4e96aad47ec87a3ff375df08c05cd0cd0ea",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "repository-baseline-configuration",
+      "description": "Prüft oder ergänzt beauftragte Issue-Templates, Dependabot-Konfiguration und Codex-Agent-Vorlagen.",
+      "usable_in_phases": [
+        "preparation"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/repository-baseline-configuration/SKILL.md",
+      "files": [
+        {
+          "path": "skills/repository-baseline-configuration/SKILL.md",
+          "sha256": "460971458998caf3e6922da6f71fd4dce8a9ad939c00412daf70b0b82e1e4ead",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "requirements-clarification",
+      "description": "Klärt unklare Ziele, Scope-Grenzen und Akzeptanzkriterien vor Planung oder Umsetzung.",
+      "usable_in_phases": [
+        "intake",
+        "discovery",
+        "analysis",
+        "planning"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/requirements-clarification/SKILL.md",
+      "files": [
+        {
+          "path": "skills/requirements-clarification/SKILL.md",
+          "sha256": "cfd3563a0df3b790fb8c0909e3c88a7295bcd6ddfd484442206e0be1af85ccc3",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "research",
+      "description": "Recherchiert aktuelle externe oder repositoryübergreifende Fakten mit prüfbaren Quellen.",
+      "usable_in_phases": [
+        "intake",
+        "discovery",
+        "analysis",
+        "design",
+        "planning",
+        "observation"
+      ],
+      "kind": "capability",
+      "version": "1.0.0",
+      "path": "skills/research/SKILL.md",
+      "files": [
+        {
+          "path": "skills/research/SKILL.md",
+          "sha256": "26207bc1e6da8e4c877bd77f82689fb5c982993c9e0f014775b4d55632701b62",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "sequence-modeling",
+      "description": "Spezifiziert relevante Nutzer- und Integrationsabläufe als Mermaid-Sequenzen aus vorhandenen Stories, Kriterien und Architekturgrenzen.",
+      "usable_in_phases": [
+        "analysis",
+        "design"
+      ],
+      "kind": "capability",
+      "version": "0.2.0",
+      "path": "skills/sequence-modeling/SKILL.md",
+      "files": [
+        {
+          "path": "skills/sequence-modeling/SKILL.md",
+          "sha256": "57f9b9483b24fec5b0e5bb7a0a800026488eca6115d836fa4103e5b2e29875a8",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/sequence-modeling/agents/openai.yaml",
+          "sha256": "4eb447945e7bac752d6927d6bd4eaf18286da1fb58de83f42c5525cb556fa55c",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/sequence-modeling/assets/sequence.md",
+          "sha256": "80ce0b7830baa11cbd0fabd774d40357aba368bc7311930e180b5e1a582dfb47",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    },
+    {
+      "name": "user-story-specification",
+      "description": "Formuliert fachliche User Stories und überprüfbare Akzeptanzkriterien aus geklärtem Scope als Design-Spezifikation vor der GitHub-Erstellung.",
+      "usable_in_phases": [
+        "discovery",
+        "planning"
+      ],
+      "kind": "capability",
+      "version": "0.2.0",
+      "path": "skills/user-story-specification/SKILL.md",
+      "files": [
+        {
+          "path": "skills/user-story-specification/SKILL.md",
+          "sha256": "4f0258f28a4681a491fb1a74bcef8807e19533b39d9451c00eaa18194ce7f302",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/user-story-specification/agents/openai.yaml",
+          "sha256": "885982dc450c395a1c2ec2a9e84405cda9da60468bde65906b32b5a732d93037",
+          "hash_encoding": "utf8-lf"
+        },
+        {
+          "path": "skills/user-story-specification/assets/story.md",
+          "sha256": "12617ba927093e7f6c378b43368b037bfa5d7bdd917d90173f4118bfc316bc7e",
+          "hash_encoding": "utf8-lf"
+        }
+      ]
+    }
+  ],
+  "legacy_paths": {
+    "skills/brainstorming.md": {
+      "skill": "brainstorming",
+      "mode": ""
+    },
+    "skills/code-analysis.md": {
+      "skill": "code-analysis",
+      "mode": "analyze"
+    },
+    "skills/code-implementation-planning.md": {
+      "skill": "code-implementation-planning",
+      "mode": ""
+    },
+    "skills/code-implementation.md": {
+      "skill": "code-implementation",
+      "mode": ""
+    },
+    "skills/code-minimization.md": {
+      "skill": "code-minimization",
+      "mode": ""
+    },
+    "skills/code-reading.md": {
+      "skill": "code-analysis",
+      "mode": "read"
+    },
+    "skills/code-testing.md": {
+      "skill": "code-testing",
+      "mode": ""
+    },
+    "skills/code_diff-review.md": {
+      "skill": "code-diff-review",
+      "mode": ""
+    },
+    "skills/code_refactoring.md": {
+      "skill": "code-refactoring",
+      "mode": "local"
+    },
+    "skills/design-prototyping.md": {
+      "skill": "design-prototyping",
+      "mode": ""
+    },
+    "skills/design-review.md": {
+      "skill": "design-review",
+      "mode": ""
+    },
+    "skills/documentation.md": {
+      "skill": "documentation",
+      "mode": ""
+    },
+    "skills/github_branch-checkout-from-default.md": {
+      "skill": "git-branch-operations",
+      "mode": "create"
+    },
+    "skills/github_commit-history-reading.md": {
+      "skill": "commit-history-summary",
+      "mode": "read"
+    },
+    "skills/github_commit.md": {
+      "skill": "git-commit-push",
+      "mode": "commit"
+    },
+    "skills/github_default-branch-update.md": {
+      "skill": "git-branch-operations",
+      "mode": "update-default"
+    },
+    "skills/github_integration-branch-update.md": {
+      "skill": "git-branch-operations",
+      "mode": "update-integration"
+    },
+    "skills/github_issue-creation.md": {
+      "skill": "github-issue-ops",
+      "mode": "create"
+    },
+    "skills/github_issue-reading.md": {
+      "skill": "github-issue-ops",
+      "mode": "read"
+    },
+    "skills/github_pr-checks-observation.md": {
+      "skill": "github-pr-ops",
+      "mode": "checks"
+    },
+    "skills/github_pr-creation.md": {
+      "skill": "github-pr-ops",
+      "mode": "create"
+    },
+    "skills/github_pr-merge.md": {
+      "skill": "github-pr-ops",
+      "mode": "merge"
+    },
+    "skills/github_push.md": {
+      "skill": "git-commit-push",
+      "mode": "push"
+    },
+    "skills/github_relationship-setting.md": {
+      "skill": "github-issue-ops",
+      "mode": "relationship"
+    },
+    "skills/github_repository-baseline-configuration.md": {
+      "skill": "repository-baseline-configuration",
+      "mode": ""
+    },
+    "skills/github_type-setting.md": {
+      "skill": "github-issue-ops",
+      "mode": "type"
+    },
+    "skills/requirements-clarification.md": {
+      "skill": "requirements-clarification",
+      "mode": ""
+    },
+    "skills/research.md": {
+      "skill": "research",
+      "mode": ""
+    },
+    "workflows/bugfix-from-default.md": {
+      "skill": "bugfix",
+      "mode": "from-default"
+    },
+    "workflows/bugfix.md": {
+      "skill": "bugfix",
+      "mode": ""
+    },
+    "workflows/commit-history-summary.md": {
+      "skill": "commit-history-summary",
+      "mode": ""
+    },
+    "workflows/commit-push.md": {
+      "skill": "git-commit-push",
+      "mode": "commit-push"
+    },
+    "workflows/design-exploration.md": {
+      "skill": "design-exploration",
+      "mode": ""
+    },
+    "workflows/feature-finish.md": {
+      "skill": "feature-finish",
+      "mode": ""
+    },
+    "workflows/insight-to-issue.md": {
+      "skill": "insight-to-issue",
+      "mode": ""
+    },
+    "workflows/instruction-improvement-issue.md": {
+      "skill": "insight-to-issue",
+      "mode": "instruction"
+    },
+    "workflows/issue-acceptance-convergence.md": {
+      "skill": "issue-acceptance-convergence",
+      "mode": ""
+    },
+    "workflows/issue-graph-implementation.md": {
+      "skill": "issue-graph-implementation",
+      "mode": ""
+    },
+    "workflows/issue-implementation.md": {
+      "skill": "issue-implementation",
+      "mode": ""
+    },
+    "workflows/issue-sanitize.md": {
+      "skill": "issue-sanitize",
+      "mode": ""
+    },
+    "workflows/issue-to-pr.md": {
+      "skill": "issue-to-pr",
+      "mode": ""
+    },
+    "workflows/issue-to-sub-issues-flat.md": {
+      "skill": "issue-to-sub-issues",
+      "mode": "flat"
+    },
+    "workflows/issue-to-sub-issues.md": {
+      "skill": "issue-to-sub-issues",
+      "mode": ""
+    },
+    "workflows/online-publication-check.md": {
+      "skill": "online-publication-check",
+      "mode": ""
+    },
+    "workflows/project-implementation-planning.md": {
+      "skill": "project-implementation-planning",
+      "mode": ""
+    },
+    "workflows/refactoring-secure.md": {
+      "skill": "code-refactoring",
+      "mode": "secure"
+    },
+    "workflows/release.md": {
+      "skill": "release",
+      "mode": ""
+    }
+  }
+}

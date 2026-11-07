@@ -1,0 +1,3 @@
+interface:
+  display_name: "ADR Authoring"
+  short_description: "Architekturentscheidungen und ihre Folgen festhalten"

@@ -1,0 +1,21 @@
+{
+  "pattern": "P08",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "4db4fc61e28c0512abed6f62eb2fc92557ecb96e4519bb3f8aba33d5a79cc49d",
+    "dialog.css": "de0652c7646b02d999fb4990fbb65988b46437cc1fe0dae1282aa2fce147926b",
+    "dialog.js": "9d6338ef533f708df299a71a5545f3e3f7a5bdfb9f2950e44afd648c2b57a99f"
+  },
+  "results": [
+    {
+      "check": "Dialogfokus, Escape, Erhalt und explizites Verwerfen des Entwurfs",
+      "status": "passed"
+    },
+    {
+      "check": "390 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

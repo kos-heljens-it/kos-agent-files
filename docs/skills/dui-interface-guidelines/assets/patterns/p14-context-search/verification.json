@@ -1,0 +1,21 @@
+{
+  "pattern": "P14",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "cc46a1c36a4d8088b63775a88dd4c6b194fd8255135e00cccbeeb7c6de032328",
+    "pattern.css": "0ea91f69ccb9ed08e8522255e2c840333daf3792d2482b116019e979b2eb79bb",
+    "pattern.js": "ef9588ec6422d846bae28922ccaeaea69803e3444d7aa11debe933acd404550c"
+  },
+  "results": [
+    {
+      "check": "Treffer und keine Treffer, sichtbare Objekte und unveränderte Kartenpositionen, Zurücksetzen",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

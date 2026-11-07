@@ -1,6 +1,6 @@
 # PLANNER.md
 
-Stand: 2026-10-13
+Stand: 2026-10-30
 
 ## Zweck
 
@@ -8,9 +8,6 @@ Diese Datei definiert Leitplanken für die Planung und Pflege von GitHub Issues 
 
 [MUST_NOT] Diese Datei darf keine Leitplanken für die technische Umsetzung oder technische Task-Planung enthalten.
 
-## Codex-Ausführung
-
-[MUST_IF] Wenn ein `planner`-SubAgent verfügbar ist, muss Planner-Verantwortung an ihn delegiert werden. Die fachlichen Regeln dieser Datei bleiben dabei maßgeblich.
 
 ## Inhalt
 

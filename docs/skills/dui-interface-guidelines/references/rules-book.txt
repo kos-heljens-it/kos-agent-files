@@ -1,0 +1,565 @@
+DUI Richtlinien für die Gestaltung von Nutzungsschnittstellen
+
+Arbeitsgrundlage aus den Unterlagen in src
+
+Leitgedanke: Unnötige erzwungene Sequenzialität reduzieren. Die Oberfläche soll dabei helfen, den Zustand des Systems wahrzunehmen, zu verstehen und gezielt zu verändern.
+
+Die folgenden 160 Richtlinien verdichten die Vorlesungsinhalte zu konkreten Gestaltungsempfehlungen. Bedingungen und Ausnahmen stehen bei der jeweiligen Regel. Mit [A] markierte Punkte sind eine praktische Ableitung aus den genannten Prinzipien, keine wörtliche Forderung einer Folie.
+
+Die Quellenangaben beziehen sich auf PDF-Seiten, gezählt ab der ersten Seite, und werden unten über Q01 bis Q17 aufgelöst. Übungszettel und eingereichte Lösungen wurden zur Einordnung der Beispiele herangezogen; sie gelten nicht als verbindliche Musterlösungen.
+
+Dies ist der fachliche Katalog für die weitere Ausarbeitung. Projektspezifische Farben, Schriftgrößen, Abstände, Komponenten und HTML/CSS-Beispiele sind noch nicht festgelegt.
+
+
+01 Leitprinzipien
+
+Grundlage: Q02, PDF-S. 2-7; Q10, PDF-S. 24, 29
+
+R001  Unnötigen Wahrnehmungs-, Denk- und Bedienaufwand vermeiden. Jeder zusätzliche Schritt braucht einen Nutzen für die Aufgabe.
+
+R002  Nur Reihenfolgen erzwingen, die sich aus der Aufgabe ergeben. Beispielsweise muss eine E-Mail vor dem Versand einen Empfänger haben; das Schreiben des Textes muss deshalb nicht auf die Empfängereingabe warten.
+
+R003  Den relevanten Systemzustand wahrnehmbar, verständlich und beeinflussbar machen.
+
+R004  Wiedererkennen und Auswählen ermöglichen, statt Bezeichnungen, Positionen oder Befehle auswendig lernen zu lassen.
+
+R005  Die eigentliche Arbeitsaufgabe in den Mittelpunkt stellen. Dekoration und die Beschäftigung mit der Oberfläche dürfen sie nicht verdrängen.
+
+R006  Robust gestalten: wechselnde Inhalte, andere Fenster, unterschiedliche Darstellungsgrößen und unkontrollierte Hintergründe mitbedenken.
+
+R007  Gestaltungskonflikte anhand des Nutzungskontexts entscheiden. Mehr Übersicht, größere Ziele und vollständig sichtbare Optionen beanspruchen beispielsweise denselben begrenzten Platz.
+
+R008  Gleichartige Funktionen gleich darstellen und gleich benennen. Unterschiede im Aussehen sollen einen Unterschied in Inhalt, Zustand oder Verhalten ausdrücken.
+
+
+02 Ausrichtung und Fluchtlinien
+
+Grundlage: Q06, PDF-S. 8-17, 98-123
+
+R009  Elemente an wenigen gemeinsamen vertikalen und horizontalen Fluchtlinien ausrichten. Zufällige Einzelpositionen vermeiden.
+
+R010  Bei Leserichtung von links nach rechts besonders auf einen ruhigen linken Rand achten. Er unterstützt das Suchen und den Einstieg in die nächste Zeile.
+
+R011  Texte innerhalb einer Zeile an ihrer Grundlinie ausrichten. Gleiche Außenhöhen von Feld und Button garantieren noch keine gemeinsame Textgrundlinie.
+
+R012  Auch obere und rechte Kanten von Feldern und Flächen aufeinander abstimmen, wenn dadurch ein ruhigeres Gesamtbild entsteht.
+
+R013  Für gleichartige Elemente regelmäßige Abstände und wiederkehrende Innenabstände verwenden.
+
+R014  Ein Raster als Hilfsmittel verwenden; zusätzlich die tatsächlichen Textanfänge, Grundlinien und Innenabstände kontrollieren.
+
+R015  Unabhängig entwickelte oder dynamisch eingeblendete Bereiche an die Umgebung anpassen. Falls das nicht sinnvoll möglich ist, den Bereich als eigenständige Gruppe deutlich absetzen.
+
+R016  Zentrierte oder rechtsbündige Bereiche nur gezielt einsetzen. Eine klar abgesetzte Buttonleiste kann beispielsweise rechtsbündig sein, ohne den linken Lesefluss des Formulars zu stören.
+
+
+03 Gruppierung und räumliche Zuordnung
+
+Grundlage: Q06, PDF-S. 22-33, 45-86
+
+R017  Inhaltlich zusammengehörige Elemente räumlich gruppieren. Die Geometrie soll fachliche und funktionale Beziehungen ausdrücken.
+
+R018  Gruppen bevorzugt durch freien Raum voneinander absetzen. Innerhalb einer Gruppe kleinere, zwischen verschiedenen Gruppen größere Abstände verwenden.
+
+R019  Beschriftungen, Erklärungen und Bedienelemente möglichst direkt nebeneinander platzieren. Der Zusammenhang soll im lokalen Wahrnehmungsbereich erkennbar sein.
+
+R020  Wenn räumliche Nähe nicht möglich ist, Beziehungen durch eine ähnliche Anordnung oder eine eindeutige sichtbare Verbindung vermitteln.
+
+R021  Keine Nähe oder Verbindung erzeugen, die einen falschen Zusammenhang nahelegt, etwa ein Schließen-Symbol neben einem Text, obwohl beide verschiedene Ansichten beenden.
+
+R022  Unnötige Rahmen, Trennlinien und plastische Verzierungen entfernen. Sie schaffen zusätzliche Konturen und können die eigentliche Struktur verdecken.
+
+R023  Bei Platzmangel bereits gebildete Gruppen durch dezente Hintergrundflächen oder Helligkeitsunterschiede zusätzlich trennen. Farbe allein ersetzt die inhaltlich sinnvolle Gruppierung nicht.
+
+R024  Wenn Gruppen als Flächen hervortreten sollen, lokal erkennbare Flächenunterschiede oder dezente Schatten verwenden. Das Vorlesungsprinzip „Stapeln statt Umrahmen“ verlangt keine zusätzlichen Karten oder Schatten um jedes Element.
+
+
+04 Buttons und Abschluss von Handlungen
+
+Grundlage: Q06, PDF-S. 34-44, 87-96, 108-123; Q08, PDF-S. 9-15; Q14, PDF-S. 14-29
+
+R025  Buttons mit der konkreten Handlung oder ihrem Ergebnis beschriften: „PDF exportieren“, „Änderungen speichern“ oder „Ohne Speichern schließen“.
+
+R026  Generische Beschriftungen wie „OK“, „Ja“, „Nein“, „Mehr“ und „Weiter“ vermeiden, wenn die konkrete Handlung sonst erst an anderer Stelle erschlossen werden muss.
+
+R027  „Abbrechen“ nur verwenden, wenn eindeutig ist, welcher Vorgang abgebrochen wird. Bei Verwechslungsgefahr konkret werden: „Kopie abbrechen“ oder „Bearbeitung fortsetzen“.
+
+R028  Den Abschluss einer Handlung bei Leserichtung von links nach rechts in der Regel unten rechts anbieten. Die Vorlesung zeigt beispielsweise „Verwerfen“ links und „Übernehmen“ rechts.
+
+R029  Bei einer räumlich dargestellten linearen Abfolge „Zurück“ links und „Weiter“ rechts anordnen. Andere Leserichtungen und verbindliche Plattformkonventionen berücksichtigen.
+
+R030  Eine vorhandene fachliche Bearbeitungsreihenfolge in der Anordnung abbilden. Technische Implementierungsreihenfolgen sind kein ausreichender Grund für die Reihenfolge im Interface.
+
+R031  Gefährliche Aktionen räumlich von häufig verwendeten, ungefährlichen Aktionen trennen. Ein kleiner Fehlklick darf nicht unmittelbar die schwerwiegendste Folge auslösen.
+
+R032  Die Anordnung innerhalb einer Anwendung stabil halten und Plattformkonventionen berücksichtigen. Aus der Empfehlung für den Handlungsabschluss folgt keine universelle Reihenfolge sämtlicher Dialogbuttons.
+
+
+05 Erkennbare Objekte und sichtbare Funktionen
+
+Grundlage: Q03, PDF-S. 3-38; Q10, PDF-S. 4-20
+
+R033  Objekte deutlich vom Hintergrund und voneinander abheben. Für die Erkennbarkeit besonders auf Helligkeitskontrast achten.
+
+R034  Anklickbare, verschiebbare und editierbare Elemente als solche erkennbar gestalten. Ihre Bedienbarkeit soll sich vor einer zufälligen Interaktion erschließen.
+
+R035  Eingabefelder von Beschriftungen und reinen Ausgaben unterscheiden. Eine kaum sichtbare Linie reicht für diese Unterscheidung unter Umständen nicht aus.
+
+R036  Auswahl, Inaktivität und problematische Zustände durch erkennbare Darstellungsunterschiede anzeigen.
+
+R037  Funktionen durch sichtbare Auslöser zugänglich machen. Rechtsklick, Doppelklick, Gesten, Drag-and-drop oder Tastenkürzel dürfen nicht der einzige Zugang sein.
+
+R038  Falls eine Auswahl wenige Alternativen hat und ausreichend Platz vorhanden ist, diese direkt zeigen, statt sie unnötig hinter einem Auswahlmechanismus zu verstecken.
+
+R039  Optionale Details erst bei Bedarf aufdecken, wenn das die Übersicht verbessert. Den Zugang sichtbar machen und den gewählten Aufklappzustand bei passendem Kontext erhalten.
+
+R040  Teiltransparente Bedienelemente nur bei kontrolliertem Hintergrund einsetzen. Ein Overlay muss über wechselnden Inhalten lesbar und eindeutig bleiben.
+
+
+06 Farben und visuelle Hervorhebung
+
+Grundlage: Q01, PDF-S. 19-30, 55-59, 81-84, 92-105; Q03, PDF-S. 20-27, 34-45
+
+R041  Mit einer ruhigen Grundpalette und Abstufungen von Helligkeit und Sättigung arbeiten. Viele stark unterschiedliche, gesättigte Farben vermeiden.
+
+R042  Eine gezielte Akzentfarbe für relevante Zustände oder notwendige Aufmerksamkeit freihalten. Wenn alles hervorsticht, lässt sich nichts mehr sinnvoll hervorheben.
+
+R043  Signalfarben für besondere Umstände, Fehler und relevante Risiken verwenden. Gewöhnliche Schließen- oder Löschen-Aktionen nicht allein wegen ihres Namens zum auffälligsten Objekt machen.
+
+R044  Wichtige Informationen zusätzlich durch Text, Form, Symbol oder Position kennzeichnen. Farbe darf nicht der einzige Bedeutungsträger sein.
+
+R045  Farben im tatsächlichen Ensemble und auf den vorgesehenen Hintergründen prüfen. Derselbe Farbwert wirkt je nach Umgebung unterschiedlich.
+
+R046  Reines, stark gesättigtes Blau für kleine Schrift und feine Strukturen vermeiden; stark gesättigte Rot-Blau-Kombinationen zurückhaltend einsetzen.
+
+R047  Verläufe, Texturen und Schatten dezent und funktional verwenden. Bei simulierten Licht- und Schatteneffekten eine konsistente Lichtquelle von oben, häufig links oben, annehmen.
+
+R048  Farbrezepte aus den Folien als Ausgangspunkt behandeln. HSB-Sättigung bis 50 Prozent, Farbwinkel bis 45 Grad oder bestimmte Helligkeitsbereiche sind keine universellen Grenzwerte für jede Oberfläche.
+
+
+07 Typografie und Lesbarkeit
+
+Grundlage: Q04, PDF-S. 17-45
+
+R049  Für kurze Oberflächentexte in der Regel eine gut lesbare serifenlose Schrift wählen. Auf hochauflösenden Displays können Serifenschriften für längere Fließtexte ebenfalls geeignet sein.
+
+R050  Schrift nach ihrer tatsächlich sichtbaren Größe und dem Betrachtungsabstand beurteilen. Gleiche nominelle Größen verschiedener Schriften wirken unterschiedlich; Papierangaben nicht ungeprüft als Bildschirmvorgabe übernehmen.
+
+R051  Bei Codes, Kennungen und anderen zeichenkritischen Inhalten auf unterscheidbare Zeichen achten, besonders I, l, 1 sowie O und 0.
+
+R052  Mehrzeilige Texte bei Leserichtung von links nach rechts grundsätzlich linksbündig im Flattersatz setzen. Zentrierung und Blocksatz besonders bei schmalen Spalten vermeiden.
+
+R053  Den Zeilenabstand so wählen, dass Zeilen leicht verfolgt werden können und zugleich als zusammenhängender Text erkennbar bleiben.
+
+R054  Texthierarchien überwiegend über Schriftgröße und Schriftstärke aufbauen. Unnötige Schriftwechsel, Zierschriften, Sperrung und längere Texte in Versalien vermeiden.
+
+R055  Für Hervorhebungen bevorzugt Fettsetzung oder gut lesbare Kursivsetzung nutzen. Unterstreichung für Verknüpfungen freihalten; problematische Ligaturen bei unkontrollierten Texten vermeiden.
+
+R056  Robusten Textkontrast vorsehen und die Darstellung bei realen Umgebungsbedingungen prüfen. Die Vorlesung bevorzugt für allgemeine Textarbeit Dunkel auf Hell; einen angebotenen Dark Mode umschaltbar machen und nach Aufgabe und Nutzerbedarf beurteilen.
+
+
+08 Icons und Bildzeichen
+
+Grundlage: Q05, PDF-S. 8-10, 15-25, 31, 39-50
+
+R057  Icons möglichst zusammen mit erklärendem Text anbieten. Bild und Wort unterstützen unterschiedliche Zugänge zum Verstehen.
+
+R058  Die Bedeutung von Icons als erlernt behandeln. Ein bekanntes Bild garantiert weder eine eindeutige Funktion noch internationale Verständlichkeit.
+
+R059  Gegenstände auf ihre globalen Merkmale reduzieren, etwa Silhouette, Grundform und Orientierung. Fotorealistische Details und unübliche Perspektiven vermeiden.
+
+R060  Icons so unterscheiden, dass die Unterschiede schon an der Gesamtform erkennbar sind. Winzige lokale Details sind eine schlechte Grundlage für die Auswahl.
+
+R061  Innerhalb eines Satzes auf ähnliche optische Größe, Strichwirkung, Farbigkeit und visuelles Gewicht achten. Einzelne normale Icons sollen nicht unbeabsichtigt Aufmerksamkeit an sich ziehen.
+
+R062  Merkmale für Zustände reservieren. Ein normales Icon soll beispielsweise nicht bereits so aussehen wie die Hervorhebung eines ausgewählten oder problematischen Objekts.
+
+R063  Vorhandene, zusammenpassende Iconsätze bevorzugen und gemischte Sätze sorgfältig angleichen. Die Verständlichkeit der Motive mit der Zielgruppe prüfen.
+
+R064  Tooltips als Kompromiss bei Platzmangel verwenden. Wichtige Erklärungen nicht ausschließlich darin unterbringen: Sie sind verzögert, erfordern einen Zusatzschritt und sind bei Touch nicht ohne Weiteres verfügbar.
+
+
+09 Formulare und Reduzierung von Eingaben
+
+Grundlage: Q06, PDF-S. 16, 98-123; Q07, PDF-S. 7-41; Q13, PDF-S. 39
+
+R065  Vor dem Layout fachliche Datenklassen bilden, dann Felder gruppieren und nach nachvollziehbaren Konventionen oder Arbeitsabläufen ordnen.
+
+R066  Beschriftungen nahe am zugehörigen Feld halten. Bei sehr unterschiedlich langen Bezeichnern Labels oberhalb der Felder erwägen; nur eindeutig verständliche Abkürzungen verwenden.
+
+R067  Eingabeelemente an Datentyp und Aufgabe anpassen. Sich gegenseitig ausschließende Alternativen als gemeinsame Auswahl darstellen; unabhängige Entscheidungen getrennt bedienbar machen.
+
+R068  Sinnvolle, änderbare Standardwerte verwenden. Je nach Aufgabe kommen konfigurierbare, zuletzt verwendete, häufig verwendete Werte oder eine Verlaufsauswahl infrage; bei sicherheitskritischen Entscheidungen kann eine bewusste Eingabe erforderlich sein.
+
+R069  Bereits vorhandene Daten wiederverwenden. Beispielsweise die Lieferadresse als Rechnungsadresse übernehmen lassen, statt dieselben Felder erneut ausfüllen zu müssen.
+
+R070  Logisch abhängige Eingaben automatisch ableiten oder eingrenzen, sofern die Abhängigkeit tatsächlich eindeutig ist. Ungültige Kombinationen verhindern und Einschränkungen verständlich rückmelden.
+
+R071  Informationslose Startschritte und bloße Bestätigungen einer bereits eindeutigen Auswahl vermeiden. Zusätzliche Bestätigungen dort vorsehen, wo sie eine relevante Fehlhandlung verhindern.
+
+R072  Gültige Eingabevarianten tolerieren und Fehleingaben zur Korrektur erhalten. Eine abgelehnte Eingabe darf nicht unnötig zur vollständigen Neueingabe zwingen.
+
+
+10 Zielflächen und präzise Bedienung
+
+Grundlage: Q07, PDF-S. 44-66
+
+R073  Hinreichend große anklickbare Zielflächen vorsehen. Besonders kleine Ziele vergrößern, bevor bereits große Elemente weiter vergrößert werden.
+
+R074  Die bedienbare Fläche darf größer als das sichtbare Icon sein, solange sie eindeutig zugeordnet ist und nicht mit benachbarten Aktionen verwechselt werden kann.
+
+R075  Bei aufeinanderfolgenden Handlungen kurze Wege ermöglichen. Die Bedeutung und Gruppierung der Elemente dabei beibehalten.
+
+R076  Bei unbekannter Ansteuerungsrichtung auch die kleinere Ausdehnung einer Zielfläche berücksichtigen. Ein sehr breiter, aber extrem niedriger Button bleibt schwer treffbar.
+
+R077  Zwischen benachbarten Aktionen genügend Abstand lassen, besonders bei folgenreichen Eingaben. Die unter realen Bedingungen erreichbare motorische Genauigkeit zugrunde legen.
+
+R078  Die Auflösung eines Eingabewerkzeugs an die Aufgabe anpassen. Ein grober Slider für ein langes Video braucht beispielsweise eine zusätzliche Möglichkeit zur genauen Positionierung.
+
+R079  Positionierhilfen wie Raster oder Magnetlinien bei Bedarf anbieten und abschaltbar machen. Bei überlappenden Objekten die aktuelle Auswahl klar zeigen und alternative Auswahlwege ermöglichen.
+
+R080  Die Eingabetechnik berücksichtigen. Bei Touch Auswahl und Auslösung bewusst gestalten; bei geeigneten Aktionen erst beim Loslassen auslösen und ein Abbrechen der begonnenen Interaktion ermöglichen.
+
+
+11 Rückmeldungen und Fehlermeldungen
+
+Grundlage: Q08, PDF-S. 2-22, 30-47
+
+R081  Auf jede Eingabe unmittelbar erkennbar reagieren. Auch wenn ein Ergebnis noch berechnet wird, muss der Eingang der Aktion sichtbar sein.
+
+R082  Rückmeldungen möglichst dort zeigen, wo die Handlung und die Aufmerksamkeit stattfinden, etwa am Feld, am manipulierten Objekt oder nahe dem Zeiger.
+
+R083  Den aktuellen Zustand und das Ergebnis einer Handlung konkret beschreiben. Relevante Objekt-, Datei- oder Zielnamen nennen.
+
+R084  Neben dem Geschehenen auch mögliche nächste Handlungen und ihre Folgen deutlich machen: Feed-back und Feed-forward zusammen anbieten.
+
+R085  Fehlermeldungen mit verständlicher Ursache, betroffenem Kontext und einer ausführbaren Möglichkeit zur Behebung formulieren.
+
+R086  Meldungstitel und Buttons so konkret gestalten, dass auch beim schnellen Lesen die Entscheidung verständlich bleibt. Ausführliche Erklärungen für komplexe Folgen ergänzen.
+
+R087  Eine Meldung nur dann ausdrücklich bestätigen lassen, wenn die Kenntnisnahme wirklich erforderlich ist. Routinemäßige Hinweise sollen die Arbeit nicht ständig unterbrechen.
+
+R088  Akustische Signale sparsam und ergänzend verwenden. Ein Klang allein vermittelt weder ausreichend differenzierte Informationen noch eine verlässliche räumliche Zuordnung.
+
+
+12 Fortschritt und Aufmerksamkeit
+
+Grundlage: Q01, PDF-S. 19-27; Q08, PDF-S. 23-29; Q09, PDF-S. 3-6, 19-20
+
+R089  Bei langen Vorgängen den Prozess selbst sichtbar machen und seinen Verlauf fortlaufend rückmelden.
+
+R090  Fortschritt aufgabenbezogen erklären, beispielsweise durch aktuellen Arbeitsschritt, bearbeitete Elemente, Ziel und eine brauchbare Schätzung der Restdauer.
+
+R091  Geschätzte Dauer und Fortschritt konsistent und nachvollziehbar darstellen. Gestalterische Beruhigung darf keine falschen Entscheidungen über den tatsächlichen Prozess nahelegen. [A]
+
+R092  Relevante Ereignisse zusätzlich dauerhaft auffindbar darstellen. Ein kurzes Blinken, ein Ton oder eine Vibration darf nicht die einzige Information über das Ereignis bleiben.
+
+R093  Aufmerksamkeit nur dann aktiv anfordern, wenn der Anlass es rechtfertigt. Ein abgeschlossener Hintergrundprozess kann einen Hinweis benötigen; daraus folgt kein automatischer Wechsel in den Vordergrund.
+
+R094  Dekoratives Blinken und parallele Daueranimationen vermeiden. Bewegungen sollen Information vermitteln oder Orientierung unterstützen.
+
+R095  Animationen ruhig und gleichmäßig gestalten, komplexe Richtungswechsel vermeiden und länger laufende Animationen beendbar beziehungsweise abschaltbar machen.
+
+R096  Klänge und andere stark aufmerksamkeitfordernde Signale abschaltbar machen. Dauernde Störungen schwächen die Konzentration auf die eigentliche Aufgabe.
+
+
+13 Kontrolle über Prozesse und Wiederverwendung
+
+Grundlage: Q07, PDF-S. 25-40; Q09, PDF-S. 8-20
+
+R097  Langlaufende Prozesse grundsätzlich abbrechbar gestalten und die Folgen eines Abbruchs vor der Entscheidung verdeutlichen.
+
+R098  Falls ein Prozess nicht abbrechbar ist, vor dem Start darauf hinweisen und Dauer oder Abschlussbedingungen nennen. Solche Vorgänge nicht ungefragt automatisch beginnen.
+
+R099  Wenn sinnvoll eine Pause mit späterer Fortsetzung anbieten. Pausierte Vorgänge und ihre verbleibenden Aufgaben sichtbar halten.
+
+R100  Mehrstufiges Rückgängigmachen und eine Wiederherstellung der rückgängig gemachten Schritte ermöglichen, soweit die Operationen dies zulassen.
+
+R101  Unfertige Bearbeitungen als Zwischenstand speichern lassen. Anforderungen an ein gültiges Endergebnis dürfen die Sicherung einer noch unvollständigen Arbeit nicht unnötig verhindern.
+
+R102  Während langer Vorgänge sinnvolles Weiterarbeiten ermöglichen. Parallel laufende Prozesse mit Status und Bedienmöglichkeiten zugänglich machen.
+
+R103  Notwendige Anschlussaktionen direkt anbieten. Bei einem Namenskonflikt beispielsweise eine neue Namenswahl ermöglichen, statt nur zu erklären, dass der Nutzer außerhalb des Dialogs umbenennen müsse.
+
+R104  Ein- und Ausgaben, Einstellungen und Teilobjekte wiederverwendbar machen. Kopierbare Meldungen, Übernahmefunktionen und die Bearbeitung eines Gruppenelements vermeiden unnötige Neueingaben oder das Auflösen und Wiederherstellen der gesamten Gruppe.
+
+
+14 Stabile Anordnung und Übergänge
+
+Grundlage: Q10, PDF-S. 24-44; Q13, PDF-S. 9-11
+
+R105  Wiederkehrende Funktionen über Ansichten hinweg an stabilen Positionen und in derselben Reihenfolge anbieten.
+
+R106  Vorübergehend nicht nutzbare Optionen in stabilen Arbeitsanordnungen eher deaktivieren als ersatzlos ausblenden, wenn ihr Platz und ihre Existenz für die Orientierung wichtig sind.
+
+R107  Objekte nicht ohne erkennbaren Anlass umsortieren. Automatische Anpassungen dürfen das räumlich Gelernte nicht ständig entwerten.
+
+R108  Wenn eine Suche innerhalb einer vorhandenen räumlichen Anordnung der Orientierung dienen soll, Treffer möglichst markieren und den Kontext erhalten. Das ist eine Empfehlung für stabile Arrangements, keine allgemeine Vorgabe für jede Suchergebnisliste.
+
+R109  Positions- und Ansichtsänderungen nachvollziehbar machen. Eine funktionale Animation kann den Zusammenhang zwischen Ausgangs- und Zielzustand zeigen.
+
+R110  Bei direkter Manipulation den möglichen Endzustand bereits während der Bewegung sichtbar machen, etwa die Einfügeposition beim Umsortieren einer Liste.
+
+R111  Beim Öffnen einer untergeordneten Ansicht den Bezug zum Ausgangsobjekt erhalten. Dialoge und Overlays sollen nicht unnötig den gesamten Arbeitskontext ersetzen.
+
+R112  Aktive und inaktive Bereiche klar unterscheiden. Eine dezente Abdunkelung kann den Kontext erhalten, wenn Lesbarkeit und Zuordnung dabei bestehen bleiben.
+
+
+15 Navigation und Orientierung
+
+Grundlage: Q11, PDF-S. 8-37
+
+R113  Inhalte und Funktionen sinnvoll strukturieren, bevor eine Navigation dafür entworfen wird. Die Struktur soll zur Aufgabe passen und nicht nur technische Speicherung widerspiegeln.
+
+R114  Die aktuelle Position und erreichbare Ziele sichtbar machen. Für hierarchische Inhalte eignen sich beispielsweise Breadcrumbs mit erreichbaren übergeordneten Ebenen; bei Netzstrukturen kann eine lokale Karte helfen.
+
+R115  Hauptnavigation bei ausreichendem Platz sichtbar lassen. Ein verstecktes Menü ist ein Kompromiss für Platzmangel und keine automatische Verbesserung.
+
+R116  Für Menüs keine starre Obergrenze von sieben plus/minus zwei Einträgen ableiten. Sinnvolle Kategorien und die konkrete Auswahlaufgabe sind entscheidend.
+
+R117  Tabs für gleichrangige Kategorien einsetzen, die mit geringem Aufwand wechselbar bleiben sollen. Den aktiven Tab klar mit seinem Inhalt verbinden; bei vielen Kategorien eine besser passende Anordnung wählen.
+
+R118  Bei scrollbaren Inhalten erkennbar machen, dass außerhalb des Ausschnitts weitere Inhalte liegen. Sichtbare Scrollbars können zusätzlich Position und Anteil am Gesamtinhalt vermitteln.
+
+R119  Bei sehr großen Inhalten alternative Sprünge oder Seiten anbieten. Bei Seitennavigation aktuelle Seite, Gesamtumfang soweit bekannt und einen passenden Direktzugriff auf andere Seiten zeigen.
+
+R120  Dynamisches Nachladen und wechselnde Gesamtlängen hinsichtlich Orientierung prüfen. Eine sich ständig verändernde Scrollposition darf den Rückweg und das Verständnis des Umfangs nicht unnötig erschweren.
+
+
+16 Modi und Eingabefokus
+
+Grundlage: Q12, PDF-S. 13-36
+
+R121  Unnötige Modi vermeiden oder zusammenfassen. Ein Modus ist problematisch, wenn dieselbe Eingabe anders wirkt und der dafür verantwortliche Zustand nicht im Bewusstsein des Nutzers ist.
+
+R122  Verbleibende Modi durch ihre Aufgabe begründen. Eine Trennung zwischen Bearbeiten und Präsentieren kann beispielsweise versehentliche Änderungen verhindern.
+
+R123  Den aktuellen Modus klar darstellen und seinen Einfluss auf die Bedienung verständlich machen.
+
+R124  Moduswechsel möglichst durch eine ausdrückliche Handlung auslösen und den Wechsel wahrnehmbar machen.
+
+R125  Den Nutzer nicht in einem Modus festhalten. Einen verständlichen, zugänglichen Weg zum Verlassen anbieten.
+
+R126  Eingabefokus nicht durch unerwartet auftauchende Fenster oder Ereignisse an sich ziehen. Laufende Eingaben dürfen nicht plötzlich in einem anderen Kontext landen.
+
+R127  Kleine, leicht übersehbare Zustandsunterschiede nicht zur einzigen Erklärung einer stark veränderten Tastenwirkung machen.
+
+R128  Modale Dialoge gezielt einsetzen, wenn die vorübergehende Einschränkung eine notwendige Entscheidung oder sichere Bearbeitung unterstützt. Den zusätzlichen Zwang zum Abschließen oder Schließen berücksichtigen.
+
+
+17 Anpassbarkeit und alternative Bedienwege
+
+Grundlage: Q02, PDF-S. 5; Q13, PDF-S. 7-39
+
+R129  Mehrere geeignete Bedienwege zum selben Ziel anbieten, beispielsweise sichtbare Menüs, Mausbedienung und Tastenkürzel.
+
+R130  Tastenkürzel an sichtbaren Funktionen erläutern, damit sie beim Erkunden erlernt werden können.
+
+R131  Weder Maus noch Tastatur pauschal als einzigen Weg vorschreiben. Touchbedienung benötigt eine Prüfung ihrer eigenen Auswahl- und Auslösebedingungen.
+
+R132  Häufig gebrauchte Funktionen und Arbeitsanordnungen bei Bedarf durch den Nutzer anpassbar machen.
+
+R133  Anpassungen rücksetzbar gestalten. Eine verständliche Standardkonfiguration muss wiederherstellbar sein.
+
+R134  Zusammengehörige Einstellungen bei Bedarf als Konfiguration speichern und passend zum Dokument, Ordner oder Arbeitskontext wiederverwenden lassen.
+
+R135  Automatisch adaptive Oberflächen zurückhaltend einsetzen. Selten verwendete Optionen ungefragt zu verstecken oder Menüs umzuräumen kann Kontrolle und Orientierung verschlechtern.
+
+R136  Assistenten und optimierte Abläufe als freiwillige Unterstützung anbieten. Wo die Aufgabe andere Wege erlaubt, diese zugänglich halten und den geführten Ablauf abbrechbar machen.
+
+
+18 Konventionen und Sprache
+
+Grundlage: Q14, PDF-S. 5-16, 28-38; Q15, PDF-S. 3-9
+
+R137  Aufgaben-, Plattform-, Kultur- und Organisationskonventionen vor der Gestaltung klären und bei der Bedienung berücksichtigen.
+
+R138  Bewährte Bedienkonventionen nur mit einem konkreten Nutzen durchbrechen. Den Lern- und Umgewöhnungsaufwand gegen den erwarteten Vorteil abwägen.
+
+R139  Bei abweichendem Verhalten eine hinreichend erkennbare Gestaltung wählen. Ein vertraut aussehendes Element soll nicht überraschend etwas anderes tun.
+
+R140  Für dieselbe Bedeutung durchgängig dieselben Begriffe verwenden, beispielsweise nicht zwischen „Sichern“, „Speichern“ und „Übernehmen“ wechseln, wenn tatsächlich dieselbe Funktion gemeint ist.
+
+R141  Kurze, direkte und konkrete Formulierungen verwenden. Doppelte Verneinungen, unnötige Konjunktive und unklare Fragen vermeiden.
+
+R142  Die Fachsprache der Zielgruppe verwenden und unnötige IT-Begriffe vermeiden. Statt „unerwarteter Fehler“ den verständlichen Sachverhalt und die mögliche Handlung nennen.
+
+R143  Im Zusammenhang übersetzen: Bedeutung, grammatische Funktion und Zustand eines Elements berücksichtigen. Einzelne Wörter lassen sich nicht zuverlässig unabhängig vom Interface übersetzen.
+
+R144  Lokalisierung über die Sprache hinaus planen, etwa für Adressen, Einheiten, Leserichtung und kulturell geprägte Bildzeichen. Icons und Farben nicht ungeprüft als international eindeutig behandeln.
+
+
+19 Barrierefreiheit
+
+Grundlage: Q17, PDF-S. 3-10; ergänzend Q01, PDF-S. 105; Q13, PDF-S. 38
+
+R145  Informationen und Funktionen so gestalten, dass sie wahrnehmbar, bedienbar, verständlich und mit unterschiedlichen Zugangstechniken nutzbar bleiben.
+
+R146  Visuelle Informationen auch ohne Farberkennung verständlich machen. Status beispielsweise mit einer eindeutigen Beschriftung oder einem zusätzlichen Symbol vermitteln.
+
+R147  Vergrößerte Darstellung und eingeschränkte Gesichtsfelder mitbedenken. Rückmeldungen und zugehörige Bedienelemente dürfen nicht erst weit außerhalb des gerade sichtbaren Bereichs erschlossen werden müssen.
+
+R148  Inhalte für die lineare Ausgabe durch Screenreader nachvollziehbar strukturieren. Beziehungen und Bedienzustände dürfen nicht ausschließlich aus dem grafischen Arrangement verständlich werden. [A]
+
+R149  Bilder und rein bildliche Bedienelemente mit einer verständlichen textlichen Entsprechung versehen. [A]
+
+R150  Alternative Bedienung bei motorischen Einschränkungen ermöglichen. Tastaturzugang, ausreichend große Zielflächen und tolerante Eingaben zusammen berücksichtigen.
+
+R151  Informationen nicht ausschließlich akustisch übermitteln. Für relevante gesprochene Multimedia-Inhalte Untertitel oder geeignete textliche Entsprechungen anbieten.
+
+R152  Gedächtnis und Sprachverständnis entlasten: Informationen sichtbar halten, Auswahl ermöglichen und verständliche Sprache verwenden. Unterschiedliche Bedürfnisse gegebenenfalls durch geeignete anpassbare Darstellungen unterstützen.
+
+
+20 Gestaltungsentscheidungen überprüfen
+
+Grundlage: Q16, PDF-S. 2-4, 8-16
+
+R153  Gestaltungsregeln als überprüfbare Entwurfsentscheidungen anwenden. Ein formal regelkonformes Interface muss sich in der tatsächlichen Nutzung bewähren.
+
+R154  Kritische Abläufe früh mit Skizzen oder Papierprototypen prüfen, bevor viel Aufwand in die technische Umsetzung fließt.
+
+R155  Mit Personen aus der tatsächlichen Zielgruppe testen, einschließlich relevanter Unterschiede in Erfahrung und Fähigkeiten.
+
+R156  Realistische Aufgaben stellen und beobachten, ob Personen die passenden Funktionen selbst finden, auslösen und ihre Folgen verstehen.
+
+R157  Bei vergleichbaren Tests gleiche Aufgaben, Vorinformationen und Ausgangszustände verwenden. Aufgaben und Versuchsablauf zuvor selbst auf Fehler prüfen.
+
+R158  Beobachten, an welcher Stelle Irritationen, Suchaufwand, Fehlbedienungen und unnötige Schritte entstehen. Bei Bedarf durch lautes Denken die Interpretation der Systemreaktionen nachvollziehen.
+
+R159  Expertenreviews und Benutzertests ergänzend einsetzen. Experten können Prinzipverletzungen früh erkennen; Nutzer können Schwierigkeiten sichtbar machen, die Experten nicht mehr erwarten.
+
+R160  Die Oberfläche und ihre Richtlinien anhand der Befunde verbessern und relevante Änderungen erneut prüfen.
+
+
+Einordnung kontextabhängiger und missverständlicher Aussagen
+
+- „Hauptaktion immer rechts“: Die Vorlesung empfiehlt den Handlungsabschluss bei Leserichtung von links nach rechts meist unten rechts. Sie begründet damit keine ausnahmslose Reihenfolge für alle Plattformen, Dialoge und Leserichtungen. Siehe R028-R032.
+- „Jede Gruppe braucht einen Rahmen oder Schatten“: Vorrang hat räumliches Absetzen. „Stapeln statt Umrahmen“ erläutert die lokale Erkennbarkeit von Flächen, keine Pflicht zur Dekoration sämtlicher Gruppen. Siehe R018, R022-R024.
+- „Ein Menü darf höchstens sieben Einträge enthalten“: Die Navigationsvorlesung weist diese Übertragung eines Gedächtnisexperiments ausdrücklich zurück. Siehe R116.
+- „Dark Mode ist grundsätzlich besser oder grundsätzlich ungeeignet“: Die Typografievorlesung bevorzugt Dunkel auf Hell für allgemeine Textarbeit und diskutiert Ausnahmen. Daraus folgt hier eine kontextbezogene Entscheidung und Umschaltbarkeit, kein pauschales Verbot. Siehe R056, Q04 S. 43-45.
+- „Ein Fortschrittsbalken soll blinken und die Restzeit darf nie steigen“: HW9 formuliert solche Vorgaben. Die Folien behandeln Einflüsse auf das Zeiterleben; sie begründen keinen generellen Blinkzwang und keine Garantie für unveränderliche Schätzungen. Die praktische Ableitung in R091 fordert nachvollziehbare Information ohne irreführende Prozessdarstellung; R094-R096 begrenzen Ablenkung.
+- „Touch braucht keine sichtbaren Scrollhinweise“: HW11 diskutiert die erschwerte direkte Bedienung eines kleinen Scrollbalkens. Das hebt dessen zusätzliche Orientierungsfunktion nicht auf. Ob eine weitere Inhaltsmenge erkennbar ist, bleibt auch bei Touch relevant. Siehe R118, Q11 S. 13-18.
+- „Icons erklären sich selbst“: Die Iconvorlesung trennt Wiedererkennung von erstmaligem Bedeutungsverstehen. Auch ein reduziertes Icon muss gelernt werden; ein Warnsymbol für eine normale Funktion wie „Fehler melden“ ist deshalb keine automatische Musterlösung. Siehe R057-R064.
+
+Die angeführten Norm- und Rechtsverweise in den Lehrunterlagen werden hier nicht als aktuelle technische oder rechtliche Anforderungen fortgeschrieben. Die hier verwendeten Regeln zur Barrierefreiheit verdichten die in den Unterlagen erklärten Gestaltungsprinzipien.
+
+Quellenverzeichnis der Vorlesungsgrundlagen
+
+
+Q01  src\4\G3 Architektur der Wahrnehmung_compressed.pdf (105 PDF-Seiten)
+
+Q02  src\5\P Praxis – Leitforderung_compressed.pdf (7 PDF-Seiten)
+
+Q03  src\5\P1.1 Bildschirmobjekte_compressed.pdf (48 PDF-Seiten)
+
+Q04  src\6\P1.2 Typographie_compressed.pdf (47 PDF-Seiten)
+
+Q05  src\6\P1.3 Icongestaltung_compressed.pdf (53 PDF-Seiten)
+
+Q06  src\7\P1.4 Anordnung_compressed.pdf (124 PDF-Seiten)
+
+Q07  src\8\P2.1 Eingaben_compressed.pdf (67 PDF-Seiten)
+
+Q08  src\9\P2.2 Rückmeldungen_compressed.pdf (48 PDF-Seiten)
+
+Q09  src\9\P2.3 Prozesse.pdf (21 PDF-Seiten)
+
+Q10  src\10\P3.1 Übergänge_compressed.pdf (45 PDF-Seiten)
+
+Q11  src\10\P3.2 Navigation_compressed.pdf (41 PDF-Seiten)
+
+Q12  src\11\P3.3 Modusgestaltung_compressed.pdf (37 PDF-Seiten)
+
+Q13  src\11\P4 Flexibilität_compressed.pdf (40 PDF-Seiten)
+
+Q14  src\12\U1.1 Konventionen_compressed.pdf (38 PDF-Seiten)
+
+Q15  src\12\U1.2 Sprache.pdf (9 PDF-Seiten)
+
+Q16  src\12\U1.3 Testen_compressed.pdf (16 PDF-Seiten)
+
+Q17  src\12\U2 Barrierefreiheit.pdf (10 PDF-Seiten)
+
+
+Vollständigkeit der gesichteten Sammlung
+
+37 PDF-Dateien mit zusammen 844 PDF-Seiten. Davon sind 17 eigenständige Vorlesungssätze, ein zusätzlicher Auszug und 19 Übungszettel beziehungsweise eingereichte Lösungen. Der Auszug „P1.4 Anordnung_compressed-97-124.pdf“ entspricht den Seiten 97-124 des vollständigen Satzes und wurde nicht als zusätzliche Quelle mit eigenen Regeln gezählt.
+
+Text wurde aus allen Dateien ausgelesen. Die Übungsseiten sowie ausgewählte bildlastige Vorlesungsseiten und die zentralen Layoutbeispiele wurden zusätzlich als gerenderte Seiten geprüft. Die historischen Grundlagen aus Übung 3 wurden auf ihre Relevanz für Responsivität und direkte Manipulation geprüft; sie liefern keine zusätzlichen Layoutvorgaben.
+
+Dateiinventar
+
+
+src\3\Aufgabenzettel 3.pdf | 2 PDF-Seiten
+
+src\3\DUI_HW3.pdf | 2 PDF-Seiten
+
+src\4\Aufgabenzettel4.pdf | 2 PDF-Seiten
+
+src\4\DUI_HW4.pdf | 3 PDF-Seiten
+
+src\4\G3 Architektur der Wahrnehmung_compressed.pdf | 105 PDF-Seiten
+
+src\5\Aufgabenzettel5.pdf | 2 PDF-Seiten
+
+src\5\DUI_HW5_final.pdf | 5 PDF-Seiten
+
+src\5\P Praxis – Leitforderung_compressed.pdf | 7 PDF-Seiten
+
+src\5\P1.1 Bildschirmobjekte_compressed.pdf | 48 PDF-Seiten
+
+src\6\Aufgabenzettel6.pdf | 2 PDF-Seiten
+
+src\6\HW6 – Kopie.pdf | 6 PDF-Seiten
+
+src\6\P1.2 Typographie_compressed.pdf | 47 PDF-Seiten
+
+src\6\P1.3 Icongestaltung_compressed.pdf | 53 PDF-Seiten
+
+src\7\Aufgabenzettel7.pdf | 3 PDF-Seiten
+
+src\7\HW7.pdf | 3 PDF-Seiten
+
+src\7\P1.4 Anordnung_compressed-97-124.pdf | 28 PDF-Seiten
+
+src\7\P1.4 Anordnung_compressed.pdf | 124 PDF-Seiten
+
+src\8\Aufgabenzettel8.pdf | 2 PDF-Seiten
+
+src\8\HW8.pdf | 7 PDF-Seiten
+
+src\8\P2.1 Eingaben_compressed.pdf | 67 PDF-Seiten
+
+src\9\Aufgabenzettel9.pdf | 2 PDF-Seiten
+
+src\9\HW9.pdf | 3 PDF-Seiten
+
+src\9\P2.2 Rückmeldungen_compressed.pdf | 48 PDF-Seiten
+
+src\9\P2.3 Prozesse.pdf | 21 PDF-Seiten
+
+src\10\Aufgabenzettel10.pdf | 3 PDF-Seiten
+
+src\10\HW10.pdf | 6 PDF-Seiten
+
+src\10\P3.1 Übergänge_compressed.pdf | 45 PDF-Seiten
+
+src\10\P3.2 Navigation_compressed.pdf | 41 PDF-Seiten
+
+src\11\Aufgabenzettel11.pdf | 2 PDF-Seiten
+
+src\11\HW11.pdf | 3 PDF-Seiten
+
+src\11\P3.3 Modusgestaltung_compressed.pdf | 37 PDF-Seiten
+
+src\11\P4 Flexibilität_compressed.pdf | 40 PDF-Seiten
+
+src\12\Aufgabenzettel12.pdf | 2 PDF-Seiten
+
+src\12\U1.1 Konventionen_compressed.pdf | 38 PDF-Seiten
+
+src\12\U1.2 Sprache.pdf | 9 PDF-Seiten
+
+src\12\U1.3 Testen_compressed.pdf | 16 PDF-Seiten
+
+src\12\U2 Barrierefreiheit.pdf | 10 PDF-Seiten

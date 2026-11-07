@@ -1,21 +1,18 @@
 # DEVELOPER.md
 
-Stand: 2026-10-13
+Stand: 2026-10-30
 
 ## Zweck
 
-Diese Datei definiert technologieübergreifende Developer-Regeln. Technologiespezifische Regeldateien werden über [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md) aufgelöst.
+Diese Datei definiert technologieübergreifende Developer-Regeln. Technologiespezifische Regeldateien werden über [TECHNOLOGIES.md](../../TECHNOLOGIES.md) aufgelöst.
 
-## Codex-Ausführung
-
-[MUST_IF] Wenn ein `developer`-SubAgent verfügbar ist, muss Developer-Verantwortung an ihn delegiert werden. Die fachlichen und technologiespezifischen Regeln bleiben dabei maßgeblich.
 
 ## Priorität innerhalb der Developer-Rolle
 
 [PRIORITY] Bei widersprüchlichen Regeldateien innerhalb der Developer-Rolle gilt innerhalb ihres jeweiligen Scopes diese Reihenfolge:
 
-1. Passende technologiespezifische Regeldatei aus [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md).
-2. [DEVELOPER.md](https://heljens-it-services.github.io/agent-files/roles/developer/DEVELOPER.md).
+1. Passende technologiespezifische Regeldatei aus [TECHNOLOGIES.md](../../TECHNOLOGIES.md).
+2. [DEVELOPER.md](DEVELOPER.md).
 
 [PRIORITY] Bei mehreren passenden `DEVELOPER.*.md`-Dateien hat die spezifischere Regel nur innerhalb ihres ausdrücklich beschriebenen Scopes Vorrang vor einer allgemeineren Regel.
 
@@ -186,3 +183,20 @@ Diese Datei definiert technologieübergreifende Developer-Regeln. Technologiespe
 [MUST_IF] Wenn eine neue Laufzeit-, Build- oder Test-Abhängigkeit eingeführt werden soll, die weder der Task noch `PROJECT.md` vorgibt, muss der Agent sie vor der Einführung begründen und die Freigabe des Users einholen.
 
 [PRIORITY] Sicherheitsupdates haben Vorrang vor kosmetischen Refactorings.
+
+## Minimal hinreichende Lösung
+
+[MUST] Neue Abstraktionen, Dependencies, Konfigurationsoptionen und alternative Pfade benötigen einen konkreten heutigen Treiber aus Task oder Repository.
+
+Vor neuer Struktur den Current-Driver-Test beantworten:
+
+1. Welcher heutige Bedarf oder welche bestehende Last erzeugt den Druck?
+2. Welcher konkrete Vertrag, welche Boundary oder welche Invariante würde ohne sie leiden?
+3. Welche tatsächliche Stelle, Anforderung oder reale Variante belegt diesen Bedarf?
+4. Erfüllt eine direktere Lösung oder vorhandene Struktur denselben Vertrag gleichwertig?
+
+[MUST_NOT] Wenn heutiger Bedarf und Evidenz fehlen oder eine direktere gleichwertige Lösung existiert, darf keine zusätzliche konzeptionelle Ebene eingeführt werden.
+
+[MUST_NOT] Hypothetische Consumer, ungenutzte Extension Points, Pattern-Namen oder allgemeine Qualitätswörter dürfen den Treiber nicht ersetzen.
+
+[SHOULD] Bestehende geeignete Struktur vor neuer Indirektion nutzen; semantisch falsche Wiederverwendung oder das Verletzen einer realen Architekturgrenze vermeiden.

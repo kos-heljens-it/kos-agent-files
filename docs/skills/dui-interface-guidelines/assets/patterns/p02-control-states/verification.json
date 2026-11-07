@@ -1,0 +1,29 @@
+{
+  "pattern": "P02",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Backend.",
+  "source_sha256": {
+    "index.html": "1c7922c4b5f95cce7e7959b5b5174bfd63851e07b55028eed88c7828f7862ae3",
+    "controls.css": "e4f18eb1a45cc9087298d278dd6e81ffeeb7402784371f219bf443abff87ccd4",
+    "controls.js": "09b35b280c2abc121ffc4d60a477d78e968f1f0a9365c203411fb15796a1b76f"
+  },
+  "results": [
+    {
+      "check": "Auswahl über gesamte Beschriftungsfläche, Änderung, Übernahme und Rückkehr zum Ausgangswert",
+      "status": "passed"
+    },
+    {
+      "check": "Vergrößerte Icon-Zielfläche und beschrifteter Auswahlzustand",
+      "status": "passed"
+    },
+    {
+      "check": "Bedienbare Ziele und kein horizontaler Überlauf bei 390 und 320 px",
+      "status": "passed"
+    },
+    {
+      "check": "Keine JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

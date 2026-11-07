@@ -1,0 +1,736 @@
+{
+  "patterns": [
+    {
+      "id": "P01",
+      "title": "Formularlayout",
+      "status": "reviewed-candidate",
+      "scope": "Eigenständiges HTML/CSS/JavaScript-Muster ohne Angular- oder Backend-Integration.",
+      "documentation": "assets/patterns/p01-form-layout/pattern.md",
+      "entrypoint": "assets/patterns/p01-form-layout/index.html",
+      "source_files": [
+        "index.html",
+        "form-layout.css",
+        "demo.js"
+      ],
+      "verification": "assets/patterns/p01-form-layout/verification.json",
+      "rule_ids": [
+        "R009",
+        "R010",
+        "R011",
+        "R012",
+        "R013",
+        "R014",
+        "R016",
+        "R017",
+        "R018",
+        "R019",
+        "R022",
+        "R025",
+        "R026",
+        "R027",
+        "R028",
+        "R030",
+        "R031",
+        "R065",
+        "R066",
+        "R067"
+      ],
+      "screenshots": [
+        "assets/patterns/p01-form-layout/screenshots/reference-desktop.png",
+        "assets/patterns/p01-form-layout/screenshots/reference-mobile.png",
+        "assets/patterns/p01-form-layout/screenshots/counterexample-desktop.png",
+        "assets/patterns/p01-form-layout/screenshots/reference-long-labels.png",
+        "assets/patterns/p01-form-layout/screenshots/reference-text-200.png"
+      ]
+    },
+    {
+      "id": "P02",
+      "title": "Zustände und Zielflächen",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p02-control-states/pattern.md",
+      "entrypoint": "assets/patterns/p02-control-states/index.html",
+      "source_files": [
+        "index.html",
+        "controls.css",
+        "controls.js"
+      ],
+      "verification": "assets/patterns/p02-control-states/verification.json",
+      "rule_ids": [
+        "R033",
+        "R034",
+        "R036",
+        "R037",
+        "R038",
+        "R073",
+        "R074",
+        "R076",
+        "R077"
+      ],
+      "screenshots": [
+        "assets/patterns/p02-control-states/screenshots/initial.png",
+        "assets/patterns/p02-control-states/screenshots/selected-focus.png",
+        "assets/patterns/p02-control-states/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P03",
+      "title": "Eingabe und Rückmeldung",
+      "status": "reviewed-candidate",
+      "scope": "Lokale HTML/CSS/JavaScript-Simulation ohne Angular- oder Backend-Integration.",
+      "documentation": "assets/patterns/p03-validation/pattern.md",
+      "entrypoint": "assets/patterns/p03-validation/index.html",
+      "source_files": [
+        "index.html",
+        "validation.css",
+        "validation.js"
+      ],
+      "verification": "assets/patterns/p03-validation/verification.json",
+      "rule_ids": [
+        "R072",
+        "R081",
+        "R082",
+        "R083",
+        "R084",
+        "R085",
+        "R086",
+        "R087"
+      ],
+      "screenshots": [
+        "assets/patterns/p03-validation/screenshots/initial.png",
+        "assets/patterns/p03-validation/screenshots/field-error.png",
+        "assets/patterns/p03-validation/screenshots/save-error.png",
+        "assets/patterns/p03-validation/screenshots/field-error-mobile.png"
+      ]
+    },
+    {
+      "id": "P04",
+      "title": "Vorgänge und Fortschritt",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p04-process/pattern.md",
+      "entrypoint": "assets/patterns/p04-process/index.html",
+      "source_files": [
+        "index.html",
+        "process.css",
+        "process.js"
+      ],
+      "verification": "assets/patterns/p04-process/verification.json",
+      "rule_ids": [
+        "R081",
+        "R089",
+        "R090",
+        "R091",
+        "R094",
+        "R097",
+        "R099"
+      ],
+      "screenshots": [
+        "assets/patterns/p04-process/screenshots/paused.png",
+        "assets/patterns/p04-process/screenshots/completed.png",
+        "assets/patterns/p04-process/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P05",
+      "title": "Navigation und Orientierung",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Navigationsmuster ohne Angular- oder Backend-Integration.",
+      "documentation": "assets/patterns/p05-navigation/pattern.md",
+      "entrypoint": "assets/patterns/p05-navigation/index.html",
+      "source_files": [
+        "index.html",
+        "navigation.css",
+        "navigation.js"
+      ],
+      "verification": "assets/patterns/p05-navigation/verification.json",
+      "rule_ids": [
+        "R105",
+        "R107",
+        "R111",
+        "R113",
+        "R114",
+        "R115",
+        "R117"
+      ],
+      "screenshots": [
+        "assets/patterns/p05-navigation/screenshots/desktop-overview.png",
+        "assets/patterns/p05-navigation/screenshots/desktop-projects.png",
+        "assets/patterns/p05-navigation/screenshots/mobile-projects.png"
+      ]
+    },
+    {
+      "id": "P06",
+      "title": "Typografie und Farbe",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p06-type-colour/pattern.md",
+      "entrypoint": "assets/patterns/p06-type-colour/index.html",
+      "source_files": [
+        "index.html",
+        "type-colour.css",
+        "type-colour.js"
+      ],
+      "verification": "assets/patterns/p06-type-colour/verification.json",
+      "rule_ids": [
+        "R041",
+        "R044",
+        "R045",
+        "R049",
+        "R052",
+        "R053",
+        "R054",
+        "R055",
+        "R056"
+      ],
+      "screenshots": [
+        "assets/patterns/p06-type-colour/screenshots/light.png",
+        "assets/patterns/p06-type-colour/screenshots/dark.png",
+        "assets/patterns/p06-type-colour/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P07",
+      "title": "Icons im Ensemble",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p07-icon-ensemble/pattern.md",
+      "entrypoint": "assets/patterns/p07-icon-ensemble/index.html",
+      "source_files": [
+        "index.html",
+        "icons.css",
+        "icons.js"
+      ],
+      "verification": "assets/patterns/p07-icon-ensemble/verification.json",
+      "rule_ids": [
+        "R057",
+        "R059",
+        "R060",
+        "R061",
+        "R062"
+      ],
+      "screenshots": [
+        "assets/patterns/p07-icon-ensemble/screenshots/all.png",
+        "assets/patterns/p07-icon-ensemble/screenshots/documents.png",
+        "assets/patterns/p07-icon-ensemble/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P08",
+      "title": "Dialog und Tastaturfokus",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p08-dialog-focus/pattern.md",
+      "entrypoint": "assets/patterns/p08-dialog-focus/index.html",
+      "source_files": [
+        "index.html",
+        "dialog.css",
+        "dialog.js"
+      ],
+      "verification": "assets/patterns/p08-dialog-focus/verification.json",
+      "rule_ids": [
+        "R025",
+        "R112",
+        "R124",
+        "R125",
+        "R126",
+        "R128",
+        "R150"
+      ],
+      "screenshots": [
+        "assets/patterns/p08-dialog-focus/screenshots/dialog.png",
+        "assets/patterns/p08-dialog-focus/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P09",
+      "title": "Eingaben wiederverwenden",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p09-data-reuse/pattern.md",
+      "entrypoint": "assets/patterns/p09-data-reuse/index.html",
+      "source_files": [
+        "index.html",
+        "reuse.css",
+        "reuse.js"
+      ],
+      "verification": "assets/patterns/p09-data-reuse/verification.json",
+      "rule_ids": [
+        "R015",
+        "R039",
+        "R068",
+        "R069",
+        "R070",
+        "R071",
+        "R075",
+        "R147"
+      ],
+      "screenshots": [
+        "assets/patterns/p09-data-reuse/screenshots/default.png",
+        "assets/patterns/p09-data-reuse/screenshots/invoice.png",
+        "assets/patterns/p09-data-reuse/screenshots/date-error.png",
+        "assets/patterns/p09-data-reuse/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "Grobe und genaue Eingabe",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p10-precise-input/pattern.md",
+      "entrypoint": "assets/patterns/p10-precise-input/index.html",
+      "source_files": [
+        "index.html",
+        "precision.css",
+        "precision.js"
+      ],
+      "verification": "assets/patterns/p10-precise-input/verification.json",
+      "rule_ids": [
+        "R072",
+        "R078",
+        "R081",
+        "R082"
+      ],
+      "screenshots": [
+        "assets/patterns/p10-precise-input/screenshots/default.png",
+        "assets/patterns/p10-precise-input/screenshots/precise.png",
+        "assets/patterns/p10-precise-input/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P11",
+      "title": "Auswahl und Positionierung",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p11-overlap-snap/pattern.md",
+      "entrypoint": "assets/patterns/p11-overlap-snap/index.html",
+      "source_files": [
+        "index.html",
+        "objects.css",
+        "objects.js"
+      ],
+      "verification": "assets/patterns/p11-overlap-snap/verification.json",
+      "rule_ids": [
+        "R036",
+        "R037",
+        "R079",
+        "R150"
+      ],
+      "screenshots": [
+        "assets/patterns/p11-overlap-snap/screenshots/default.png",
+        "assets/patterns/p11-overlap-snap/screenshots/selected.png",
+        "assets/patterns/p11-overlap-snap/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P12",
+      "title": "Sichtbare Arbeitsmodi",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p12-visible-modes/pattern.md",
+      "entrypoint": "assets/patterns/p12-visible-modes/index.html",
+      "source_files": [
+        "index.html",
+        "modes.css",
+        "modes.js"
+      ],
+      "verification": "assets/patterns/p12-visible-modes/verification.json",
+      "rule_ids": [
+        "R106",
+        "R123",
+        "R124",
+        "R125"
+      ],
+      "screenshots": [
+        "assets/patterns/p12-visible-modes/screenshots/default.png",
+        "assets/patterns/p12-visible-modes/screenshots/editing.png",
+        "assets/patterns/p12-visible-modes/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P13",
+      "title": "Freiwilliger Ablauf und Zwischenstand",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p13-guided-draft/pattern.md",
+      "entrypoint": "assets/patterns/p13-guided-draft/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p13-guided-draft/verification.json",
+      "rule_ids": [
+        "R029",
+        "R101",
+        "R124",
+        "R125",
+        "R136"
+      ],
+      "screenshots": [
+        "assets/patterns/p13-guided-draft/screenshots/default.png",
+        "assets/patterns/p13-guided-draft/screenshots/guided.png",
+        "assets/patterns/p13-guided-draft/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P14",
+      "title": "Suche im räumlichen Kontext",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p14-context-search/pattern.md",
+      "entrypoint": "assets/patterns/p14-context-search/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p14-context-search/verification.json",
+      "rule_ids": [
+        "R107",
+        "R108",
+        "R146"
+      ],
+      "screenshots": [
+        "assets/patterns/p14-context-search/screenshots/default.png",
+        "assets/patterns/p14-context-search/screenshots/search.png",
+        "assets/patterns/p14-context-search/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P15",
+      "title": "Änderungen rückgängig machen",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p15-undo-redo/pattern.md",
+      "entrypoint": "assets/patterns/p15-undo-redo/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p15-undo-redo/verification.json",
+      "rule_ids": [
+        "R100",
+        "R106"
+      ],
+      "screenshots": [
+        "assets/patterns/p15-undo-redo/screenshots/default.png",
+        "assets/patterns/p15-undo-redo/screenshots/history.png",
+        "assets/patterns/p15-undo-redo/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P16",
+      "title": "Ereignisse nachvollziehen",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p16-event-history/pattern.md",
+      "entrypoint": "assets/patterns/p16-event-history/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p16-event-history/verification.json",
+      "rule_ids": [
+        "R092",
+        "R093",
+        "R126"
+      ],
+      "screenshots": [
+        "assets/patterns/p16-event-history/screenshots/default.png",
+        "assets/patterns/p16-event-history/screenshots/events.png",
+        "assets/patterns/p16-event-history/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P17",
+      "title": "Seitennavigation und Direktsprung",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p17-pagination/pattern.md",
+      "entrypoint": "assets/patterns/p17-pagination/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p17-pagination/verification.json",
+      "rule_ids": [
+        "R029",
+        "R072",
+        "R114",
+        "R119"
+      ],
+      "screenshots": [
+        "assets/patterns/p17-pagination/screenshots/default.png",
+        "assets/patterns/p17-pagination/screenshots/last-page.png",
+        "assets/patterns/p17-pagination/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P18",
+      "title": "Sichtbare Tastenkürzel",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p18-visible-shortcuts/pattern.md",
+      "entrypoint": "assets/patterns/p18-visible-shortcuts/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p18-visible-shortcuts/verification.json",
+      "rule_ids": [
+        "R036",
+        "R037",
+        "R129",
+        "R130"
+      ],
+      "screenshots": [
+        "assets/patterns/p18-visible-shortcuts/screenshots/default.png",
+        "assets/patterns/p18-visible-shortcuts/screenshots/marked.png",
+        "assets/patterns/p18-visible-shortcuts/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P19",
+      "title": "Namenskonflikt direkt lösen",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p19-name-conflict/pattern.md",
+      "entrypoint": "assets/patterns/p19-name-conflict/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p19-name-conflict/verification.json",
+      "rule_ids": [
+        "R072",
+        "R082",
+        "R085",
+        "R103"
+      ],
+      "screenshots": [
+        "assets/patterns/p19-name-conflict/screenshots/default.png",
+        "assets/patterns/p19-name-conflict/screenshots/conflict.png",
+        "assets/patterns/p19-name-conflict/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P20",
+      "title": "Reihenfolge mit Vorschau ändern",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p20-reorder-preview/pattern.md",
+      "entrypoint": "assets/patterns/p20-reorder-preview/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p20-reorder-preview/verification.json",
+      "rule_ids": [
+        "R037",
+        "R110",
+        "R129"
+      ],
+      "screenshots": [
+        "assets/patterns/p20-reorder-preview/screenshots/default.png",
+        "assets/patterns/p20-reorder-preview/screenshots/drag-preview.png",
+        "assets/patterns/p20-reorder-preview/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P21",
+      "title": "Orientierung beim Nachladen",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p21-load-more/pattern.md",
+      "entrypoint": "assets/patterns/p21-load-more/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p21-load-more/verification.json",
+      "rule_ids": [
+        "R118",
+        "R120"
+      ],
+      "screenshots": [
+        "assets/patterns/p21-load-more/screenshots/default.png",
+        "assets/patterns/p21-load-more/screenshots/loaded.png",
+        "assets/patterns/p21-load-more/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P22",
+      "title": "Auslösen und Abbrechen bei Touch",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster; Touch in Edge emuliert, kein physisches Gerät.",
+      "documentation": "assets/patterns/p22-touch-cancel/pattern.md",
+      "entrypoint": "assets/patterns/p22-touch-cancel/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p22-touch-cancel/verification.json",
+      "rule_ids": [
+        "R037",
+        "R080",
+        "R131"
+      ],
+      "screenshots": [
+        "assets/patterns/p22-touch-cancel/screenshots/default.png",
+        "assets/patterns/p22-touch-cancel/screenshots/activated.png",
+        "assets/patterns/p22-touch-cancel/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P23",
+      "title": "Arbeitsansicht anpassen",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster mit browserspezifischem localStorage.",
+      "documentation": "assets/patterns/p23-view-settings/pattern.md",
+      "entrypoint": "assets/patterns/p23-view-settings/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p23-view-settings/verification.json",
+      "rule_ids": [
+        "R132",
+        "R133",
+        "R134"
+      ],
+      "screenshots": [
+        "assets/patterns/p23-view-settings/screenshots/default.png",
+        "assets/patterns/p23-view-settings/screenshots/custom.png",
+        "assets/patterns/p23-view-settings/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P24",
+      "title": "Semantik und Textalternativen",
+      "status": "reviewed-candidate",
+      "scope": "Code-Referenz ohne Bildnachweis und ohne Screenreader-Prüfung.",
+      "documentation": "assets/patterns/p24-accessible-semantics/pattern.md",
+      "entrypoint": "assets/patterns/p24-accessible-semantics/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js",
+        "route.svg"
+      ],
+      "verification": "assets/patterns/p24-accessible-semantics/verification.json",
+      "rule_ids": [
+        "R148",
+        "R149"
+      ],
+      "screenshots": []
+    },
+    {
+      "id": "P25",
+      "title": "Bewegung steuern",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p25-motion-control/pattern.md",
+      "entrypoint": "assets/patterns/p25-motion-control/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p25-motion-control/verification.json",
+      "rule_ids": [
+        "R095",
+        "R145"
+      ],
+      "screenshots": [
+        "assets/patterns/p25-motion-control/screenshots/default.png",
+        "assets/patterns/p25-motion-control/screenshots/paused.png",
+        "assets/patterns/p25-motion-control/screenshots/reduced.png",
+        "assets/patterns/p25-motion-control/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P26",
+      "title": "Eingabe, Ausgabe und Gruppen",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p26-input-output-groups/pattern.md",
+      "entrypoint": "assets/patterns/p26-input-output-groups/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p26-input-output-groups/verification.json",
+      "rule_ids": [
+        "R017",
+        "R018",
+        "R023",
+        "R024",
+        "R035",
+        "R072"
+      ],
+      "screenshots": [
+        "assets/patterns/p26-input-output-groups/screenshots/default.png",
+        "assets/patterns/p26-input-output-groups/screenshots/invalid.png",
+        "assets/patterns/p26-input-output-groups/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P27",
+      "title": "Beziehungen sichtbar halten",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p27-spatial-relationships/pattern.md",
+      "entrypoint": "assets/patterns/p27-spatial-relationships/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p27-spatial-relationships/verification.json",
+      "rule_ids": [
+        "R020",
+        "R021"
+      ],
+      "screenshots": [
+        "assets/patterns/p27-spatial-relationships/screenshots/default.png",
+        "assets/patterns/p27-spatial-relationships/screenshots/selected.png",
+        "assets/patterns/p27-spatial-relationships/screenshots/mobile.png"
+      ]
+    },
+    {
+      "id": "P28",
+      "title": "Akzente und Warnfarben",
+      "status": "reviewed-candidate",
+      "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+      "documentation": "assets/patterns/p28-colour-emphasis/pattern.md",
+      "entrypoint": "assets/patterns/p28-colour-emphasis/index.html",
+      "source_files": [
+        "index.html",
+        "pattern.css",
+        "pattern.js"
+      ],
+      "verification": "assets/patterns/p28-colour-emphasis/verification.json",
+      "rule_ids": [
+        "R042",
+        "R043",
+        "R044"
+      ],
+      "screenshots": [
+        "assets/patterns/p28-colour-emphasis/screenshots/default.png",
+        "assets/patterns/p28-colour-emphasis/screenshots/error.png",
+        "assets/patterns/p28-colour-emphasis/screenshots/mobile.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>P17 Seitennavigation und Direktsprung</title><link rel="stylesheet" href="pattern.css"><script src="pattern.js" defer></script></head>
+<body><header class="reference"><span>P17</span> Seitennavigation und Direktsprung</header><main>
+<p class="eyebrow">DOKUMENTE / ÜBERSICHT</p><h1>Dokumente ansehen</h1>
+<p class="intro">Die Liste ist in überschaubare Seiten aufgeteilt. Die aktuelle Position und ein Direktsprung bleiben sichtbar.</p>
+<section aria-labelledby="list-heading"><div class="list-heading"><h2 id="list-heading" tabindex="-1">Dokumente</h2><p id="range" class="hint"></p></div><ul id="items" class="items"></ul></section>
+<nav aria-label="Seitennavigation" class="pages"><p id="page-status" class="page-status" aria-live="polite"></p><div class="page-actions"><button type="button" id="previous">← Vorherige Seite</button><button type="button" id="next">Nächste Seite →</button></div>
+<form id="jump-form" novalidate><label for="page-number">Zu Seite springen</label><div class="jump"><input type="number" id="page-number" min="1" max="7" step="1" inputmode="numeric" aria-describedby="jump-hint jump-error"><button type="submit">Seite öffnen</button></div><p id="jump-hint" class="hint">Seitenzahl von 1 bis 7 eingeben.</p><p id="jump-error" class="error" hidden>Bitte eine ganze Seitenzahl von 1 bis 7 eingeben.</p></form></nav>
+</main><footer>Lokale Vorschau ohne Produktanbindung; Daten werden nicht dauerhaft gespeichert.</footer></body></html>

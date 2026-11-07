@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P02 Zustände und Zielflächen</title>
+  <link rel="stylesheet" href="controls.css">
+  <script src="controls.js" defer></script>
+</head>
+<body>
+  <header class="reference"><span>P02</span> Zustände und Zielflächen</header>
+  <main class="surface">
+    <p class="eyebrow">Arbeitsbereich / Einstellungen</p>
+    <h1>Benachrichtigungen</h1>
+    <p class="intro">Wählen Sie, auf welchen Wegen Sie Hinweise erhalten möchten.</p>
+    <form id="settings-form">
+      <fieldset>
+        <legend>Benachrichtigungskanäle</legend>
+        <p class="description">Mehrere Kanäle können gleichzeitig ausgewählt werden.</p>
+        <div class="channels">
+          <div class="channel">
+            <label class="channel-choice" for="email"><input id="email" type="checkbox" checked><span><strong>E-Mail</strong><small>Hinweise an Ihre hinterlegte Adresse</small></span></label>
+            <button class="favorite" type="button" data-channel="E-Mail" aria-pressed="false" aria-label="E-Mail zu Favoriten hinzufügen"><span aria-hidden="true">☆</span></button>
+          </div>
+          <div class="channel">
+            <label class="channel-choice" for="browser"><input id="browser" type="checkbox"><span><strong>Browser</strong><small>Hinweise während der Nutzung anzeigen</small></span></label>
+            <button class="favorite" type="button" data-channel="Browser" aria-pressed="false" aria-label="Browser zu Favoriten hinzufügen"><span aria-hidden="true">☆</span></button>
+          </div>
+        </div>
+      </fieldset>
+      <p class="hint" id="save-hint">Ändern Sie eine Auswahl, um sie zu übernehmen.</p>
+      <div class="actions"><button id="save" class="primary" type="submit" disabled aria-describedby="save-hint">Auswahl übernehmen <span aria-hidden="true">→</span></button></div>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+  <footer>Lokale Vorschau: Auswahl und Favoriten werden nicht dauerhaft gespeichert.</footer>
+</body>
+</html>

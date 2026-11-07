@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P12 Sichtbare Arbeitsmodi</title>
+  <link rel="stylesheet" href="modes.css">
+  <script src="modes.js" defer></script>
+</head>
+<body>
+  <header class="reference"><span>P12</span> Sichtbare Arbeitsmodi</header>
+  <main class="surface">
+    <p class="eyebrow">ARBEITSBEREICH / NOTIZ</p>
+    <h1>Notiz öffnen</h1>
+    <p class="intro">Lesen oder bearbeiten Sie den Entwurf. Beide Arbeitsmodi sind jederzeit sichtbar.</p>
+    <div class="mode-heading"><h2>Arbeitsmodus</h2><p id="current-mode">Ansichtsmodus aktiv</p></div>
+    <div class="modes" role="group" aria-label="Arbeitsmodus wählen">
+      <button type="button" id="view-mode" aria-pressed="true">Ansehen</button>
+      <button type="button" id="edit-mode" aria-pressed="false">Bearbeiten</button>
+    </div>
+    <p class="hint" id="mode-hint">Die Notiz ist schreibgeschützt. Wählen Sie „Bearbeiten“, um Änderungen vorzunehmen.</p>
+    <div class="field"><label for="note">Ihre Notiz</label><textarea id="note" rows="5" readonly aria-describedby="mode-hint">Rückmeldungen aus dem Team zusammenfassen.</textarea></div>
+    <p class="hint" id="save-hint">Speichern wird im Bearbeitungsmodus nach einer Änderung verfügbar.</p>
+    <div class="actions"><button type="button" id="save" disabled aria-describedby="save-hint">Notiz übernehmen <span aria-hidden="true">→</span></button></div>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </main>
+  <footer>Lokale Vorschau. Die Notiz wird nicht dauerhaft gespeichert.</footer>
+</body>
+</html>

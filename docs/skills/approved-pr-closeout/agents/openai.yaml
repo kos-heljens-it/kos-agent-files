@@ -1,0 +1,4 @@
+interface:
+  display_name: "Freigegebenen PR abschließen"
+  short_description: "Freigegebenen PR und Issue sicher abschließen"
+  default_prompt: "Verwende $approved-pr-closeout, um einen ausdrücklich freigegebenen PR zu mergen, zu prüfen und die zugehörigen Issues abzuschließen."

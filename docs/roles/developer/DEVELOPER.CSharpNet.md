@@ -1,10 +1,10 @@
 # DEVELOPER.CSharpNet.md
 
-Stand: 2026-10-13
+Stand: 2026-10-30
 
 ## Zweck
 
-Diese Datei gilt für C#- und .NET-Projekte aller Einstiegstypen. Anwendungs- und hostspezifische Regeldateien werden über [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md) aufgelöst.
+Diese Datei gilt für C#- und .NET-Projekte aller Einstiegstypen. Anwendungs- und hostspezifische Regeldateien werden über [TECHNOLOGIES.md](../../TECHNOLOGIES.md) aufgelöst.
 
 ## Sprach- und Coderichtlinien
 

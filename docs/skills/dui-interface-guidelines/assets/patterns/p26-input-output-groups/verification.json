@@ -1,0 +1,21 @@
+{
+  "pattern": "P26",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "45dd78b6b1d5dfdfbfc47daf95aa5f41a503c820b6b577cae259ed245cd28089",
+    "pattern.css": "83e8befb4374c5466622fd72ed969bfa9802a7a198f0c46c9b982b590c4bea3b",
+    "pattern.js": "6ab52ec0c7ba7988dc824b82eabb5e54db2f2f3afcee8057164efd52657cffb8"
+  },
+  "results": [
+    {
+      "check": "Benannte Gruppen, unterscheidbare Ein- und Ausgabe, Berechnung und erhaltene ungültige Eingabe",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

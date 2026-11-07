@@ -1,0 +1,124 @@
+---
+name: issue-to-sub-issues
+description: "Zerlegt ein Issue rekursiv oder mit flat in genau eine materialisierte Child-Ebene."
+metadata:
+  version: "1.0.0"
+  schema-version: "2"
+  covers_phases: "analysis, planning"
+  kind: workflow
+---
+
+# Workflow: Issue To Sub Issues
+
+## Ziel
+
+Ein Issue als Baum bis zu sauber geschnittenen, eigenständig ausführbaren Leaf-Issues zerlegen. Ohne Zusatz rekursiv, mit `flat` genau eine Ebene.
+
+## Verwenden
+
+- Für Epics, Stories oder zu große Tasks, die weiter zerlegt werden sollen.
+- Nicht für direkte Umsetzung; dafür [issue-graph-implementation](../issue-graph-implementation/SKILL.md), [issue-to-pr](../issue-to-pr/SKILL.md) oder [issue-implementation](../issue-implementation/SKILL.md) nutzen.
+
+## Direkter Alias
+
+- `/sub-issues <issue-number>`
+- `/sub-issues <issue-number> flat`
+
+`<issue-number>` ist eine positive Ganzzahl mit optionalem `#`. `flat` ist das einzige optionale Positionsargument.
+
+## Verwendete Skills
+
+- `github-issue-ops` (Modus `read`)
+- `requirements-clarification`
+- `brainstorming`
+- `code-implementation-planning`
+
+## Modus flat
+
+Bei `flat` ausschließlich [eine Child-Ebene](references/flat.md) materialisieren und danach zurückgeben. Keine rekursive Zerlegung starten.
+
+## Teilverfahren
+
+- [Eine Child-Ebene](references/flat.md) für jeden einzelnen Zerlegungsschritt.
+
+## Modi
+
+### Übergabe eines Phase-Epics
+
+Vor der Zerlegung eines aus einem projektweiten Plan materialisierten Epic wird geprüft, dass die zugrunde liegende Phase den Status `READY` besitzt und freigegeben ist. Das Epic muss genau diese Phase repräsentieren; ein passendes bestehendes Epic wird wiederverwendet und nicht dupliziert.
+
+Die Übergabe prüft den nativen Type `Epic` sowie vorhandene native Parent/Child- und `blocked by`-Beziehungen. Body-Links oder Checklisten ersetzen diese Metadaten nicht. Parent/Child ordnet die fachliche Struktur, nicht die Reihenfolge der Phasen. Eine harte Ausführungsabhängigkeit wird nur bei tatsächlicher Notwendigkeit als richtungsstabile `blocked by`-Beziehung ergänzt.
+
+Nach dieser Prüfung übernimmt `/sub-issues` ausschließlich seine normale rekursive oder flache Zerlegung. Es plant keine Projektphasen neu und zieht keine Story-/Task-Mikroplanung aus dem Phasenplan vor.
+
+### Rekursiv
+
+Standard ohne Zusatz.
+
+1. Ausgangs-Issue und vorhandene Child-Struktur lesen.
+2. Geschlossene Knoten nicht erneut zerlegen.
+3. Offene Leaf-Issues auf Terminalität prüfen.
+4. Einen nicht terminalen Task mit `code-implementation-planning` gegen den Task-Issue-Vertrag vervollständigen, wenn sein Scope bereits ein klar abgrenzbares Arbeitspaket bildet; andernfalls mit `issue-to-sub-issues` (Modus `flat`) genau eine Ebene weiter zerlegen.
+5. Neue Child-Issues erneut prüfen.
+6. Wiederholen, bis jeder offene Ast in terminalen Leaves endet.
+7. Bestehende Issues wiederverwenden und Duplikate vermeiden.
+8. Bereits besuchte Issues deduplizieren; nur Kanten in den aktiven Rekursionspfad als Zyklus melden.
+
+### Flat
+
+Bei `/sub-issues <issue-number> flat` das [Flat-Teilverfahren](references/flat.md) genau einmal für das Ausgangs-Issue ausführen. Diesen Entry-Point dabei nicht erneut aufrufen und danach nicht weiter zerlegen.
+
+## Terminalitätskriterien
+
+Ein Task-Leaf ist nur terminal, wenn er den [kanonischen Task-Issue-Vertrag](../../github/ISSUE_TEMPLATES.md#task-issue-vertrag) vollständig erfüllt und ohne erneute grundlegende Architektur-, Scope- oder Vorgehensentscheidung umgesetzt werden kann.
+
+Zusätzlich:
+
+- `Epic` und `Story` sind im rekursiven Modus nicht terminal, solange eine sinnvolle weitere Zerlegung möglich ist.
+- Der Type `Task` allein beendet die Rekursion nicht.
+- Ein `Spike` darf terminal sein, wenn sein Ergebnis bewusst Recherche, Analyse, Entscheidung oder Klärung ist.
+- Keine künstliche Mindest- oder Zieltiefe erzeugen. Unterschiedliche Äste dürfen unterschiedlich tief sein.
+- Nicht bis zu technisch trivialen Kleinstschritten zerlegen.
+- Bleiben wesentliche Entscheidungen offen, muss weiter geklärt, geplant oder fachlich sinnvoll zerlegt werden.
+
+## Baumregeln
+
+- Parent/Child beschreibt Hierarchie, nicht automatisch Ausführungsreihenfolge.
+- Harte Abhängigkeiten nur als `blocked by` setzen, wenn sie tatsächlich erforderlich sind.
+- Abhängigkeiten möglichst auf der niedrigsten fachlich korrekten Ebene ausdrücken.
+- Jeder erzeugte Knoten muss kleiner und klarer als sein Parent sein.
+- Bestehende passende Child-Issues verwenden statt Duplikate zu erzeugen.
+
+## Rücksprungregeln
+
+- Unklare Anforderungen vor weiteren GitHub-Mutationen zur Klärung zurückgeben.
+
+## Codex-Orchestrierung
+
+- Rekursive oder flache Zerlegung und Terminalitätsprüfung: `planner`.
+- Issue- und Relationship-Mutationen: `main/orchestrator` nach kontrollierter Ableitung.
+- Konflikte in Hierarchie oder Scope gehen an `planner`; unabhängige Leseanalysen dürfen parallel erfolgen, Schreibzugriffe nicht.
+
+- Bei unklarem Inhalt zu `github-issue-ops` (Modus `read`).
+- Bei unklarem Ziel oder Scope zu `requirements-clarification`.
+- Bei unklarem Schnitt zu `brainstorming`.
+- Bei Zyklus, widersprüchlicher Hierarchie oder nicht belastbarer Zerlegung stoppen und den Blocker nennen.
+
+## Endergebnis
+
+### Rekursiv
+
+- vollständiger relevanter Issue-Baum
+- terminale offene Leaf-Tasks oder bewusst terminale Spikes
+- gesetzte Parent/Child- und erforderliche `blocked by`-Beziehungen
+
+### Flat
+
+- genau eine erzeugte oder vervollständigte Child-Ebene
+
+## Grenzen
+
+- Keine Umsetzung starten.
+- Ausgangs-Issue nicht schließen.
+- Keine künstliche Zerlegung nur zur Erzeugung weiterer Ebenen.
+- Keine Duplikate erzeugen.

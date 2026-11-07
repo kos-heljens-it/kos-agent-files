@@ -1,0 +1,21 @@
+{
+  "pattern": "P13",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "10e29bd9134444776925a504988025648c869ea07e8b71bb7efb69fb358b6ef7",
+    "pattern.css": "d482a4b09d4dfd16fbb065edbfb60ccd3cae260265506a02f2d48cca056fdc51",
+    "pattern.js": "78dd295e91413e7eb6e2958ca177357afd912a5dd8263d32508f45bd7188a433"
+  },
+  "results": [
+    {
+      "check": "Freiwilliger Ablauf, Navigation, Zwischenstand ohne Pflichtangaben, Wiederherstellung und Prüfung",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

@@ -1,43 +1,8 @@
-# WORKFLOWS.md
+# Bisheriger Workflow-Katalog
 
-## Zweck
+Zusammengesetzte Verfahren stehen jetzt als `kind: workflow` im
+[gemeinsamen Skill-Katalog](../skills/SKILLS.md). Es gibt keinen zweiten
+fachlichen Katalog und keine zusätzliche Ausführungsgrammatik.
 
-Diese Datei ist die Lookup-Datei für Workflows, die mehrere atomare Skills zu einem zusammenhängenden Ablauf kombinieren.
-
-## Workflows
-
-| ID | Workflow | Direkte Aliase | Lesen und verwenden, wenn | URL | Zweck |
-|---|---|---|---|---|---|
-| `issue-acceptance-convergence` | Issue Acceptance Convergence | `/acceptance <issue-number>` | Die Akzeptanzkriterien eines Root-Issues und seines vollständigen Child-Graphen gegen den aktuellen integrierten Stand geprüft werden sollen. | [issue-acceptance-convergence.md](https://heljens-it-services.github.io/agent-files/workflows/issue-acceptance-convergence.md) | Graphweite Acceptance prüfen und konvergieren. |
-| `bugfix` | Bugfix | `/bugfix` | Ein Fehler auf dem aktuell ausgecheckten Branch analysiert, behoben und abgesichert werden soll, ohne Branch oder Pull Request implizit zu erzeugen. | [bugfix.md](https://heljens-it-services.github.io/agent-files/workflows/bugfix.md) | Fehler auf dem aktuellen Branch beheben. |
-| `bugfix-from-default` | Bugfix From Default | `/bugfix from-default` | Ein Fehler bewusst auf einem neuen Bugfix-Branch von der Standardbasis behoben und anschließend als eigener Pull Request abgeschlossen werden soll. | [bugfix-from-default.md](https://heljens-it-services.github.io/agent-files/workflows/bugfix-from-default.md) | Isolierten Bugfix von der Standardbasis bis zum Pull Request durchführen. |
-| `commit-history-summary` | Commit History Summary | `/summary` | Commits und gemergte Pull Requests für einen Zeitraum fachlich, technisch oder detailliert zusammengefasst werden sollen. | [commit-history-summary.md](https://heljens-it-services.github.io/agent-files/workflows/commit-history-summary.md) | Änderungshistorie zusammenfassen. |
-| `commit-push` | Commit Push | `/cp` | Fertige lokale Änderungen zusammenhängend committet und gepusht werden sollen. | [commit-push.md](https://heljens-it-services.github.io/agent-files/workflows/commit-push.md) | Änderungen committen und pushen. |
-| `design-exploration` | Design Exploration | `/design-explore` | Eine visuelle oder interaktive Lösung explorativ entwickelt, gerendert, verglichen und iteriert werden soll. | [design-exploration.md](https://heljens-it-services.github.io/agent-files/workflows/design-exploration.md) | Designrichtungen explorieren, visualisieren und reviewen. |
-| `feature-finish` | Feature Finish | `/finish` | Ein freigegebener Arbeitsbranch sicher committed, geprüft, gemergt und abgeschlossen werden soll. | [feature-finish.md](https://heljens-it-services.github.io/agent-files/workflows/feature-finish.md) | Arbeitsbranch abschließen. |
-| `issue-graph-implementation` | Issue Graph Implementation | `/implement <issue-number>` | Ein Issue mit seinen relevanten Issue-Beziehungen bis zur verifizierten Implementierung und zum Pull Request bearbeitet werden soll. | [issue-graph-implementation.md](https://heljens-it-services.github.io/agent-files/workflows/issue-graph-implementation.md) | Issue-Graph implementieren. |
-| `issue-sanitize` | Issue Graph Sanitization | `/sanitize <issue-number>` | Einen relevanten Issue-Graphen auf native GitHub Issue-Types und Relationships prüfen und eindeutig ableitbare Korrekturen verifizieren soll. | [issue-sanitize.md](https://heljens-it-services.github.io/agent-files/workflows/issue-sanitize.md) | Issue-Graph sanitizen. |
-| `insight-to-issue` | Insight To Issue | - | Eine Erkenntnis aus Brainstorming, Analyse, Research oder Nutzungskontext in ein GitHub-Issue überführt werden soll. | [insight-to-issue.md](https://heljens-it-services.github.io/agent-files/workflows/insight-to-issue.md) | Erkenntnis als Issue erfassen. |
-| `instruction-improvement-issue` | Instruction Improvement Issue | - | Ein Verbesserungsvorschlag für Agent Instructions, Skills oder Workflows als Issue erfasst werden soll. | [instruction-improvement-issue.md](https://heljens-it-services.github.io/agent-files/workflows/instruction-improvement-issue.md) | Instruction-Verbesserung erfassen. |
-| `issue-to-pr` | Issue To PR | - | Ein Ticket bis zur Pull-Request-Erstellung überführt werden soll. | [issue-to-pr.md](https://heljens-it-services.github.io/agent-files/workflows/issue-to-pr.md) | Ticket als Pull Request umsetzen. |
-| `issue-to-sub-issues` | Issue To Sub Issues | `/sub-issues <issue-number>`<br>`/sub-issues <issue-number> flat` | Ein Issue rekursiv oder flach in Child-Issues zerlegt werden soll. | [issue-to-sub-issues.md](https://heljens-it-services.github.io/agent-files/workflows/issue-to-sub-issues.md) | Issue-Baum erzeugen. |
-| `issue-to-sub-issues-flat` | Issue To Sub Issues Flat | - | Genau eine Child-Ebene erzeugt werden soll. | [issue-to-sub-issues-flat.md](https://heljens-it-services.github.io/agent-files/workflows/issue-to-sub-issues-flat.md) | Eine Child-Ebene erzeugen. |
-| `issue-implementation` | Issue Implementation | - | Ein einzelnes Issue oder Arbeitspaket implementiert, verifiziert, committet und gepusht werden soll. | [issue-implementation.md](https://heljens-it-services.github.io/agent-files/workflows/issue-implementation.md) | Issue implementieren. |
-| `project-implementation-planning` | Project Implementation Planning | - | Eine projektweite Zielvorstellung interaktiv klären und als Human-freigegebenen Phasenplan oberhalb der Epic-Ebene strukturieren soll. | [project-implementation-planning.md](https://heljens-it-services.github.io/agent-files/workflows/project-implementation-planning.md) | Projektweite Implementierungsphasen planen. |
-| `online-publication-check` | Online Publication Check | - | Nach einem Release oder bei Zweifeln an Erreichbarkeit, Vernetzung oder Aktualität der veröffentlichten Agent Files geprüft werden soll. | [online-publication-check.md](https://heljens-it-services.github.io/agent-files/workflows/online-publication-check.md) | Veröffentlichung über GitHub Pages prüfen. |
-| `refactoring-secure` | Refactoring Secure | - | Code bei nachweisbarem Verhaltenserhalt strukturiert und abgesichert werden soll. | [refactoring-secure.md](https://heljens-it-services.github.io/agent-files/workflows/refactoring-secure.md) | Refactoring absichern. |
-| `release` | Release | `/release` | Der freigegebene Stand von `develop` nach `main` veröffentlicht werden soll. | [release.md](https://heljens-it-services.github.io/agent-files/workflows/release.md) | Develop-Stand nach Main freigeben. |
-
-## Codex-Orchestrierung
-
-[MUST] Der Hauptagent bleibt für Workflow-Auswahl, Phasenkoordination, rollenübergreifende Entscheidungen und externe GitHub-/Git-Mutationen verantwortlich.
-
-[MUST_IF] Wenn Codex-Custom-Agents verfügbar sind, müssen Planungs- und Issue-Strukturphasen an `planner`, technische Analyse, Implementierung und Refactoring an `developer`, Verifikation und Check-Beobachtung an `tester` sowie gestalterische Exploration, Prototyping und visuelle Design-Reviews an `designer` delegiert werden.
-
-[ALLOW_IF] Ein Workflow darf diese Default-Zuordnung für einen konkreten Schritt überschreiben, wenn Verantwortung, Übergabe, Rückgabe und Verifikation im Workflow eindeutig bleiben.
-
-Übergabe, Rückgabe und die Grenzen paralleler Delegation regelt ausschließlich [ROLES.md](https://heljens-it-services.github.io/agent-files/roles/ROLES.md) im Abschnitt `Codex-Laufzeitabbildung`.
-
-[MUST_IF] Wenn ein Developer einen echten Planbruch erkennt, muss der Orchestrator an `planner` zurückgeben. Findet `tester` einen lokalen Implementierungsfehler, muss die Korrektur an `developer` zurückgegeben werden; widersprüchliche Akzeptanzkriterien gehen an `planner` oder den Orchestrator.
-
-[ALLOW_IF] Ohne Codex-Custom-Agents führt der Hauptagent dieselben Workflow-Phasen nach den fachlichen Regeln selbst aus.
+[Migration und bisherige URLs](../COMPATIBILITY.md) dokumentieren die Nachfolger
+und Operationsmodi. Vor Ausführung den kanonischen Skill lesen.

@@ -1,0 +1,139 @@
+:root {
+  font-family:"Segoe UI",system-ui,sans-serif;
+  color:#1d3437;
+  background:#f2f4f1
+}
+* {
+  box-sizing:border-box
+}
+body {
+  margin:0;
+  line-height:1.5
+}
+button,textarea {
+  font:inherit
+}
+:focus-visible {
+  outline:3px solid #17665c;
+  outline-offset:3px
+}
+.reference,.surface,footer {
+  width:min(44rem,calc(100% - 2rem));
+  margin-inline:auto
+}
+.reference {
+  padding:2rem 0 1.5rem;
+  font-size:.9rem;
+  font-weight:650
+}
+.reference span {
+  border:1px solid #8c9d97;
+  border-radius:.3rem;
+  padding:.2rem .5rem;
+  margin-right:.55rem;
+  font-size:.72rem
+}
+.surface {
+  padding:clamp(1.5rem,5vw,3rem);
+  background:#fff;
+  border:1px solid #dce3dd;
+  border-radius:.6rem
+}
+.eyebrow {
+  margin:0 0 .5rem;
+  color:#536568;
+  font-size:.75rem;
+  font-weight:650;
+  letter-spacing:.06em
+}
+h1 {
+  margin:0;
+  font-size:clamp(1.75rem,3vw,2.25rem);
+  line-height:1.25;
+  letter-spacing:-.035em
+}
+.intro {
+  margin:.75rem 0 2rem;
+  color:#536568
+}
+label {
+  display:block;
+  margin-bottom:.4rem;
+  font-weight:600;
+  font-size:.875rem
+}
+textarea {
+  width:100%;
+  padding:.7rem;
+  border:1px solid #9daca9;
+  border-radius:.35rem;
+  resize:vertical;
+  color:#1d3437
+}
+.actions {
+  display:flex;
+  justify-content:flex-end;
+  margin-top:1.5rem
+}
+button {
+  min-height:2.875rem;
+  padding:.65rem 1rem;
+  border-radius:.35rem;
+  font-weight:600;
+  cursor:pointer
+}
+.primary {
+  background:#17665c;
+  color:#fff;
+  border:1px solid #17665c
+}
+.secondary {
+  background:#fff;
+  color:#31594d;
+  border:1px solid #9daca9
+}
+dialog {
+  width:min(30rem,calc(100% - 2rem));
+  border:1px solid #aabbb3;
+  border-radius:.6rem;
+  padding:1.75rem;
+  color:#1d3437;
+  background:#fff
+}
+dialog::backdrop {
+  background:rgb(17 35 30 / .48)
+}
+dialog h2 {
+  font-size:1.2rem;
+  margin:0
+}
+dialog p {
+  color:#536568;
+  margin:.75rem 0 1.5rem
+}
+.dialog-actions {
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  flex-wrap:wrap
+}
+#status {
+  color:#245447;
+  font-size:.875rem
+}
+#status:empty {
+  margin:0
+}
+footer {
+  padding:1.5rem 0 2rem;
+  color:#536568;
+  font-size:.8125rem
+}
+@media(max-width:38rem) {
+  .dialog-actions {
+    flex-direction:column
+  }
+  .dialog-actions button {
+    width:100%
+  }
+}

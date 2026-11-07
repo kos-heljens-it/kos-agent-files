@@ -1,0 +1,21 @@
+{
+  "pattern": "P04",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "5650d32c8e9b61f673df7d565b15aab3901c3eaa85671f45a3037b6b64fc8cb2",
+    "process.css": "4f99d8d119cf661e95dc379e6098dbb12ef71614eaff814452487b8a45304fa8",
+    "process.js": "418805225cf521d3eb9d51c722ef96974f80ec6cff9c68abccb21b3ba7738ea1"
+  },
+  "results": [
+    {
+      "check": "Start, Fortschritt, Pause, Fortsetzung, Abbruch, Neustart und Abschluss",
+      "status": "passed"
+    },
+    {
+      "check": "390 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

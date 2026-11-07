@@ -1,10 +1,10 @@
 # TESTER.Angular.Playwright.md
 
-Stand: 2026-10-13
+Stand: 2026-10-30
 
 ## Zweck
 
-Diese Datei definiert Playwright-Regeln für Angular-Anwendungen. Allgemeine Tester- und Angular-Regeln werden über [TESTER.md](https://heljens-it-services.github.io/agent-files/roles/tester/TESTER.md) und [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md) aufgelöst.
+Diese Datei definiert Playwright-Regeln für Angular-Anwendungen. Allgemeine Tester- und Angular-Regeln werden über [TESTER.md](TESTER.md) und [TECHNOLOGIES.md](../../TECHNOLOGIES.md) aufgelöst.
 
 ## Funktionale Tests
 

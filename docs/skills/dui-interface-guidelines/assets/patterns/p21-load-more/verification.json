@@ -1,0 +1,21 @@
+{
+  "pattern": "P21",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "12f9b1404f1d0f38c09aa5fe60fbf921e72e0a45115c96ead8d4ccee038f0d50",
+    "pattern.css": "15027f7f01c5c38cb46edca7adb12c37d6d0207bb3c14232f651a57caffb451a",
+    "pattern.js": "81f5412fe4c1c84151cb4d0f66ddb59ed0274c987ae116fe34c2a88a9cb58dc7"
+  },
+  "results": [
+    {
+      "check": "Scrollbarer Ausschnitt, Nachladen ohne Positionsverlust, Rückweg zu alten Einträgen und Ende der Liste",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

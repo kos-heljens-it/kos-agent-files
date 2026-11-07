@@ -1,0 +1,29 @@
+{
+  "pattern": "P09",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "597198017ff056b647d50a8c5085bf771ea8af4d8c5491fb755a6eaa51a0d391",
+    "reuse.css": "8d5af55b5538524f8889b3340a7eae4feb71148ea394964c3732224758748647",
+    "reuse.js": "16b9d808243f53dceeee7736230c77fe1779657a4b57a613ab00e89c56f7593d"
+  },
+  "results": [
+    {
+      "check": "Änderbarer Standardwert, direkte Übernahme und Erhalt einer abweichenden Rechnungsadresse",
+      "status": "passed"
+    },
+    {
+      "check": "Abhängige Datumsgrenze, lokale Fehlermeldung und Erhalt ungültiger Eingabe",
+      "status": "passed"
+    },
+    {
+      "check": "Formular und geöffnete Rechnungsadresse bei 390 und 320 px ohne horizontalen Überlauf",
+      "status": "passed"
+    },
+    {
+      "check": "Keine JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

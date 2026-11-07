@@ -1,0 +1,21 @@
+{
+  "pattern": "P15",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "339f5685ba0e3b9312690989dfc38a2c3261bd510ea638b80b1a714bbcb519f8",
+    "pattern.css": "e66171da065d1447ee0e11c144993214f7788ae9bb9c6423add782a7377cadb5",
+    "pattern.js": "ed5026c152670117ac2312c0b6ae768b3a03a5d87b13f42e9f59a006c89f3e2b"
+  },
+  "results": [
+    {
+      "check": "Mehrstufiges Rückgängigmachen, Wiederherstellen und Verwerfen des alten Wiederherstellungspfads bei neuer Änderung",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 # DEVELOPER.NetConsole.md
 
-Stand: 2026-08-21
+Stand: 2026-10-30
 
 ## Zweck
 
-Diese Datei gilt für .NET-Konsolenanwendungen. Zugehörige allgemeine und anwendungsbezogene Regeldateien werden über [TECHNOLOGIES.md](https://heljens-it-services.github.io/agent-files/TECHNOLOGIES.md) aufgelöst.
+Diese Datei gilt für .NET-Konsolenanwendungen. Zugehörige allgemeine und anwendungsbezogene Regeldateien werden über [TECHNOLOGIES.md](../../TECHNOLOGIES.md) aufgelöst.
 
 ## Zielbild
 

@@ -1,0 +1,21 @@
+{
+  "pattern": "P25",
+  "channel": "msedge",
+  "browser": "156.0.4314.50",
+  "scope": "Lokales HTML/CSS/JavaScript-Muster ohne Produktintegration.",
+  "source_sha256": {
+    "index.html": "17bcba6c6a62806bc13b37cff15ad685f05f08111e1fc308b2200768c358cef9",
+    "pattern.css": "915050bbff7db8005977b082cb4af69cd8206750a41832e4848702b0c1e6fff0",
+    "pattern.js": "2fc667d62f8f36d41fb36830d39ae5f1214f3f249944f036289d76f5431cec83"
+  },
+  "results": [
+    {
+      "check": "Bewegung pausieren und fortsetzen, reduzierte Systemeinstellung, Zustand und Fokus bei Einstellungswechsel",
+      "status": "passed"
+    },
+    {
+      "check": "390 und 320 px ohne horizontalen Überlauf, JavaScript-Fehler oder Netzwerkzugriffe",
+      "status": "passed"
+    }
+  ]
+}
