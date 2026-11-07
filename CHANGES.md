@@ -1,6 +1,6 @@
 # Skill-Bibliothek: Änderungen, Begründung und Autonomia-Architektur
 
-Stand: 6. November 2026. Präsentationsunterlage zum lokalen Refactoring in
+Stand: 8. November 2026. Präsentationsunterlage zum Refactoring in
 `refactor/skill-registry`. Implementierte Bibliotheksänderungen und geplante
 Autonomia-Komponenten werden ausdrücklich unterschieden.
 
@@ -265,7 +265,7 @@ Vor einem Task wird ein vollständiger Bibliotheksstand synchronisiert, geprüft
 Jobs dürfen neue Versionen verwenden. Das vermeidet alte Kataloge zusammen mit
 neueren Instruktionen oder einen Bibliothekswechsel während eines Wiederanlaufs.
 
-## 10. Prüfung der Gemini-Antworten und der bisherigen Aussagen
+## 10. Prüfung der Architekturvorschläge und der bisherigen Aussagen
 
 | Aussage | Bewertung und Präzisierung |
 |---|---|
@@ -290,9 +290,10 @@ installiert nicht automatisch Agent-Konfiguration. Diese Änderungen an der
 Ausführungspolitik sollten vor einer Upstream-Übernahme ausdrücklich mitgeprüft werden.
 
 Der Datenvertrag und die Bibliotheksdateien sind implementiert. Schema, Phasen,
-Links, Katalogaktualität und Tests werden lokal geprüft. Eine Prüfung im laufenden
-Autonomia-Harness ist noch nicht möglich. Commit, Push und Pages-Veröffentlichung
-sind nicht Teil des erreichten lokalen Ergebnisses.
+Links, Katalogaktualität und Tests wurden lokal geprüft. Eine Prüfung im laufenden
+Autonomia-Harness ist noch nicht möglich. Commit und Push in den Fork sind erfolgt.
+Die Übernahme in `main` erfolgt über einen Pull Request; die GitHub-Pages-
+Veröffentlichung ist ein separater Schritt.
 
 Technischer Vertrag und vollständige Karten: [Registry](kos-agent-files/docs/REGISTRY.md),
 [Katalog](kos-agent-files/docs/skills/SKILLS.md),
